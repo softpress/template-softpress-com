@@ -1,0 +1,30 @@
+body { margin:0px; background-color:#e6e6e6; height:100% }
+html { height:100% }
+a:link { color:#b3b3b3; text-decoration:none }
+a:visited { color:#999; text-decoration:none }
+a:hover { color:#ff0080; text-decoration:none }
+a:active { color:#ff0080; text-decoration:underline }
+#PageDiv { position:relative; min-height:100% }
+#photographer { max-width:100%; overflow:hidden }
+#CSSMenu { height:auto; overflow:visible; position:relative }
+#fwNav1 { float:right; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#333333; text-decoration:none; background:#F0F0F0; padding:3px 10px 3px 10px }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#FF0080; text-decoration:none; background:#F0F0F0 }
+#fwNav1 .fwNavItem a:active { color:#FF0080; text-decoration:none; background:#F0F0F0 }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('../../Resources/menu-3-black.png'); background-repeat:no-repeat; background-size:100%; float:right }
+@media screen and (max-width:768px)
+{
+	#fwNav1 { width:100%; right:0; left:0; margin-top:10px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; top:0; right:0; bottom:100%; left:0; margin-top:-100%; background-color:#CCCCCC; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out margin, .2s ease-out bottom; -moz-transition:.2s ease-out margin, .2s ease-out bottom; -ms-transition:.2s ease-out margin, .2s ease-out bottom; -o-transition:.2s ease-out margin, .2s ease-out bottom; transition:.2s ease-out margin, .2s ease-out bottom }
+	.fwNav1-toggle-close { background-image:url('../../Resources/menu-3-white.png'); margin:35px 10px 0px 20px }
+	.fwNavContainer1.fwMenuOn { margin-top:0; bottom:0 }
+}

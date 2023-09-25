@@ -1,0 +1,60 @@
+body { margin:0px; background-color:#fff; height:100% }
+html { height:100% }
+a:link { color:#333 }
+a:visited { color:#333 }
+a:hover { color:#4982ad }
+a:active { color:#4982ad }
+#PageDiv { position:relative; min-height:100% }
+#Header { width:90%; height:340px; min-height:400px; z-index:0; clear:both; margin-left:auto; margin-right:auto; overflow:hidden }
+#Body1 { width:86%; z-index:0; clear:both; padding-left:2%; padding-right:2%; padding-bottom:2%; margin-left:auto; margin-top:-30px; margin-right:auto }
+#ContentWrapper1 { width:30%; z-index:0; float:left }
+#Content1 { width:90%; z-index:0; float:left; padding:5%; background-color:#fff }
+#Content3 { width:90%; z-index:0; float:left; padding:5%; margin-top:50px; background-color:#fff }
+#Content2 { width:61%; min-height:523px; z-index:0; float:left; padding:2%; margin-left:5%; background-color:#fff }
+#Video720caption { width:100%; overflow:hidden }
+#Body2 { width:86%; z-index:0; clear:both; padding:2%; margin-left:auto; margin-right:auto }
+#Content4 { width:98%; z-index:0; clear:both; padding:1%; margin-left:auto; margin-right:auto; margin-bottom:20px; background-color:#fff }
+#Content5 { width:17%; z-index:0; float:left; padding:1%; margin-right:1.25%; background-color:#fff }
+#Content6 { width:17%; z-index:0; float:left; padding:1%; margin-right:1.25%; background-color:#fff }
+#Content7 { width:17%; z-index:0; float:left; padding:1%; margin-right:1.25%; background-color:#fff }
+#Content8 { width:17%; z-index:0; float:left; padding:1%; margin-right:1.25%; background-color:#fff }
+#Content9 { width:17%; z-index:0; float:left; padding:1%; background-color:#fff }
+#Menu { height:auto; overflow:visible; position:relative }
+#fwNav1 { float:right; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#000000; text-decoration:none; background:#FFFFFF; padding:20px 23px 20px 23px }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#000000; text-decoration:none; background:#5C9DC4 }
+#fwNav1 .fwNavItem a:active { color:#000000; text-decoration:none; background:#5C9DC4 }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('../Resources/menu-1-black.png'); background-repeat:no-repeat; background-size:100%; float:right }
+#fwNav1 .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem a.fwCurrent:hover { display:block; color:#FFFFFF; background:#4982AD; font-weight:normal }
+@media screen and (max-width:768px)
+{
+	#Header { min-height:340px }
+	#ContentWrapper1 { width:100% }
+	#Content2 { width:96%; margin-left:0px; margin-top:50px }
+	#Content5 { width:98%; margin-right:0px }
+	#Content6 { width:98%; margin-right:0px }
+	#Content7 { width:98%; margin-right:0px }
+	#Content8 { width:98%; margin-right:0px }
+	#Content9 { width:98% }
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; top:0; right:0; bottom:0; left:100%; margin-right:-100%; background-color:#333333; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out margin, .2s ease-out left; -moz-transition:.2s ease-out margin, .2s ease-out left; -ms-transition:.2s ease-out margin, .2s ease-out left; -o-transition:.2s ease-out margin, .2s ease-out left; transition:.2s ease-out margin, .2s ease-out left }
+	.fwNav1-toggle-close { background-image:url('../Resources/menu-close-white.png'); margin:15px 20px 20px 20px }
+	.fwNavContainer1.fwMenuOn { margin-right:0; left:0 }
+}
+@media screen and (max-width:667px)
+{
+	#Content5 { width:95%; float:none; margin-left:auto; margin-right:auto }
+	#Content6 { width:95%; float:none; margin-left:auto; margin-right:auto }
+	#Content7 { width:95%; float:none; margin-left:auto; margin-right:auto }
+	#Content8 { width:95%; float:none; margin-left:auto; margin-right:auto }
+	#Content9 { width:95%; float:none; margin-left:auto; margin-right:auto }
+}

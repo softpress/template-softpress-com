@@ -1,0 +1,55 @@
+body { margin:0px; background-color:#191919; background-image:url(../../Resources/eagle.jpg); background-position:center; background-repeat:no-repeat; height:100% }
+html { height:100% }
+a:link { color:#b3b3b3; text-decoration:none }
+a:visited { color:#b3b3b3; text-decoration:none }
+a:hover { color:#f6f8f7; text-decoration:none }
+a:active { color:#f6f8f7; text-decoration:none }
+#credit a:link { color:#f6f8f7; text-decoration:none }
+#credit a:visited { color:#f6f8f7; text-decoration:none }
+#credit a:hover { color:#b3b3b3; text-decoration:none }
+#credit a:active { color:#b3b3b3; text-decoration:none }
+#PageDiv { position:relative; min-height:100% }
+#header-center { position:relative; width:96%; min-height:80px; max-width:2400px; margin-left:auto; margin-right:auto }
+#credit_m.f-ms { background-image:url(../../Resources/credit.png) }
+#nav { height:auto; overflow:visible }
+#fwNav1 { float:right; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#B3B3B3; text-decoration:none; background:#191919; padding:12px 16px 12px 16px; white-space:nowrap }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem:hover > span a, #fwNav1 .fwNavItem:hover > a { color:#F6F8F7; text-decoration:none }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#F6F8F7; text-decoration:none }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('../../Resources/menu-gray.png'); background-repeat:no-repeat; background-size:100%; float:right }
+#fwNav1 * .sub { visibility:hidden; position:absolute; left:-0; float:left; padding:0; margin:0; list-style:none; z-index:1 }
+#fwNav1 .sub * .sub { top:-0 }
+#fwNav1 .fwNavItem .sub .fwNavItem { display:block; margin:0; padding:0; left:0; width:100%; *width:auto; border-left:0; border-right:0 }
+#fwNav1 * * * .sub { left:100%; top:0 }
+#fwNav1 .fwNavItem .sub .fwNavItem a { display:block; color:#0000FF; text-decoration:none; background:#191919; padding:10px 14px 10px 14px; white-space:nowrap }
+#fwNav1 .fwNavItem .sub .fwFirstChild { border-top:0 }
+#fwNav1 .fwNavItem .sub .fwLastChild { border-bottom:0 }
+#fwNav1 .fwNavItem .sub .fwNavItem:hover > span a, #fwNav1 .fwNavItem .sub .fwNavItem:hover > a { color:#0000FF; text-decoration:none }
+#fwNav1 .fwNavItem .sub .fwNavItem a:hover, #fwNav1 .fwNavItem .sub .fwNavItem span a:hover, #fwNav1 .fwNavItem .sub .fwNavItem a:focus { color:#0000FF; text-decoration:none }
+#fwNav1 :hover > .sub { visibility:visible }
+@media screen and (max-width:667px)
+{
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-left:40px; padding-right:40px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; top:0; right:0; bottom:100%; left:0; margin-top:-100%; background-color:#191919; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out margin, .2s ease-out bottom; -moz-transition:.2s ease-out margin, .2s ease-out bottom; -ms-transition:.2s ease-out margin, .2s ease-out bottom; -o-transition:.2s ease-out margin, .2s ease-out bottom; transition:.2s ease-out margin, .2s ease-out bottom }
+	.fwNav1-toggle-close { margin:24px 20px 20px 20px }
+	.fwNavContainer1.fwMenuOn { margin-top:0; bottom:0 }
+	#fwNav1 .fwNavItem .sub .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-right:0px; padding-left:0px }
+	#fwNav1 .fwNavItem .sub .sub .fwNavItem a { padding-left:0px }
+	#fwNav1 .fwNavItem .sub .sub .sub .fwNavItem a { padding-left:0px }
+	#fwNav1 .fwNavItem .sub { position:relative; visibility:visible; width:100%; left:0; top:0 }
+	#fwNav1 .fwNavItem .sub .fwNavItem { width:100% }
+	#fwNav1 .fwNavItem .sub .sub { left:0 }
+	#fwNav1 .fwNavItem .sub .sub .fwNavItem { border-left:none }
+	.fwMainPointer1, .fwSubPointer1 { display:none }
+	#fwNav1 .fwNavItem .sub .fwLastChild { border-bottom:none }
+	#fwNav1 .fwLastChild .sub .fwLastChild { border-bottom:0 }
+}

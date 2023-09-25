@@ -1,0 +1,44 @@
+#PageWrapper.f-ms { width:100%; z-index:0; background-size:cover }
+#HeaderWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto }
+#Header.f-ms { width:90%; z-index:0; clear:both; padding:40px 2%; margin-left:auto; margin-right:auto }
+#LogoWrapper.f-ms { width:50%; z-index:0; float:left; clear:left }
+#Logo.f-ms { width:100%; z-index:0; float:left; clear:both }
+#LogoSubtitle.f-ms { width:100%; z-index:0; float:left; clear:both }
+#HeaderRight.f-ms { width:50%; z-index:0; float:left; margin-top:30px }
+#HeaderSMALL.f-ms { width:90%; z-index:0; padding:40px 2%; margin-left:auto; margin-right:auto; display:none }
+#LogoWrapper1.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto }
+#Logo1.f-ms { width:100%; z-index:0; float:left; clear:both }
+#LogoSubtitle1.f-ms { width:100%; z-index:0; float:left; clear:both }
+#HeaderRight1.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-top:30px; margin-right:auto }
+#CSSMenuWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; border-top:solid #d4e6d5 1px; border-bottom:solid #d4e6d5 1px }
+#CSSMenu.f-ms { width:94%; z-index:0; clear:both; margin-left:auto; margin-right:auto }
+#BodyWrapper1.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#f5f5f5 }
+#Body1.f-ms { width:90%; z-index:0; clear:both; padding:5% 2%; margin-left:auto; margin-right:auto; overflow:hidden }
+#BodyWrapper2.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#e6e6e6 }
+#Body2.f-ms { width:90%; z-index:0; clear:both; padding:5% 2%; margin-left:auto; margin-right:auto; overflow:hidden }
+#BodyWrapper3.f-ms { width:100%; z-index:0; margin-left:auto; margin-right:auto; background-color:#f5f5f5 }
+#Body3.f-ms { width:90%; z-index:0; clear:both; padding:5% 2%; margin-left:auto; margin-right:auto; overflow:hidden }
+#FooterWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-image:url(../Resources/stripe_f4ea13293f.png); border-top:solid #262626 5px }
+#Footer.f-ms { width:90%; z-index:0; clear:both; padding:60px 20px; margin-left:auto; margin-right:auto }
+#FooterLeft.f-ms { width:18.02%; z-index:0; float:left; clear:left }
+#Address.f-ms { width:50%; z-index:0; float:right; clear:right }
+#Set7.f-ms { width:68%; z-index:0; float:right }
+#Set7Icon1.f-ms { left:160px; top:30px; width:64px; height:64px; margin:0px }
+#Set7Icon2.f-ms { left:224px; top:30px; width:64px; height:64px; margin:0px }
+#Set7Icon3.f-ms { left:288px; top:30px; width:64px; height:64px; margin:0px }
+#Set7Icon4.f-ms { left:352px; top:30px; width:64px; height:64px; margin:0px }
+#Set7Icon6.f-ms { left:416px; top:30px; width:64px; height:64px; margin:0px }
+#DontDelete.f-ms { position:absolute; left:21px; top:-41px; width:58px; height:12px; z-index:1 }
+@media screen and (max-width:768px)
+{
+	#Header.f-ms { display:none }
+	#HeaderRight.f-ms { float:right; clear:right }
+	#HeaderSMALL.f-ms { display:block }
+	#LogoWrapper1.f-ms { float:left; clear:left; margin-left:0px; margin-right:0px }
+	#HeaderRight1.f-ms { float:right; clear:right; margin-left:0px; margin-right:0px }
+	#CSSMenu.f-ms { padding-top:3%; padding-bottom:3%; margin-top:20px; margin-bottom:20px }
+	#Footer.f-ms { padding-left:2%; padding-right:2% }
+	#FooterLeft.f-ms { width:100%; float:none; margin-left:auto; margin-right:auto; margin-bottom:3% }
+	#Address.f-ms { width:100% }
+	#Set7.f-ms { width:100% }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Store</title>
+<meta name="viewport" content="width = device-width, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="generator" content="Freeway Pro 7.0">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/store.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Della+Respira|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    .fwNavItem a {
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+</style>
+<script type="text/javascript">//<![CDATA[
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old) im.old = im.src;
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/smallset7icon1b.png");
+	FWLoad("Resources/smallset7icon1.png");
+	FWLoad("Resources/smallset7icon2b.png");
+	FWLoad("Resources/smallset7icon2.png");
+	FWLoad("Resources/smallset7icon3b.png");
+	FWLoad("Resources/smallset7icon3.png");
+	FWLoad("Resources/smallset7icon5b.png");
+	FWLoad("Resources/smallset7icon5.png");
+	FWLoad("Resources/smallset7icon7b.png");
+	FWLoad("Resources/smallset7icon7.png");
+}
+//]]></script></head>
+<body class="fullwidthbackground" onload="FWPreload()">
+<div id="PageDiv" class="f-cf">
+	<div id="PageWrapper" class="f-cf fullwidthbackground f-ms"><div id="TopSpacer" class="f-cf f-ms"></div>
+		<div id="HeaderWrapper" class="f-cf f-ms"><div id="Header" class="f-cf"><div id="Logo" class="f-cf f-ms"><div id="ShoppingCartWrapper" class="f-cf f-ms"><div id="CartImageWrapper" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><a href="http://www.aitsafe.com/cf/review.cfm?userid=%23USERID&#38;config=58006940&#38;return=template.softpress.com/floral/store.html&#38;currency=0" title="Review your cart" target="_blank"><img id="cart" class="f-ms" src="Resources/cart.png" alt="cart"></a></p>
+						</div>
+						<div id="CartTextWrapper" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="PageContent"><span class="TextSize14">My Basket</span></span></p>
+						</div>
+					</div>
+					<div id="LogoTitle" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="LogoTitle">Floral</span></p>
+					</div>
+					<div id="LogoSubtitle" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="BigSubtitle">online flower specialists</span></p>
+					</div>
+				</div>
+				<div id="CSSMenu" class="f-cf f-ms"><input type="checkbox" id="fwNav1-toggle">
+					<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+					<div class="fwNavContainer1">
+						<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+						<ul class="CSSMenu" id="fwNav1">
+							<li class="fwFirstChild fwNavItem"><a href="index.html">home</a></li>
+							<li class="fwNavItem"><a href="about.html">about</a></li>
+							<li class="fwNavItem"><a href="#nil" class="fwCurrent">store</a></li>
+							<li class="fwLastChild fwNavItem"><a href="contact.html">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper1" class="f-cf f-ms"><div id="Body1" class="f-cf"><div id="PageTitle" class="f-cf"><p class="AlignCenter f-fp f-lp"><span class="PageContentTitle">Store</span></p>
+				</div>
+				<div id="AllProducts" class="f-cf"><div id="ProductsWrapper1" class="f-cf"><div id="Product1" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG1804" src="Resources/picjumbocomimg18.jpeg" alt="picjumbocomIMG1804">Cras mattis contur.</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton1" src="Resources/productbutton1.png" alt="ProductButton1"></a></span></p>
+						</div>
+						<div id="Product2" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG8687" src="Resources/picjumbocomimg86.jpeg" alt="picjumbocomIMG8687">Purus Mollis Fertum</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton2" src="Resources/productbutton1.png" alt="ProductButton2"></a></span></p>
+						</div>
+					</div>
+					<div id="ProductsWrapper2" class="f-cf"><div id="Product3" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG8735" src="Resources/picjumbocomimg87.jpeg" alt="picjumbocomIMG8735">Cras mattis contur.</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton3" src="Resources/productbutton3.png" alt="ProductButton3"></a></span></p>
+						</div>
+						<div id="Product4" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG9857" src="Resources/picjumbocomimg98.jpeg" alt="picjumbocomIMG9857">Purus Mollis Fertum</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton4" src="Resources/productbutton3.png" alt="ProductButton4"></a></span></p>
+						</div>
+					</div>
+					<div id="ProductsWrapper3" class="f-cf"><div id="Product5" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG9868" src="Resources/picjumbocomimg98a.jpeg" alt="picjumbocomIMG9868">Cras mattis contur.</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton5" src="Resources/productbutton3.png" alt="ProductButton5"></a></span></p>
+						</div>
+						<div id="Product6" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG9870" src="Resources/picjumbocomimg98b.jpeg" alt="picjumbocomIMG9870">Purus Mollis Fertum</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton6" src="Resources/productbutton3.png" alt="ProductButton6"></a></span></p>
+						</div>
+					</div>
+					<div id="ProductsWrapper4" class="f-cf"><div id="Product7" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG9877" src="Resources/picjumbocomimg98c.jpeg" alt="picjumbocomIMG9877">Cras mattis contur.</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton7" src="Resources/productbutton3.png" alt="ProductButton7"></a></span></p>
+						</div>
+						<div id="Product8" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG1" src="Resources/picjumbocomimg1.jpeg" alt="picjumbocomIMG1">Purus Mollis Fertum</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton8" src="Resources/productbutton1.png" alt="ProductButton8"></a></span></p>
+						</div>
+					</div>
+					<div id="ProductsWrapper5" class="f-cf"><div id="Product9" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG2" src="Resources/picjumbocomimg2.jpeg" alt="picjumbocomIMG2">Cras mattis contur.</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton9" src="Resources/productbutton9.png" alt="ProductButton9"></a></span></p>
+						</div>
+						<div id="Product10" class="f-cf"><p class="f-fp"><span class="PageContentTitle"><img id="picjumbocomIMG3" src="Resources/picjumbocomimg3.jpeg" alt="picjumbocomIMG3">Purus Mollis Fertum</span></p>
+							<p>&nbsp;</p>
+							<p><span class="PageContent">Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</span></p>
+							<p class="f-lp"><span class="PageContent"> <a href="http://www.aitsafe.com/cf/add.cfm?userid=%23USERID&#38;config=58006940&#38;product=My%20product%20name&#38;price=14.99&#38;qty=1&#38;return=template.softpress.com/floral/store.html&#38;units&#38;currency=0&#38;tax=0&#38;hash=0c6f633704f85d2e25685797f0e6e300" title="Add To Cart" target="_blank"><img id="ProductButton10" src="Resources/productbutton1.png" alt="ProductButton10"></a></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper" class="f-cf f-ms"><div id="Footer" class="f-cf f-ms"><div id="FooterContentWrapper" class="f-cf f-ms"><div id="FooterBox5" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="Footer">© Floral 2014</span></p>
+					</div>
+					<div id="SmallSet7" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon1',1,'Resources/smallset7icon1.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon1\',2,\'Resources/smallset7icon1.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon1" class="f-ms" src="Resources/smallset7icon1b.png" alt="SmallSet7Icon1"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon2',1,'Resources/smallset7icon2.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon2\',2,\'Resources/smallset7icon2.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon2" class="f-ms" src="Resources/smallset7icon2b.png" alt="SmallSet7Icon2"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon3',1,'Resources/smallset7icon3.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon3\',2,\'Resources/smallset7icon3.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon3" class="f-ms" src="Resources/smallset7icon3b.png" alt="SmallSet7Icon3"></a><a href="http://www.flickr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon5',1,'Resources/smallset7icon5.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon5\',2,\'Resources/smallset7icon5.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon5" class="f-ms" src="Resources/smallset7icon5b.png" alt="SmallSet7Icon5"></a><a href="http://www.instagram.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon7',1,'Resources/smallset7icon7.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon7\',2,\'Resources/smallset7icon7.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon7" class="f-ms" src="Resources/smallset7icon7b.png" alt="SmallSet7Icon7"></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="BottomSpacer" class="f-cf f-ms"></div>
+	</div>
+</div>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("CSSMenu", 480);
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("CSSMenu", 480);
+});
+
+//]]></script></body>
+</html>

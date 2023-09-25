@@ -1,0 +1,32 @@
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.f-cf:before,.f-cf:after { content:" "; display:table }
+.f-cf { _zoom:1 }
+.f-cf:after { clear:both }
+blockquote { color:#4c4c4c; font-family:Roboto, sans-serif; font-weight: 300; font-style:italic; font-size:17px; word-spacing:2.04px; line-height:1.75; margin-left:0%; margin-right:0% }
+em { font-style:italic }
+h1 { font-weight:bold; font-size:18px }
+h1:first-child { margin-top:0px }
+h2 { color:#003e73; font-family:'Arvo',Helvetica,serif; font-weight: 700; font-size:30px; text-align:center; margin-bottom:6px }
+h2:first-child { margin-top:0px }
+h3 { font-weight:bold; font-size:14px }
+h3:first-child { margin-top:0px }
+strong { font-weight:bold }
+.CenterAlign { text-align:center }
+.BigTitle { color:#fff; font-family:'Pacifico',Helvetica,cursive; font-size:56px }
+.ShoppingCart { color:#fff; font-family:'Pacifico',Helvetica,cursive; font-size:22px }
+.Menu { font-family:'Arvo',Helvetica,serif; font-weight: 400; font-size:16px; text-align:center }
+.PageContent { color:#4c4c4c; font-family:Roboto, sans-serif; font-weight: 300; font-size:16px; word-spacing:1.92px; line-height:1.75 }
+.Footer { color:#fff; font-family:'Arvo',Helvetica,serif; font-weight: 400; font-size:18px }
+.PacificoFont { font-family:'Pacifico',Helvetica,cursive; font-size:20px }
+.PageContentList { color:#4c4c4c; font-family:Roboto, sans-serif; font-weight: 300; font-size:16px; word-spacing:1.92px; line-height:1.75; list-style:circle }
+.BuyButton { font-family:'Arvo',Helvetica,serif; font-weight: 700; font-size:18px; word-spacing:2.16px; line-height:1.5; text-align:center }
+.FormItem { color:#000; font-family:'Arvo',Helvetica,serif; font-weight: 400; font-size:16px; text-align:center }
+.SubmitButton { color:#e25d68; font-family:'Arvo',Helvetica,serif; font-weight: 700; font-size:18px; line-height:1.5; text-align:center }

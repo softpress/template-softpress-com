@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Success!</title>
+<meta name="viewport" content="width = 1000, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Express 6.1.2">
+<style type="text/css">
+<!--
+body { margin:0px; background-color:#fff; background-image:url(Resources/picjumbo.com_img_.jpg); background-position:center top; background-attachment:fixed; height:100% }
+html { height:100% }
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+a:link { color:#333; text-decoration:underline }
+a:visited { color:#333; text-decoration:underline }
+a:hover { color:#7a2b9d; text-decoration:underline }
+a:active { color:#7a2b9d; text-decoration:underline }
+em { font-style:italic }
+h1 { font-size:18px }
+h1:first-child { margin-top:0px }
+strong { font-weight:bold }
+.style2 { color:#7a2b9d; font-family:'Della Respira', serif; font-size:20px; text-align:center }
+.style1 { text-align:center }
+.style3 { font-family:'Della Respira', serif; text-align:center }
+.style4 { font-size:50px }
+.style6 { color:#7a2b9d; font-size:20px }
+.style5 { font-family:'Della Respira', serif; font-size:20px }
+.style7 { font-family:'Alegreya Sans', sans-serif; font-weight: 300; font-size:14px; text-align:center }
+.style21 { font-family:'Della Respira', serif; font-size:24px; text-align:center }
+.style10 { font-family:'Della Respira', serif; font-size:16px; text-align:left }
+#PageDiv { position:relative; max-width:1000px; min-height:100%; margin:auto }
+.fwNavContainer1 { float:right; position:relative; right:50%; }
+#fwNav1 { position:relative; display:block; left:50%; padding:0; margin:0; list-style:none; }
+#fwNav1 .fwNavItem { width:auto;  float:left;margin:0; padding:0; border-right:0; border-top:0; border-bottom:0; border-left:0; position:relative; }
+#fwNav1 .fwNavItem a { display:block;color:#333333; text-decoration:none; background:url(Resources/transparent.gif) repeat; margin:0;padding:0px 25px 0px 25px; height:1%; }
+#fwNav1 .fwFirstChild { border-left:0; }
+#fwNav1 .fwLastChild { border-right:0; }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#7A2B9D; text-decoration:none; background:url(Resources/transparent.gif) repeat; }
+#fwNav1 .fwNavItem a:active { color:#7A2B9D; text-decoration:none; background:url(Resources/transparent.gif) repeat; }
+* html #fwNav1 { float:left; }
+* html #fwNav1 .fwNavItem a { float:left; height:1%; }
+-->
+</style>
+<!--[if lt IE 7]>
+<link rel=stylesheet href="css/ie6.css">
+<style type="text/css">
+#PageDiv { height:100% }
+</style>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<script src="Resources/FW_Object.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Della+Respira|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    .fwNavItem a {
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+</style>
+
+
+<script type="text/javascript">//<![CDATA[
+var usingIEFix = false;
+//]]></script>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">//<![CDATA[
+usingIEFix = true;
+//]]></script>
+<![endif]-->
+
+
+<script type="text/javascript">//<![CDATA[
+
+function FWStripFileFromFilterString(filterString)
+{
+	var start,end;
+	var strSrc = "src='";
+	var strRes = "";
+
+	start = filterString.indexOf(strSrc);
+
+	if(start != -1)
+	{
+		start += strSrc.length;
+		
+		end = filterString.indexOf("',",start);
+		if(end != -1)
+		{
+			strRes = filterString.substring(start,end);
+		}
+	}
+
+	return strRes;
+}
+
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old)
+		{
+			if(usingIEFix && im.runtimeStyle.filter)
+				im.old = FWStripFileFromFilterString(im.runtimeStyle.filter);
+			else
+				im.old = im.src;
+		}
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/facebook1.png");
+	FWLoad("Resources/facebook.png");
+	FWLoad("Resources/twitter1.png");
+	FWLoad("Resources/twitter.png");
+	FWLoad("Resources/linkedin1.png");
+	FWLoad("Resources/linkedin.png");
+	FWLoad("Resources/flickr1.png");
+	FWLoad("Resources/flickr.png");
+	FWLoad("Resources/instagram1.png");
+	FWLoad("Resources/instagram.png");
+}
+//]]></script></head>
+<body onload="FWPreload()">
+<div id="PageDiv">
+	<table style="border-spacing:0px; width:951px; table-layout:fixed">
+		<colgroup>
+			<col style="width:50px">
+			<col style="width:900px">
+			<col style="width:1px">
+		</colgroup>
+		<tr style="vertical-align:top">
+			<td colspan=2 style="height:40px"></td>
+			<td style="height:40px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td rowspan=8 style="height:781px"></td>
+			<td style="height:215px; background-color:#fff">
+				<table style="border-spacing:0px; width:900px; table-layout:fixed">
+					<colgroup>
+						<col style="width:20px">
+						<col style="width:5px">
+						<col style="width:225px">
+						<col style="width:400px">
+						<col style="width:100px">
+						<col style="width:101px">
+						<col style="width:29px">
+						<col style="width:5px">
+						<col style="width:14px">
+						<col style="width:1px">
+					</colgroup>
+					<tr style="vertical-align:top">
+						<td colspan=9 style="height:20px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td style="height:20px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=3 rowspan=2 style="height:70px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td rowspan=2 style="height:70px"><p class="style3 f-fp f-lp"><span class="style4">Floral</span><br><span class="style6">online flower specialists</span></p>
+						</td>
+						<td colspan=5 style="height:20px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td style="height:20px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td style="height:50px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td style="height:50px">
+							<table style="border-spacing:0px; width:101px; table-layout:fixed">
+								<colgroup>
+									<col style="width:34px">
+									<col style="width:32px">
+									<col style="width:34px">
+									<col style="width:1px">
+								</colgroup>
+								<tr style="vertical-align:top">
+									<td style="height:32px"></td>
+									<td style="height:32px"><img src="Resources/carticon.png" width=32 height=32 alt="carticon" style="float:left"></td>
+									<td style="height:32px"></td>
+									<td style="height:32px"></td>
+								</tr>
+								<tr style="vertical-align:top">
+									<td colspan=3 style="height:14px"><p class="style7 f-fp f-lp">My Basket</p>
+									</td>
+									<td style="height:14px"></td>
+								</tr>
+								<tr class="f-sp">
+									<td><img src="Resources/_clear.gif" width=34 height=1 alt="" style="float:left"></td>
+									<td><img src="Resources/_clear.gif" width=32 height=1 alt="" style="float:left"></td>
+									<td><img src="Resources/_clear.gif" width=34 height=1 alt="" style="float:left"></td>
+									<td style="height:4px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+								</tr>
+							</table>
+						</td>
+						<td colspan=3 style="height:50px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td style="height:50px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=9 style="height:30px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td style="height:30px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=2 style="height:1px; background-color:#fff"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+						<td colspan=6 style="height:1px; background-color:#ccc"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+						<td style="height:1px; background-color:#fff"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+						<td style="height:1px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=9 style="height:29px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td style="height:29px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td style="height:28px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td colspan=6 style="height:28px">
+							<div style="width:860px; position:relative; z-index:1; overflow:visible">
+								<div class="fwNavContainer1">
+									<ul class="style1 f-fp f-lp" id="fwNav1">
+										<li class="fwFirstChild fwNavItem"><a href="index.html"><span class="style5" style="text-decoration:none">home</span></a></li>
+										<li class="fwNavItem"><a href="about.html"><span class="style5" style="text-decoration:none">about</span></a></li>
+										<li class="fwNavItem"><a href="store.html"><span class="style5" style="text-decoration:none">store</span></a></li>
+										<li class="fwLastChild fwNavItem"><a href="contact.html"><span class="style5" style="text-decoration:none">contact</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td colspan=2 style="height:28px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td style="height:28px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=9 style="height:36px; background-color:#fff"><p class="f-sp">&nbsp;</p></td>
+						<td style="height:36px"></td>
+					</tr>
+					<tr class="f-sp">
+						<td><img src="Resources/_clear.gif" width=20 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=5 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=225 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=400 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=100 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=101 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=29 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=5 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=14 height=1 alt="" style="float:left"></td>
+						<td style="height:1px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+					</tr>
+				</table>
+			</td>
+			<td style="height:215px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:2px; background-color:#ccc"><p class="f-sp">&nbsp;</p></td>
+			<td style="height:2px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:2px; background-color:#666"><p class="f-sp">&nbsp;</p></td>
+			<td style="height:2px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:138px; background-color:#f3f3f3; padding:50px"><p class="style21 f-fp">&nbsp;</p>
+			<p class="style21">&nbsp;</p>
+			<p class="style21">&nbsp;</p>
+			<p class="style21 f-lp">Thank you!</p>
+			</td>
+			<td style="height:238px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:150px; background-color:#f3f3f3; padding:50px"><p class="style2 f-fp f-lp">Your email has been sent - we will get back in touch as soon as we can. <br>Please click <a href="index.html">here</a> to return to the home page.</p>
+			</td>
+			<td style="height:250px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:2px; background-color:#666"><p class="f-sp">&nbsp;</p></td>
+			<td style="height:2px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:2px; background-color:#ccc"><p class="f-sp">&nbsp;</p></td>
+			<td style="height:2px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:70px; background-color:#fff">
+				<table style="border-spacing:0px; width:900px; table-layout:fixed">
+					<colgroup>
+						<col style="width:25px">
+						<col style="width:140px">
+						<col style="width:520px">
+						<col style="width:38px">
+						<col style="width:38px">
+						<col style="width:38px">
+						<col style="width:38px">
+						<col style="width:38px">
+						<col style="width:25px">
+					</colgroup>
+					<tr style="vertical-align:top">
+						<td colspan=8 style="height:16px"></td>
+						<td style="height:16px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=3 style="height:9px"></td>
+						<td rowspan=3 style="height:38px"><a href="http://www.facebook.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img1',1,'Resources/facebook.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/facebook1.png" width=38 height=38 alt="Facebook" style="float:left" id="img1"></a></td>
+						<td rowspan=3 style="height:38px"><a href="http://www.twitter.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img2',1,'Resources/twitter.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/twitter1.png" width=38 height=38 alt="Twitter" style="float:left" id="img2"></a></td>
+						<td rowspan=3 style="height:38px"><a href="http://www.linkedin.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img3',1,'Resources/linkedin.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/linkedin1.png" width=38 height=38 alt="LinkedIn" style="float:left" id="img3"></a></td>
+						<td rowspan=3 style="height:38px"><a href="http://www.flickr.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img4',1,'Resources/flickr.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/flickr1.png" width=38 height=38 alt="Flickr" style="float:left" id="img4"></a></td>
+						<td rowspan=3 style="height:38px"><a href="http://www.instagram.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img5',1,'Resources/instagram.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/instagram1.png" width=38 height=38 alt="Instagram" style="float:left" id="img5"></a></td>
+						<td style="height:9px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td style="height:16px"></td>
+						<td style="height:16px"><p class="style10 f-fp f-lp">© Floral 2015</p>
+						</td>
+						<td style="height:16px"></td>
+						<td style="height:16px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=3 style="height:13px"></td>
+						<td style="height:13px"></td>
+					</tr>
+					<tr class="f-sp">
+						<td><img src="Resources/_clear.gif" width=25 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=140 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=520 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td style="height:16px"><img src="Resources/_clear.gif" width=25 height=1 alt="" style="float:left"></td>
+					</tr>
+				</table>
+			</td>
+			<td style="height:70px"></td>
+		</tr>
+		<tr class="f-sp">
+			<td><img src="Resources/_clear.gif" width=50 height=1 alt="" style="float:left"></td>
+			<td><img src="Resources/_clear.gif" width=900 height=1 alt="" style="float:left"></td>
+			<td style="height:1px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Error!</title>
+<meta name="viewport" content="width = 1000, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Express 6.1.2">
+<style type="text/css">
+<!--
+body { margin:0px; background-color:#313040; height:100% }
+html { height:100% }
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+a:link { color:#0e6f38; text-decoration:underline }
+a:visited { color:#0e6f38; text-decoration:underline }
+a:hover { color:#57bf7c; text-decoration:underline }
+a:active { color:#57bf7c; text-decoration:underline }
+em { font-style:italic }
+h1 { font-size:18px }
+h1:first-child { margin-top:0px }
+strong { font-weight:bold }
+.style4 { font-family:'Montserrat',Helvetica,sans-serif; font-weight: 700; font-size:36px; text-align:center }
+.style2 { color:#57bf7c }
+.style5 { color:#57bf7c; font-family:'Pontano Sans',Helvetica,sans-serif; font-size:24px; text-align:center }
+.style3 { text-align:center }
+.style6 { font-family:'Pontano Sans',Helvetica,sans-serif; font-size:18px }
+.style1 { font-size:14px }
+.style17 { font-family:'Montserrat',Helvetica,sans-serif; font-weight: 700; font-size:32px; text-align:center }
+.style12 { color:#0e6f38; font-family:'Pontano Sans',Helvetica,sans-serif; font-size:20px; text-align:center }
+.style8 { font-family:'Pontano Sans',Helvetica,sans-serif; font-size:16px }
+.style9 { color:#ccc; font-family:'Pontano Sans',Helvetica,sans-serif; font-size:16px; text-align:center }
+#PageDiv { position:relative; max-width:1000px; min-height:100%; margin:auto }
+.fwNavContainer1 { float:right; position:relative; right:50%; }
+#fwNav1 { position:relative; display:block; left:50%; padding:0; margin:0; list-style:none; }
+#fwNav1 .fwNavItem { width:auto;  float:left;margin:0; padding:0; border-right:0; border-top:0; border-bottom:0; border-left:0; position:relative; }
+#fwNav1 .fwNavItem a { display:block;color:#313040; text-decoration:none; background:url(Resources/transparent.gif) repeat; margin:0;padding:8px 8px 8px 8px; height:1%; }
+#fwNav1 .fwFirstChild { border-left:0; }
+#fwNav1 .fwLastChild { border-right:0; }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#0E6F38; text-decoration:none; background:url(Resources/transparent.gif) repeat; }
+#fwNav1 .fwNavItem a:active { color:#0E6F38; text-decoration:none; background:url(Resources/transparent.gif) repeat; }
+* html #fwNav1 { float:left; }
+* html #fwNav1 .fwNavItem a { float:left; height:1%; }
+a.FooterNav:link  { text-decoration: none; color:#CCCCCC }
+a.FooterNav:visited  { text-decoration: none; color:#CCCCCC }
+a.FooterNav:hover  { text-decoration: none; color:#0E6F38 }
+a.FooterNav:active  { text-decoration: none; color:#0E6F38 }
+-->
+</style>
+<!--[if lt IE 7]>
+<link rel=stylesheet href="css/ie6.css">
+<style type="text/css">
+#PageDiv { height:100% }
+</style>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<script src="Resources/FW_Object.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans|Montserrat:400,700' rel='stylesheet' type='text/css'></link>
+
+
+<script type="text/javascript">//<![CDATA[
+var usingIEFix = false;
+//]]></script>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">//<![CDATA[
+usingIEFix = true;
+//]]></script>
+<![endif]-->
+
+
+<script type="text/javascript">//<![CDATA[
+
+function FWStripFileFromFilterString(filterString)
+{
+	var start,end;
+	var strSrc = "src='";
+	var strRes = "";
+
+	start = filterString.indexOf(strSrc);
+
+	if(start != -1)
+	{
+		start += strSrc.length;
+		
+		end = filterString.indexOf("',",start);
+		if(end != -1)
+		{
+			strRes = filterString.substring(start,end);
+		}
+	}
+
+	return strRes;
+}
+
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old)
+		{
+			if(usingIEFix && im.runtimeStyle.filter)
+				im.old = FWStripFileFromFilterString(im.runtimeStyle.filter);
+			else
+				im.old = im.src;
+		}
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/facebook3.png");
+	FWLoad("Resources/facebook.png");
+	FWLoad("Resources/twitter3.png");
+	FWLoad("Resources/twitter.png");
+	FWLoad("Resources/linkedin3.png");
+	FWLoad("Resources/linkedin.png");
+	FWLoad("Resources/googleplus3.png");
+	FWLoad("Resources/googleplus.png");
+}
+//]]></script></head>
+<body onload="FWPreload()">
+<div id="PageDiv">
+	<table style="border-spacing:0px; width:1001px; table-layout:fixed">
+		<colgroup>
+			<col style="width:1000px">
+			<col style="width:1px">
+		</colgroup>
+		<tr style="vertical-align:top">
+			<td style="height:30px"></td>
+			<td style="height:30px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:160px; background-color:#e0e0e0">
+				<table style="border-spacing:0px; width:1000px; table-layout:fixed">
+					<colgroup>
+						<col style="width:25px">
+						<col style="width:300px">
+						<col style="width:25px">
+						<col style="width:625px">
+						<col style="width:25px">
+					</colgroup>
+					<tr style="vertical-align:top">
+						<td colspan=4 style="height:50px"></td>
+						<td style="height:50px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td rowspan=2 style="height:60px"></td>
+						<td style="height:36px"><p class="style4 f-fp f-lp">SECOND<span class="style2">SIGHT</span></p>
+						</td>
+						<td rowspan=2 style="height:60px"></td>
+						<td rowspan=3 style="height:63px">
+							<div style="width:625px; position:relative; z-index:1; overflow:visible">
+								<div class="fwNavContainer1">
+									<ul class="style3 f-fp f-lp" id="fwNav1">
+										<li class="fwFirstChild fwNavItem"><a href="index.html"><span class="style6" style="text-decoration:none">WELCOME<br><span class="style1" style="text-decoration:none">home page</span></span></a></li>
+										<li class="fwNavItem"><a href="about.html"><span class="style6" style="text-decoration:none">ABOUT<br><span class="style1" style="text-decoration:none">the company</span></span></a></li>
+										<li class="fwNavItem"><a href="services.html"><span class="style6" style="text-decoration:none">SERVICES<br><span class="style1" style="text-decoration:none">what we do</span></span></a></li>
+										<li class="fwNavItem"><a href="blog.html"><span class="style6" style="text-decoration:none">BLOG<br><span class="style1" style="text-decoration:none">news &amp; updates</span></span></a></li>
+										<li class="fwLastChild fwNavItem"><a href="contact.html"><span class="style6" style="text-decoration:none">CONTACT<br><span class="style1" style="text-decoration:none">get in touch</span></span></a></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td style="height:36px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td style="height:24px"><p class="style5 f-fp f-lp">Think. Do. Succeed.</p>
+						</td>
+						<td style="height:24px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=3 style="height:3px"></td>
+						<td style="height:3px"></td>
+					</tr>
+					<tr class="f-sp">
+						<td><img src="Resources/_clear.gif" width=25 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=300 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=25 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=625 height=1 alt="" style="float:left"></td>
+						<td style="height:47px"><img src="Resources/_clear.gif" width=25 height=1 alt="" style="float:left"></td>
+					</tr>
+				</table>
+			</td>
+			<td style="height:160px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:3px; background-color:#f3f3f3"><p class="f-sp">&nbsp;</p></td>
+			<td style="height:3px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:32px; background-color:#fff; padding:50px"><p class="style17 f-fp f-lp">Error!</p>
+			</td>
+			<td style="height:132px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:3px; background-color:#f3f3f3"><p class="f-sp">&nbsp;</p></td>
+			<td style="height:3px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:40px; background-color:#e0e0e0; padding:50px"><p class="style12 f-fp f-lp">An error has occurred - resulting in the email not being sent correctly. Please check your internet settings and click <a href="contact.html">here</a> to try again, alternatively you can click <a href="mailto:&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;?subject=Please Enter A Subject.&amp;body=Hi there,">here</a> to send us an email directly.</p>
+			</td>
+			<td style="height:140px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:3px; background-color:#f3f3f3"><p class="f-sp">&nbsp;</p></td>
+			<td style="height:3px"></td>
+		</tr>
+		<tr style="vertical-align:top">
+			<td style="height:225px">
+				<table style="border-spacing:0px; width:1000px; table-layout:fixed">
+					<colgroup>
+						<col style="width:100px">
+						<col style="width:125px">
+						<col style="width:12px">
+						<col style="width:500px">
+						<col style="width:11px">
+						<col style="width:38px">
+						<col style="width:38px">
+						<col style="width:38px">
+						<col style="width:38px">
+						<col style="width:100px">
+					</colgroup>
+					<tr style="vertical-align:top">
+						<td colspan=9 style="height:50px"></td>
+						<td style="height:50px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td rowspan=3 style="height:136px"></td>
+						<td rowspan=3 style="height:136px"><p class="f-fp"><span class="style8"><a href="index.html" class="FooterNav">HOME</a></span></p>
+						<p><span class="style8"><a href="about.html" class="FooterNav">ABOUT</a></span></p>
+						<p><span class="style8"><a href="services.html" class="FooterNav">SERVICES</a></span></p>
+						<p><span class="style8"><a href="blog.html" class="FooterNav">BLOG</a></span></p>
+						<p class="f-lp"><span class="style8"><a href="contact.html" class="FooterNav">CONTACT</a></span></p>
+						</td>
+						<td style="height:32px"></td>
+						<td style="height:32px"><p class="style9 f-fp f-lp">© SECOND<span class="style2">SIGHT</span> 2014<br>ALL RIGHTS RESERVED</p>
+						</td>
+						<td style="height:32px"></td>
+						<td rowspan=2 style="height:38px"><a href="http://www.facebook.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img1',1,'Resources/facebook.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/facebook3.png" width=38 height=38 alt="Facebook" style="float:left" id="img1"></a></td>
+						<td rowspan=2 style="height:38px"><a href="http://www.twitter.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img2',1,'Resources/twitter.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/twitter3.png" width=38 height=38 alt="Twitter" style="float:left" id="img2"></a></td>
+						<td rowspan=2 style="height:38px"><a href="http://www.linkedin.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img3',1,'Resources/linkedin.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/linkedin3.png" width=38 height=38 alt="LinkedIn" style="float:left" id="img3"></a></td>
+						<td rowspan=2 style="height:38px"><a href="http://www.googleplus.com" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img4',1,'Resources/googleplus.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/googleplus3.png" width=38 height=38 alt="GooglePlus" style="float:left" id="img4"></a></td>
+						<td style="height:32px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=3 style="height:6px"></td>
+						<td style="height:6px"></td>
+					</tr>
+					<tr style="vertical-align:top">
+						<td colspan=7 style="height:98px"></td>
+						<td style="height:98px"></td>
+					</tr>
+					<tr class="f-sp">
+						<td><img src="Resources/_clear.gif" width=100 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=125 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=12 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=500 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=11 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td><img src="Resources/_clear.gif" width=38 height=1 alt="" style="float:left"></td>
+						<td style="height:39px"><img src="Resources/_clear.gif" width=100 height=1 alt="" style="float:left"></td>
+					</tr>
+				</table>
+			</td>
+			<td style="height:225px"></td>
+		</tr>
+		<tr class="f-sp">
+			<td><img src="Resources/_clear.gif" width=1000 height=1 alt="" style="float:left"></td>
+			<td style="height:1px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+#Showcase {
+	overflow: hidden;
+}
+#Showcase .fwShowcase_wrapper {
+	margin: auto;
+	width: 820px;
+	height: 186px;
+}
+#Showcase .fwShowcase_outer {
+	position: relative;
+	margin: 0;
+	float: left;
+	width: 744px;
+	height: 186px;
+	overflow: auto;
+}
+#Showcase .fwShowcase_inner {
+	width: 4836px;
+}
+#Showcase .fwShowcase_slideshow {
+	overflow: hidden;
+	float: none;
+	height: 588px;
+	width: auto;
+}
+#Showcase .fwShowcase_main {
+	position: relative;
+	margin: auto;
+	border: 1px solid #4C4C4C;
+	top: 8.5px;
+	width: 855px;
+	height: 569px;
+}
+#Showcase .fwShowcase_main img {
+	margin: 0px;
+	width: 855px;
+	height: 569px;
+}
+#Showcase .fwShowcase_empty {
+	visibility: hidden;
+}
+#Showcase .fwShowcase_controls {
+	bottom: 7px;
+	right: 7px;
+}
+.fwShowcase_wrapper a.fwShowcase_prev, .fwShowcase_wrapper a.fwShowcase_next {
+	position: relative;
+}
+#Showcase ul.fwShowcase_thumbs {
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+	margin: 0;
+}
+#Showcase ul.fwShowcase_thumbs li {
+	position: relative;
+	display: inline;
+	float: left;
+	margin: 10px;
+	width: 146px;
+	height: 146px;
+	padding: 10px;
+	border: 0 solid transparent;
+}
+#Showcase ul.fwShowcase_thumbs a {
+	display: block;
+	position: relative;
+	left: -10px;
+	top: -10px;
+	width: 166px;
+	height: 166px;
+	text-decoration: none;
+}
+* html #Showcase ul.fwShowcase_thumbs a {
+	width: 146px;
+	height: 146px;
+}
+#Showcase ul.fwShowcase_thumbs li:hover, #Showcase ul.fwShowcase_thumbs li.hover {
+	border: 0 solid transparent;
+}
+#Showcase ul.fwShowcase_thumbs li img {
+	display: block;
+	position: absolute;
+	border: 0;
+}
+.fwShowcase_info {
+	position: absolute;
+	display: inline;
+	top: 0px;
+	right: 0px;
+	padding: 3px;
+	background: #000;
+	color: #fff;
+	font-size: 10px;
+	font-family: Helvetica,Arial,sans-serif;
+	z-index: 130;
+}
+.fwShowcase_prev a, .fwShowcase_next a {
+	text-decoration: none;
+}
+a.fwShowcase_prev, a.fwShowcase_next {
+	display: block;
+	background-image: url(Resources/_clear.gif);
+	z-index: 120;
+}
+.fwShowcase_controls {
+	position: absolute;
+	height: 26px;
+	z-index: 130;
+}
+.fwShowcase_controls a {
+	position: absolute;
+	z-index: 120;
+	bottom: 0px;
+	width: 28px;
+	height: 26px;
+	background-image: url(Resources/controls.png);
+	repeat: no-repeat;
+}
+.fwShowcase_controls div {
+	position: relative;
+	float: left;
+	width: 28px;
+	height: 26px;
+}
+.fwShowcase_main .fwShowcase_close {
+	display: none;
+}
+.fwShowcase_next a {
+	background-position: -55px 0;
+}
+.fwShowcase_play a {
+	background-position: -27px 0;
+}
+.fwShowcase_prev a {
+	background-position: 0 0;
+}
+.fwShowcase_prev {
+}
+.fwShowcase_cred {
+	display: none;
+}
+

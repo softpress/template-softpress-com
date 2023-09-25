@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js" type="text/javascript">
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js?load=effects" type="text/javascript">
+</script>
+<meta charset="UTF-8">
+<title>About</title>
+<meta name="viewport" content="width = device-width, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="generator" content="Freeway Pro 7.0">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/about.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    .fwNavItem a {
+        -moz-transition: all .3s;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+</style>
+<script type="text/javascript">//<![CDATA[
+document.observe('dom:loaded', function(evt){
+var v;
+	if((v = Scriptaculous.Version.split('.'))  && v[1] && v[1] == 8 && v[2] && v[2] < 3){
+		Effect.ScrollTo = function(element) {
+			var options = arguments[1] || { },
+			scrollOffsets = document.viewport.getScrollOffsets(),
+			elementOffsets = $(element).cumulativeOffset(),
+			max = document.viewport.getScrollOffsets[0] - document.viewport.getHeight();
+			if (options.offset) elementOffsets[1] += options.offset;
+			return new Effect.Tween(null,
+		 		scrollOffsets.top,
+		 		elementOffsets[1] > max ? max : elementOffsets[1],
+		 		options,
+		 		function(p){ scrollTo(scrollOffsets.left, p.round()) }
+			);
+		};
+	}
+	var anchors = $$('a').reject(function(elm){ return (elm.up('.controls') || elm.className.match(/carousel/)); });
+	anchors.each(function(elm){
+		var ref = elm.href.split(/#/)[1];
+		var t = (!!$(ref)) ? $(ref) : anchors.find(function(em){ return em.name == ref; });
+		if(t){
+			elm.observe('click',function(evt){
+				evt.stop();
+				Effect.ScrollTo(t, {duration:'0.6', offset:-30});
+			});
+		}
+	});
+});
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old) im.old = im.src;
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/set7icon1a.png");
+	FWLoad("Resources/set7icon1.png");
+	FWLoad("Resources/set7icon2a.png");
+	FWLoad("Resources/set7icon2.png");
+	FWLoad("Resources/set7icon3a.png");
+	FWLoad("Resources/set7icon3.png");
+	FWLoad("Resources/set7icon4a.png");
+	FWLoad("Resources/set7icon4.png");
+	FWLoad("Resources/set7icon6a.png");
+	FWLoad("Resources/set7icon6.png");
+}
+//]]></script>
+</head>
+<body onload="FWPreload()">
+<div id="PageDiv" class="f-cf">
+	<div id="PageWrapper" class="f-cf f-ms"><div id="HeaderWrapper" class="f-cf f-ms"><div id="Header" class="f-cf f-ms"><div id="LogoWrapper" class="f-cf f-ms"><div id="Logo" class="f-cf f-ms"><p class="f-fp f-lp"><span class="BigTitle">Health</span></p>
+					</div>
+					<div id="LogoSubtitle" class="f-cf f-ms"><p class="f-fp f-lp"><span class="BigSubtitle">MEDICAL PROFESSIONAL</span></p>
+					</div>
+				</div>
+				<div id="HeaderRight" class="f-cf f-ms"><p class="AlignRight f-fp f-lp"><span class="BigSubtitle"><a href="tel:(123)1234-1234">(123) 1234-1234<br></a><a href="mailto:&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;?subject=Please Enter A Subject&amp;body=Hello,">address@domain.com</a></span></p>
+				</div>
+			</div>
+			<div id="HeaderSMALL" class="f-cf f-ms"><div id="LogoWrapper1" class="f-cf f-ms"><div id="Logo1" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="BigTitle">Health</span></p>
+					</div>
+					<div id="LogoSubtitle1" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="BigSubtitle">MEDICAL PROFESSIONAL</span></p>
+					</div>
+				</div>
+				<div id="HeaderRight1" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="BigSubtitle"><a href="tel:(123)1234-1234">(123) 1234-1234</a><br><a href="mailto:&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;?subject=Please Enter A Subject&amp;body=Hello,">address@domain.com</a></span></p>
+				</div>
+			</div>
+		</div>
+		<div id="CSSMenuWrapper" class="f-cf f-ms"><div id="CSSMenu" class="f-cf f-ms"><input type="checkbox" id="fwNav1-toggle">
+				<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+				<div class="fwNavContainer1">
+					<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+					<ul class="CSSMenu f-fp f-lp" id="fwNav1">
+						<li class="fwFirstChild fwNavItem"><a href="index.html">HOME</a></li>
+						<li class="fwNavItem"><a href="#nil" class="fwCurrent">ABOUT</a></li>
+						<li class="fwNavItem"><a href="services.html">SERVICES</a></li>
+						<li class="fwLastChild fwNavItem"><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper1" class="f-cf f-ms"><div id="Body1" class="f-cf f-ms"><div id="Box1" class="f-cf"><div id="item1" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="photo2141820120211" src="Resources/photo21418201202.jpeg" alt="photo2141820120211">&nbsp;</p>
+					</div>
+					<h2 class="f-fp">OUR DOCTORS</h2>
+					<p class="PageContent">Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+					<p class="PageContent">Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+					<p class="PageContent">Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
+					<p class="PageContent f-lp">Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+				</div>
+				<div id="Box2" class="f-cf"><h2 class="f-fp">WHY CHOOSE TO US?</h2>
+					<ul class="PageContent">
+						<li>Etiam porta sem malesuada magna mollis euismod.</li>
+						<li>Donec sed odio dui.</li>
+						<li>Sed posuere consectetur est at lobortis.</li>
+						<li>Cras mattis consectetur purus sit amet fermentum.</li>
+					</ul>
+					<h2>OUR QUALIFICATIONS</h2>
+					<p class="PageContent f-lp">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</p>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper2" class="f-cf fullwidthbackground"><div id="Body2" class="f-cf"></div>
+		</div>
+		<div id="BodyWrapper3" class="f-cf f-ms"><div id="Body3" class="f-cf f-ms"><div id="Box3" class="f-cf"><div id="TitleWrapper3" class="f-cf"><h3 class="center f-fp f-lp">TESTIMONIALS</h3>
+					</div>
+					<div id="ContentWrapper3" class="f-cf"><div id="QuoteWrapper1" class="f-cf"><div id="Quote1" class="f-cf"><p class="PageContent f-fp"><strong>CLIENT ONE</strong></p>
+								<p class="PageContent f-lp">&quot;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.&quot;</p>
+							</div>
+							<div id="Quote2" class="f-cf"><p class="PageContent f-fp"><strong>CLIENT TWO</strong></p>
+								<p class="PageContent f-lp">&quot;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&quot;</p>
+							</div>
+						</div>
+						<div id="QuoteWrapper2" class="f-cf"><div id="Quote3" class="f-cf"><p class="PageContent f-fp"><strong>CLIENT THREE</strong></p>
+								<p class="PageContent f-lp">&quot;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&quot;</p>
+							</div>
+							<div id="Quote4" class="f-cf"><p class="PageContent f-fp"><strong>CLIENT FOUR</strong></p>
+								<p class="PageContent f-lp">&quot;Donec sed odio dui, Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.&quot;</p>
+							</div>
+						</div>
+						<div id="QuoteWrapper3" class="f-cf"><div id="Quote5" class="f-cf"><p class="PageContent f-fp"><strong>CLIENT FIVE</strong></p>
+								<p class="PageContent f-lp">&quot;Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&quot;</p>
+							</div>
+							<div id="Quote6" class="f-cf"><p class="PageContent f-fp"><strong>CLIENT SIX</strong></p>
+								<p class="PageContent f-lp">&quot;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.&quot;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper" class="f-cf f-ms"><div id="Footer" class="f-cf f-ms"><div id="FooterLeft" class="f-cf f-ms"><p class="AlignCenter f-fp"><a href="contact.html"><span class="Footer">© HEALTH 2014<br>All Rights Reserved</span></a></p>
+					<p class="AlignCenter"><span class="Footer"><a href="tel:(123)1234-1234">(123) 1234-1234<br></a><a href="mailto:&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;?subject=Please Enter A Subject&amp;body=Hello,">address@domain.com</a></span></p>
+					<p class="AlignCenter f-lp"><span class="Footer"><a href="index.html#Top">Back To Top</a></span></p>
+				</div>
+				<div id="Address" class="f-cf f-ms"><div id="Set7" class="f-cf f-ms"><p class="AlignCenter f-fp"><span class="Footer">Join in the conversation</span></p>
+						<p class="AlignCenter f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set7Icon1',1,'Resources/set7icon1.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set7Icon1\',2,\'Resources/set7icon1.png\',\'\',\'Indigo\')',0)"><img id="Set7Icon1" class="f-ms" src="Resources/set7icon1a.png" alt="Set7Icon1"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set7Icon2',1,'Resources/set7icon2.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set7Icon2\',2,\'Resources/set7icon2.png\',\'\',\'Indigo\')',0)"><img id="Set7Icon2" class="f-ms" src="Resources/set7icon2a.png" alt="Set7Icon2"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set7Icon3',1,'Resources/set7icon3.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set7Icon3\',2,\'Resources/set7icon3.png\',\'\',\'Indigo\')',0)"><img id="Set7Icon3" class="f-ms" src="Resources/set7icon3a.png" alt="Set7Icon3"></a><a href="http://www.googleplus.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set7Icon4',1,'Resources/set7icon4.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set7Icon4\',2,\'Resources/set7icon4.png\',\'\',\'Indigo\')',0)"><img id="Set7Icon4" class="f-ms" src="Resources/set7icon4a.png" alt="Set7Icon4"></a><a href="http://www.tumblr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set7Icon6',1,'Resources/set7icon6.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set7Icon6\',2,\'Resources/set7icon6.png\',\'\',\'Indigo\')',0)"><img id="Set7Icon6" class="f-ms" src="Resources/set7icon6a.png" alt="Set7Icon6"></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="DontDelete" class="f-ms"><a id="Top"><img src="Resources/dontdelete.gif" width=58 height=12 alt="" style="float:left"></a>
+	</div>
+</div>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("CSSMenu", 768);
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("CSSMenu", 768);
+});
+
+//]]></script></body>
+</html>

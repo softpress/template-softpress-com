@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>contact</title>
+<meta name="viewport" content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Pro 7.0.3">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/contact.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Pacifico|Roboto:300,500,300italic,500italic' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css">
+    .fwNavItem a {
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+
+/*  Highlighted Text Color */
+
+/* Mozilla based browsers */
+::-moz-selection {
+background-color: #505E73;
+color: #000;
+}
+
+/* Works in Safari */
+::selection {
+background-color: #505E73;
+color: #FFF;
+}
+
+/* Works in Opera */
+::-o-selection {
+background-color: #505E73;
+color: #FFF;
+}
+::-ms-selection {
+background-color: #505E73;
+color: #FFF;
+}
+
+/* Works in Internet Explorer */
+::-webkit-selection {
+background-color: #505E73;
+color: #FFF;
+}
+
+</style>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>
+<script type="text/javascript" src="Resources/fw-gmap.js"></script>
+<script type="text/javascript">//<![CDATA[
+// Modified from http://snipplr.com/view/1853/
+function getElementsByAttribute(oElm, strTagName, strAttributeName, strAttributeValue)
+{
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var oAttributeValue = (typeof strAttributeValue != "undefined")? new RegExp("(^|\\s)" + strAttributeValue + "(\\s|$)", "i") : null;
+	var oCurrent;
+	var oAttribute;
+	for(var i=0; i<arrElements.length; i++){
+		oCurrent = arrElements[i];
+		oAttribute = oCurrent.getAttribute && oCurrent.getAttribute(strAttributeName);
+		if (typeof strAttributeValue == "undefined")
+		{
+			if (typeof oAttribute == "string")
+				arrReturnElements.push(oCurrent);
+		}
+		else if(typeof oAttribute == "string" && oAttribute.length > 0)
+		{
+			if(oAttributeValue && oAttributeValue.test(oAttribute))
+				arrReturnElements.push(oCurrent);
+		}
+	}
+	return arrReturnElements;
+}
+
+function testFields()
+{
+	var emailFields = getElementsByAttribute(document, "*", "type", "email");
+	var invalidEmailCount = 0;
+	for(var i=0; i<emailFields.length; i++)
+	{
+		var field = emailFields[i];
+		if (field.value)
+		{
+			var mail1 = ".+";
+			var mail2 = "@";
+			var mail3 = "\\.";
+			if (!field.value.match(mail1+mail2+mail1+mail3+mail1))
+			{
+				invalidEmailCount++;
+				if (!field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+					field.className += " sendFormInvalid";
+			}
+			else if (field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+				field.className = field.className.replace(/(?:^|\s)sendFormInvalid(?!\S)/g , '');
+		}
+		else if (field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+			field.className = field.className.replace(/(?:^|\s)sendFormInvalid(?!\S)/g , '');
+	}
+	
+	var requiredFields = getElementsByAttribute(document, "*", "required");
+	var invalidRequiredCount = 0;
+	for(var i=0; i<requiredFields.length; i++)
+	{
+		var field = requiredFields[i];
+		if (!field.value)
+		{
+			invalidRequiredCount++;
+			if (!field.className.match(/(?:^|\s)sendFormRequired(?!\S)/))
+				field.className += " sendFormRequired";
+		}
+		else if (field.value && field.className.match(/(?:^|\s)sendFormRequired(?!\S)/))
+			field.className = field.className.replace(/(?:^|\s)sendFormRequired(?!\S)/g , '');
+	}
+	
+	if (invalidRequiredCount > 0 || invalidEmailCount > 0)
+	{
+		alert("Please fill out all required fields with valid details.");
+		return false;
+	}
+	else
+		return true;
+}
+function fwGMapInit() {
+	fwCreateMap({item: "Map",address:"Chelsea, London",zoom:12,scaleControl:0,overviewMapControl:0,mapTypeId:"terrain",markers:[{address:"Chelsea, London",animate:true,delay:2,showInfo:1,content:"<div style='font-family:'>Homeshop</div>"}],scrollwheel:0,draggable:1,styles: [{stylers:		[{hue:'#F5F5F5'},		{visibility:'simplified'},		{gamma:.5},		{weight:.2}]	},	{elementType:'labels',stylers:[{visibility:'on'}]},	{featureType:'transit',stylers:[{visibility:'on'}]},	{featureType:'poi',stylers:[{visibility:'off'}]},	{featureType:'water',stylers:[{color:'#BED2DC'}]},	{featureType:'landscape',stylers:[{color:'#f5f5f5'}]},	{featureType:'road.arterial',stylers:[{color:'#f68591'}]},	{featureType:'road.local',stylers:[{color:'#f68591'}]},	{featureType:'road', elementType: 'labels.icon',stylers:[{visibility:'off'}]},	{elementType:'labels.text.fill',stylers:[{color:'#808080'}]},	{elementType:'labels.text.stroke',stylers:[{color:'#ffffff'}]}]});
+}
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old) im.old = im.src;
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/smallset7icon1a.png");
+	FWLoad("Resources/smallset7icon1.png");
+	FWLoad("Resources/smallset7icon2a.png");
+	FWLoad("Resources/smallset7icon2.png");
+	FWLoad("Resources/smallset7icon3a.png");
+	FWLoad("Resources/smallset7icon3.png");
+	FWLoad("Resources/smallset7icon4a.png");
+	FWLoad("Resources/smallset7icon4.png");
+	FWLoad("Resources/smallset7icon5a.png");
+	FWLoad("Resources/smallset7icon5.png");
+	FWLoad("Resources/smallset7icon6a.png");
+	FWLoad("Resources/smallset7icon6.png");
+	FWLoad("Resources/smallset7icon7a.png");
+	FWLoad("Resources/smallset7icon7.png");
+	FWLoad("Resources/smallset7icon8a.png");
+	FWLoad("Resources/smallset7icon8.png");
+	FWLoad("Resources/smallset7icon9a.png");
+	FWLoad("Resources/smallset7icon9.png");
+	FWLoad("Resources/smallset7icon10a.png");
+	FWLoad("Resources/smallset7icon10.png");
+	FWLoad("Resources/smallset7icon11a.png");
+	FWLoad("Resources/smallset7icon11.png");
+	FWLoad("Resources/smallset7icon12a.png");
+	FWLoad("Resources/smallset7icon12.png");
+	FWLoad("Resources/smallset7icon13a.png");
+	FWLoad("Resources/smallset7icon13.png");
+}
+//]]></script><style type="text/css"><!--.sendFormInvalid, .sendFormRequired { border-color:red; }
+--></style></head>
+<body onload="fwGMapInit();FWPreload()" onunload="GUnload()">
+<form action="FW_SendForm_contact.php" method="post" onsubmit="return testFields()">
+<div id="PageDiv">
+	<div id="PageWrapper" class="f-ms"><div id="HeaderWrapper" class="f-ms"><div id="Header" class="f-ms"><div id="Header_m" class="f-cf f-ms">
+					<div id="Logo" class="f-ms"><p class="CenterAlign f-fp f-lp"><span class="BigTitle">Homeshop</span></p>
+					</div>
+					<div id="ReviewButtonWrapper" class="f-ms"><p class="CenterAlign f-fp f-lp"><span class="ShoppingCart"><span id="ReviewButton" class="f-ms"><a href="http:///cf/review.cfm?userid=USER%20ID%20HERE&#38;config=58211316&#38;return=template.softpress.com/homeshop/contact.html&#38;lg&#38;currency=0" title="Review your cart" target="_blank">Review Your Cart</a></span></span></p>
+					</div>
+					<div id="Menu" class="f-ms"><input type="checkbox" id="fwNav1-toggle">
+						<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+						<div class="fwNavContainer1">
+							<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+							<ul class="Menu f-fp f-lp" id="fwNav1">
+								<li class="fwFirstChild fwNavItem"><a href="index.html">home</a></li>
+								<li class="fwNavItem"><a href="about.html">about</a></li>
+								<li class="fwNavItem"><a href="store.html">store</a></li>
+								<li class="fwNavItem"><a href="news.html">news</a></li>
+								<li class="fwLastChild fwNavItem"><a href="#nil" class="fwCurrent">contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper1" class="f-ms"><div id="Body1"><div id="Body1_m">
+					<div id="Content4"><div id="Content4_m">
+							<h2 class="f-fp">We'd love to hear from you!</h2>
+							<p class="PageContent">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. </p>
+							<p class="PageContent">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.</p>
+							<div id="FormWrap"><p class="CenterAlign f-fp"><input id="Name" class="FormItem" type=text name="Name" placeholder="Full Name" size=62 required></p>
+								<p class="CenterAlign"><input id="Email" class="FormItem" type=email name="Email" placeholder="Email Address" size=62 required></p>
+								<p class="CenterAlign"><input id="Telephone" class="FormItem" type=tel name="Telephone" placeholder="(123) 1234-1234" size=62 required></p>
+								<p class="CenterAlign"><input id="Subject" class="FormItem" type=text name="Subject" placeholder="Email Subject" size=62></p>
+								<p class="CenterAlign"><textarea id="Message" class="FormItem" cols=62 rows=3 name="Message" placeholder="Email Message"></textarea></p>
+								<p class="CenterAlign f-lp"><input id="Send" class="SubmitButton" type=submit name="Send" value="SEND"></p>
+							</div>
+						</div>
+					</div>
+					<div id="MapWrap"><div id="Map"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper" class="f-ms"><div id="FooterWrapper_m" class="f-ms">
+				<div id="Footer" class="f-ms"><p class="CenterAlign f-fp"><span class="Footer">© <span class="PacificoFont">Homeshop</span><br>All Rights Reserved</span></p>
+					<div id="SmallSet7" class="f-ms"><p class="CenterAlign f-fp f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon1',1,'Resources/smallset7icon1.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon1\',2,\'Resources/smallset7icon1.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon1" class="f-ms" src="Resources/smallset7icon1a.png" alt="SmallSet7Icon1"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon2',1,'Resources/smallset7icon2.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon2\',2,\'Resources/smallset7icon2.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon2" class="f-ms" src="Resources/smallset7icon2a.png" alt="SmallSet7Icon2"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon3',1,'Resources/smallset7icon3.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon3\',2,\'Resources/smallset7icon3.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon3" class="f-ms" src="Resources/smallset7icon3a.png" alt="SmallSet7Icon3"></a><a href="http://www.googleplus.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon4',1,'Resources/smallset7icon4.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon4\',2,\'Resources/smallset7icon4.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon4" class="f-ms" src="Resources/smallset7icon4a.png" alt="SmallSet7Icon4"></a><a href="http://www.flickr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon5',1,'Resources/smallset7icon5.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon5\',2,\'Resources/smallset7icon5.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon5" class="f-ms" src="Resources/smallset7icon5a.png" alt="SmallSet7Icon5"></a><a href="http://www.tumblr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon6',1,'Resources/smallset7icon6.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon6\',2,\'Resources/smallset7icon6.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon6" class="f-ms" src="Resources/smallset7icon6a.png" alt="SmallSet7Icon6"></a><a href="http://www.instagram.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon7',1,'Resources/smallset7icon7.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon7\',2,\'Resources/smallset7icon7.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon7" class="f-ms" src="Resources/smallset7icon7a.png" alt="SmallSet7Icon7"></a><a href="http://www.dribbble.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon8',1,'Resources/smallset7icon8.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon8\',2,\'Resources/smallset7icon8.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon8" class="f-ms" src="Resources/smallset7icon8a.png" alt="SmallSet7Icon8"></a><a href="http://www.pinterest.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon9',1,'Resources/smallset7icon9.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon9\',2,\'Resources/smallset7icon9.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon9" class="f-ms" src="Resources/smallset7icon9a.png" alt="SmallSet7Icon9"></a><a href="http://www.youtube.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon10',1,'Resources/smallset7icon10.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon10\',2,\'Resources/smallset7icon10.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon10" class="f-ms" src="Resources/smallset7icon10a.png" alt="SmallSet7Icon10"></a><a href="http://www.vimeo.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon11',1,'Resources/smallset7icon11.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon11\',2,\'Resources/smallset7icon11.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon11" class="f-ms" src="Resources/smallset7icon11a.png" alt="SmallSet7Icon11"></a><a href="http://www.soundcloud.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon12',1,'Resources/smallset7icon12.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon12\',2,\'Resources/smallset7icon12.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon12" class="f-ms" src="Resources/smallset7icon12a.png" alt="SmallSet7Icon12"></a><a href="http://www.skype.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet7Icon13',1,'Resources/smallset7icon13.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet7Icon13\',2,\'Resources/smallset7icon13.png\',\'\',\'Indigo\')',0)"><img id="SmallSet7Icon13" class="f-ms" src="Resources/smallset7icon13a.png" alt="SmallSet7Icon13"></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<input name="sendForm34449" id="sendForm34449" tabindex="-1" style="display:none;"></form>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("Menu", 960);
+fwAddListener(document.getElementById("fwNav1-toggle"), "click", function(){
+	fwToggleMenu(this);
+});
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("Menu", 960);
+});
+
+//]]></script></body>
+</html>

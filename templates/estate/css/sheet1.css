@@ -1,0 +1,28 @@
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+em { font-style:italic }
+h1 { font-weight:bold; font-size:18px }
+h1:first-child { margin-top:0px }
+h2 { color:#000; font-family:'Arvo',Helvetica,serif; font-weight: 700;; font-size:22px; text-align:center; margin-bottom:6px }
+h2:first-child { margin-top:0px }
+h3 { color:#e74c3c; font-family:'Arvo',Helvetica,serif; font-weight: 700;; font-size:16px; text-align:center; margin-top:4px }
+h3:first-child { margin-top:0px }
+strong { font-weight:bold }
+.CSSMenu { font-family:'Arvo',Helvetica,serif; font-weight: 700;; font-size:16px; text-align:center }
+.CenterAlign { text-align:center }
+.BigTitle { color:#fff; font-family:'Arvo',Helvetica,serif; font-weight: 700;; font-size:35px }
+.BigSubtitle { color:#fff; font-family:'Arvo',Helvetica,serif; font-weight: 700;; font-size:16px }
+.Content { color:#333; font-family:'Open Sans',Helvetica,sans-serif; font-weight: 300;; font-size:16px; word-spacing:1.92px; line-height:1.65; text-align:left }
+.FormItem { color:#000; font-family:'Open Sans',Helvetica,sans-serif; font-weight: 300;; font-size:14px; text-align:center }
+.FooterText { color:#fff; font-family:'Open Sans',Helvetica,sans-serif; font-weight: 300;; font-size:16px }
+.PageContent { color:#fff; font-family:'Open Sans',Helvetica,sans-serif; font-weight: 300;; font-size:16px }
+h2.style2 { color:#e74c3c; font-family:'Arvo',Helvetica,serif; font-weight: 700;; font-size:16px; text-align:center; margin-top:4px; margin-bottom:6px }
+h2:first-child { margin-top:0px }
+.FormButton { color:#fff; font-family:'Arvo',Helvetica,serif; font-weight: 700;; font-size:18px }

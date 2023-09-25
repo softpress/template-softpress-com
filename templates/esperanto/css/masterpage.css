@@ -1,0 +1,85 @@
+#PageWrapper.f-ms { width:100%; z-index:0; clear:both }
+#TopSpacer1.f-ms { width:100%; height:75px; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#f5f5f5; overflow:hidden }
+#HeaderWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#f5f5f5 }
+#Header.f-ms { width:88.5%; z-index:0; clear:both; padding:2%; margin-left:auto; margin-right:auto }
+#BodyWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#f5f5f5 }
+#Body.f-ms { width:90%; z-index:0; clear:both; padding:1% 1% 5%; margin-left:auto; margin-right:auto }
+#DeathtoStockWired3.f-ms { width:auto; max-width:100%; margin-top:20px; margin-bottom:80px; background-color:#e6e6e6; overflow:hidden; height:auto }
+#m2.f-ms { left:312px; top:562px; width:4px; height:59px; overflow:hidden }
+#Welcome.f-ms { width:60%; z-index:0; padding:3%; margin:5% auto 10%; border-top:solid #e6e6e6 3px; border-bottom:solid #e6e6e6 3px }
+#Check.f-ms { width:50px; overflow:hidden }
+#m3.f-ms { left:315px; top:1124px; width:4px; height:59px; overflow:hidden }
+#About.f-ms { width:90%; z-index:0; margin:60px auto 90px }
+#AboutLeft.f-ms { width:40%; z-index:0; float:left; padding:3%; border-top:solid #e6e6e6 3px; border-bottom:solid #e6e6e6 3px }
+#Person.f-ms { width:50px; overflow:hidden }
+#AboutRight.f-ms { width:40%; z-index:0; float:right; padding:3%; border-top:solid #e6e6e6 3px; border-bottom:solid #e6e6e6 3px }
+#Pencil.f-ms { width:50px; overflow:hidden }
+#m4.f-ms { left:333px; top:1964px; width:4px; height:59px; overflow:hidden }
+#ShowcaseWrapper.f-ms { width:100%; height:800px; z-index:0; margin:5% auto 10% }
+#m1.f-ms { width:100%; height:800px; display:inline-block }
+#m5.f-ms { left:267px; top:3002px; width:4px; height:59px; overflow:hidden }
+#Contact.f-ms { width:90%; z-index:0; margin-left:auto; margin-top:60px; margin-right:auto }
+#Email.f-ms { width:40%; z-index:0; float:left; padding:3%; border-top:solid #e6e6e6 3px; border-bottom:solid #e6e6e6 3px }
+#Mail.f-ms { width:50px; overflow:hidden }
+#Name.f-ms { width:80%; padding:2%; background-color:#fff; border:solid #d8d9da 2px }
+#Email1.f-ms { width:80%; padding:2%; background-color:#fff; border:solid #d8d9da 2px }
+#Subject.f-ms { width:80%; padding:2%; background-color:#fff; border:solid #d8d9da 2px }
+#Message.f-ms { width:80%; height:100px; padding:2%; background-color:#fff; border:solid #d8d9da 2px }
+#SendFormButton.f-ms { width:50%; padding-top:8px; padding-bottom:8px; background-color:#fff; border:solid #d8d9da 2px }
+#Comment.f-ms { width:40%; z-index:0; float:right; padding:3%; border-top:solid #e6e6e6 3px; border-bottom:solid #e6e6e6 3px }
+#Messages.f-ms { width:50px; overflow:hidden }
+#VisitorComments.f-ms { width:100%; height:400px; display:inline-block }
+#FooterWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#b3b3b3; border-top:solid #999 2px }
+#Footer.f-ms { width:100%; z-index:0; clear:both; padding-top:5%; padding-bottom:5%; margin-left:auto; margin-right:auto }
+#facebook.f-ms { width:32px; margin:3px; overflow:hidden }
+#twitter.f-ms { width:32px; margin:3px; overflow:hidden }
+#flickr.f-ms { width:32px; margin:3px; overflow:hidden }
+#dribble.f-ms { width:32px; margin:3px; overflow:hidden }
+#dont-delete-me.f-ms { position:absolute; left:57px; top:-60px; width:33px; height:15px; z-index:1 }
+#CSSMenu.f-ms { position:fixed; left:0px; top:0px; width:100%; z-index:9999; padding-top:0px; padding-bottom:0px; background-color:#e6e6e6; opacity:0.85; overflow:auto }
+@media screen and (max-width:768px)
+{
+	#Welcome.f-ms { width:80% }
+	#AboutLeft.f-ms { width:80%; float:none; clear:both; margin-left:auto; margin-right:auto }
+	#AboutRight.f-ms { width:80%; float:none; clear:both; margin-left:auto; margin-top:5%; margin-right:auto }
+	#ShowcaseWrapper.f-ms { height:auto }
+	#m1.f-ms { height:900px }
+	#Contact.f-ms { clear:both }
+	#Email.f-ms { width:80%; float:none; clear:both; margin-left:auto; margin-right:auto }
+	#Name.f-ms { width:94% }
+	#Email1.f-ms { width:94% }
+	#Subject.f-ms { width:94% }
+	#Message.f-ms { width:94% }
+	#Comment.f-ms { width:80%; float:none; clear:both; margin-left:auto; margin-top:5%; margin-right:auto }
+	#VisitorComments.f-ms { height:auto }
+	#CSSMenu.f-ms { padding-top:0px; padding-bottom:0px; overflow:visible }
+}
+@media screen and (max-width:480px)
+{
+	#Welcome.f-ms { width:94% }
+	#AboutLeft.f-ms { width:94% }
+	#AboutRight.f-ms { width:94% }
+	#ShowcaseWrapper.f-ms { margin-top:6% }
+	#m1.f-ms { height:800px }
+	#Email.f-ms { width:90% }
+	#CSSMenu.f-ms { padding-top:3%; padding-bottom:3%; opacity:1 }
+}
+@media screen and (max-width:320px)
+{
+	#Header.f-ms { width:96% }
+	#Body.f-ms { width:98% }
+	#DeathtoStockWired3.f-ms { max-width:95% }
+	#Welcome.f-ms { width:85% }
+	#About.f-ms { width:100% }
+	#AboutLeft.f-ms { width:85% }
+	#AboutRight.f-ms { width:85% }
+	#ShowcaseWrapper.f-ms { width:85% }
+	#m1.f-ms { height:414px }
+	#Email.f-ms { width:85% }
+	#Name.f-ms { width:90% }
+	#Email1.f-ms { width:90% }
+	#Subject.f-ms { width:90% }
+	#Message.f-ms { width:90% }
+	#SendFormButton.f-ms { padding:1% }
+	#Comment.f-ms { width:85% }
+}

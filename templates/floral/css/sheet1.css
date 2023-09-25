@@ -1,0 +1,36 @@
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.f-cf:before,.f-cf:after { content:" "; display:table }
+.f-cf { _zoom:1 }
+.f-cf:after { clear:both }
+em { font-style:italic }
+h1 { font-weight:bold; font-size:18px }
+h1:first-child { margin-top:0px }
+h2 { font-weight:bold; font-size:16px }
+h2:first-child { margin-top:0px }
+h3 { font-weight:bold; font-size:14px }
+h3:first-child { margin-top:0px }
+strong { font-weight:bold }
+.fullwidthbackground { background-size:cover }
+.AlignCenter { text-align:center }
+.PageContent { color:#000; font-family:'Alegreya Sans', sans-serif; font-weight: 300; font-size:18px }
+.TextSize14 { font-size:14px }
+.LogoTitle { color:#000; font-family:'Della Respira', serif; font-size:50px }
+.BigSubtitle { color:#8e44ad; font-family:'Della Respira', serif; font-size:20px }
+.CSSMenu { font-family:'Della Respira', serif; font-size:20px; text-align:center; margin-top:0px; margin-bottom:0.1px }
+.PageContentTitle { color:#8e44ad; font-family:'Della Respira', serif; font-size:28px }
+.MoreButton { color:#8e44ad; font-family:'Alegreya Sans', sans-serif; font-weight: 300; font-size:16px; background-color:#ccc; padding-top:5px; padding-bottom:5px; padding-left:15px; padding-right:15px }
+.Footer { color:#000; font-family:'Della Respira', serif; font-size:16px }
+.Color2 { color:#8e44ad }
+.BlockQuote { color:#fff; font-family:'Alegreya Sans', sans-serif; font-weight: 300; font-size:14px; background-color:#9b59b6; margin-left:15px; margin-right:15px; padding:5px; border:#020202 solid 1px }
+.CostText { color:#fff; font-family:Arial,Helvetica,sans-serif; font-size:14px }
+.BigTitle { color:#000; font-family:'Della Respira', serif; font-size:24px }
+.FormItemCenterAlign { color:#000; font-family:'Della Respira', serif; font-size:16px; text-align:center }
+.FormItemLeftAlign { color:#000; font-family:'Della Respira', serif; font-size:16px }

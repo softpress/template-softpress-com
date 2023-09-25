@@ -1,0 +1,46 @@
+body { margin:0px; background-color:#e6e6e6; height:100% }
+html { height:100% }
+a:link { color:#000 }
+a:visited { color:#000 }
+a:hover { color:#385995 }
+a:active { color:#385995 }
+#PageDiv { position:relative; min-height:100% }
+#Content1 { width:80%; z-index:0; margin-left:auto; margin-top:40px; margin-right:auto }
+#Content2 { width:80%; z-index:0; margin-left:auto; margin-top:40px; margin-right:auto }
+#Body2 { width:90%; z-index:0; clear:both; padding-top:60px; padding-bottom:60px; margin-left:auto; margin-right:auto }
+#Name { width:58%; padding:1%; background-color:#fff; border:solid #385995 2px }
+#Email { width:58%; padding:1%; background-color:#fff; border:solid #385995 2px }
+#Telephone { width:58%; padding:1%; background-color:#fff; border:solid #385995 2px }
+#Subject { width:58%; padding:1%; background-color:#fff; border:solid #385995 2px }
+#Message { width:58%; height:71px; padding:1%; background-color:#fff; border:solid #385995 2px }
+#Send { width:30%; height:50px; background-color:#fff; border:solid #385995 2px }
+#CSSMenu { height:auto; overflow:visible; position:relative }
+.fwNavContainer1 { float:right; position:relative; right:50% }
+#fwNav1 { position:relative; display:block; left:50%; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#CCCCCC; text-decoration:none; padding:25px 10px 25px 10px }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#FFFFFF; text-decoration:none }
+#fwNav1 .fwNavItem a:active { color:#FFFFFF; text-decoration:none }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('../Resources/menu-3-white.png'); background-repeat:no-repeat; background-size:100%; margin-left:auto; margin-right:auto }
+#fwNav1 .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem a.fwCurrent:hover { display:block; color:#FFFFFF; font-weight:normal }
+@media screen and (max-width:667px)
+{
+	#Name { width:95% }
+	#Email { width:95% }
+	#Telephone { width:95% }
+	#Subject { width:95% }
+	#Message { width:95% }
+	#Send { width:60% }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; top:0; right:0; bottom:100%; left:0; margin-top:-100%; background-color:#666666; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out margin, .2s ease-out bottom; -moz-transition:.2s ease-out margin, .2s ease-out bottom; -ms-transition:.2s ease-out margin, .2s ease-out bottom; -o-transition:.2s ease-out margin, .2s ease-out bottom; transition:.2s ease-out margin, .2s ease-out bottom }
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNav1-toggle-close { background-image:url('../Resources/menu-close-white.png'); margin:20px auto 20px auto }
+	.fwNavContainer1.fwMenuOn { margin-top:0; bottom:0 }
+}

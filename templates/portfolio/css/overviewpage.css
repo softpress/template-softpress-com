@@ -1,0 +1,54 @@
+#main.f-ms { z-index:0; margin-left:300px }
+#hero.f-ms { z-index:0; clear:both; padding-bottom:10px; margin-left:2.5%; margin-top:30px; margin-right:2.5% }
+#web.f-ms { width:60%; float:left; margin-right:20px }
+#work1.f-ms { width:21.5%; z-index:0; float:left; clear:left; padding-bottom:10px; margin-left:2.5%; margin-top:30px; margin-right:1.5% }
+#droplets.f-ms { width:100%; overflow:hidden }
+#work2.f-ms { width:21.5%; z-index:0; float:left; padding-bottom:10px; margin-left:1.5%; margin-top:30px; margin-right:1.5% }
+#album.f-ms { width:100%; overflow:hidden }
+#work3.f-ms { width:21.5%; z-index:0; float:left; padding-bottom:10px; margin-left:1.5%; margin-top:30px; margin-right:1.5% }
+#jumpin.f-ms { width:100%; overflow:hidden }
+#work4.f-ms { width:21.5%; z-index:0; float:left; padding-bottom:10px; margin-left:1.5%; margin-top:30px; margin-right:2.5% }
+#lettering.f-ms { width:100%; overflow:hidden }
+#footer.f-ms { z-index:0; clear:both; padding:10px; margin-left:300px }
+#fixed-sidebar.f-ms { position:fixed; left:0px; top:0px; width:300px; min-height:100%; z-index:1; background-color:#4fc3a0 }
+#title.f-ms { min-height:48px; z-index:0; padding:20px 30px }
+#title-small.f-ms { min-height:48px; z-index:0; padding:20px 30px; display:none }
+#nav.f-ms { min-height:352px; z-index:0 }
+@media screen and (max-width:1600px)
+{
+	#web.f-ms { width:100%; float:none; margin-right:0px }
+}
+@media screen and (max-width:1200px)
+{
+	#work1.f-ms { width:46% }
+	#work2.f-ms { width:46%; margin-right:2.5% }
+	#work3.f-ms { width:46%; margin-left:2.5%; margin-bottom:30px }
+	#work4.f-ms { width:46%; margin-bottom:30px }
+	#fixed-sidebar.f-ms { height:83.59% }
+}
+@media screen and (max-width:768px)
+{
+	#main.f-ms { margin-left:48px }
+	#work1.f-ms { margin-top:15px }
+	#work2.f-ms { margin-top:15px }
+	#work3.f-ms { margin-top:15px; margin-bottom:0px }
+	#work4.f-ms { margin-top:15px; margin-bottom:0px }
+	#footer.f-ms { margin-left:48px }
+	#fixed-sidebar.f-ms { width:48px; height:116.8% }
+	#title.f-ms { display:none }
+	#title-small.f-ms { min-height:0px; padding:10px; display:block }
+	#nav.f-ms { margin-left:8px; margin-right:10px }
+}
+@media screen and (max-width:667px)
+{
+	#hero.f-ms { margin-top:15px; margin-bottom:15px }
+	#fixed-sidebar.f-ms { height:93.97% }
+}
+@media screen and (max-width:375px)
+{
+	#work1.f-ms { width:auto; float:none; margin-right:2.5% }
+	#work2.f-ms { width:auto; float:none; margin-left:2.5% }
+	#work3.f-ms { width:auto; float:none; margin-right:2.5% }
+	#work4.f-ms { width:auto; float:none; margin-left:2.5% }
+	#fixed-sidebar.f-ms { height:97.21% }
+}

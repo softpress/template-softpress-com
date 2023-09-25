@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Services</title>
+<meta name="viewport" content="width = device-width, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="generator" content="Freeway Pro 7.0">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/services.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans|Montserrat:400,700' rel='stylesheet' type='text/css'></link>
+<script type="text/javascript">//<![CDATA[
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old) im.old = im.src;
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/smallset8icon1a.png");
+	FWLoad("Resources/smallset8icon1.png");
+	FWLoad("Resources/smallset8icon2a.png");
+	FWLoad("Resources/smallset8icon2.png");
+	FWLoad("Resources/smallset8icon3a.png");
+	FWLoad("Resources/smallset8icon3.png");
+	FWLoad("Resources/smallset8icon4a.png");
+	FWLoad("Resources/smallset8icon4.png");
+}
+//]]></script></head>
+<body onload="FWPreload()">
+<div id="PageDiv" class="f-cf">
+	<div id="TopSpacer" class="f-cf f-ms"></div>
+	<div id="PageWrapper" class="f-cf"><div id="HeaderWrapper" class="f-cf f-ms"><div id="Header" class="f-cf f-ms"><div id="Logo" class="f-cf f-ms"><div id="LogoTitle" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="LogoTitle">Second<span class="Color3">Sight</span></span></p>
+					</div>
+					<div id="LogoSubtitle" class="f-cf f-ms"><p class="style2 f-fp f-lp">Think. Do. Succeed.</p>
+					</div>
+				</div>
+				<div id="CSSMenu" class="f-cf f-ms"><input type="checkbox" id="fwNav1-toggle">
+					<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+					<div class="fwNavContainer1">
+						<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+						<ul class="CSSMenu" id="fwNav1">
+							<li class="fwFirstChild fwNavItem"><a href="index.html">WELCOME<br><span class="TextSize14" style="text-decoration:none">home page</span></a></li>
+							<li class="fwNavItem"><a href="about.html">ABOUT<br><span class="TextSize14" style="text-decoration:none">the company</span></a></li>
+							<li class="fwNavItem"><a href="#nil" class="fwCurrent">SERVICES<br><span class="TextSize14" style="text-decoration:none">what we do</span></a></li>
+							<li class="fwNavItem"><a href="http://softpresstest.blogspot.com">BLOG<br><span class="TextSize14" style="text-decoration:none">news &amp; updates</span></a></li>
+							<li class="fwLastChild fwNavItem"><a href="contact.html">CONTACT<br><span class="TextSize14" style="text-decoration:none">get in touch</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper1" class="f-cf f-ms"><div id="Body1" class="f-cf f-ms"><div id="QuoteItem" class="f-cf"><p class="BigTitle f-fp f-lp">“We always strive to do better and deliver our services with maximum effort.”</p>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper2" class="f-cf f-ms"><div id="Body2" class="f-cf f-ms"><div id="Box1" class="f-cf"><div id="ImageWrapper1" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="gear" src="Resources/gear.png" alt="gear"></p>
+					</div>
+					<div id="TitleWrapper" class="f-cf"><h2 class="f-fp f-lp">OUR FIRST SERVICE</h2>
+					</div>
+					<div id="TextWrapper" class="f-cf"><p class="PageContent f-fp f-lp">Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					</div>
+					<div id="ImageWrapper2" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="picjumbocomIMG5540" src="Resources/picjumbo.com_IMG_5540.jpg" alt="picjumbocomIMG5540"></p>
+					</div>
+				</div>
+				<div id="Box2" class="f-cf"><div id="ImageWrapper3" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="document" src="Resources/document.png" alt="document"></p>
+					</div>
+					<div id="TitleWrapper1" class="f-cf"><h2 class="f-fp f-lp">IN FURTHER DETAIL...</h2>
+					</div>
+					<div id="TextWrapper1" class="f-cf"><p class="PageContent f-fp">Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+						<p class="PageContent f-lp">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper3" class="f-cf f-ms"><div id="Body3" class="f-cf f-ms"><div id="Box3" class="f-cf"><div id="ImageWrapper4" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="gear1" src="Resources/gear.png" alt="gear1"></p>
+					</div>
+					<div id="TitleWrapper2" class="f-cf"><h2 class="f-fp f-lp">OUR SECOND SERVICE</h2>
+					</div>
+					<div id="TextWrapper2" class="f-cf"><p class="PageContent f-fp f-lp">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					<div id="ImageWrapper5" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="picjumbocomIMG6037" src="Resources/picjumbo.com_IMG_6037.jpg" alt="picjumbocomIMG6037"></p>
+					</div>
+				</div>
+				<div id="Box4" class="f-cf"><div id="ImageWrapper6" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="document1" src="Resources/document.png" alt="document1"></p>
+					</div>
+					<div id="TitleWrapper3" class="f-cf"><h2 class="f-fp f-lp">IN FURTHER DETAIL...</h2>
+					</div>
+					<div id="TextWrapper3" class="f-cf"><p class="PageContent f-fp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+						<p class="PageContent f-lp">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper4" class="f-cf f-ms"><div id="Body4" class="f-cf"><div id="TakeALook" class="f-cf"><p class="BigTitle f-fp f-lp">Take a look at some of our recent work.</p>
+				</div>
+				<div id="Box5" class="f-cf"><div id="ImageWrapper6aa" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="pencil" src="Resources/pencil.png" alt="pencil"></p>
+					</div>
+					<div id="TitleWrapper4" class="f-cf"><h3 class="f-fp f-lp">RECENT WORK ONE</h3>
+					</div>
+					<div id="TextWrapper4" class="f-cf"><p class="PageContent f-fp">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis.</p>
+						<p class="PageContent"><img id="picjumbocomIMG5561" src="Resources/picjumbo.com_IMG_5561.jpg" alt="picjumbocomIMG5561"></p>
+						<p class="PageContent f-lp">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					</div>
+				</div>
+				<div id="Box6" class="f-cf"><div id="ImageWrapper6aa1" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="pencil1" src="Resources/pencil.png" alt="pencil1"></p>
+					</div>
+					<div id="TitleWrapper5" class="f-cf"><h3 class="f-fp f-lp">RECENT WORK TWO</h3>
+					</div>
+					<div id="TextWrapper5" class="f-cf"><p class="PageContent f-fp">Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<p class="PageContentCentre"><img id="H" src="Resources/17H.jpg" alt="H"></p>
+						<p class="PageContent f-lp">Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					</div>
+				</div>
+				<div id="Box7" class="f-cf"><div id="ImageWrapper6aa2" class="f-cf"><p class="AlignCenter f-fp f-lp"><img id="pencil2" src="Resources/pencil.png" alt="pencil2"></p>
+					</div>
+					<div id="TitleWrapper6" class="f-cf"><h3 class="f-fp f-lp">RECENT WORK THREE</h3>
+					</div>
+					<div id="TextWrapper6" class="f-cf"><p class="PageContent f-fp">Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+						<p class="PageContentCentre"><img id="picjumbocomIMG4923" src="Resources/picjumbo.com_IMG_4923.jpg" alt="picjumbocomIMG4923"></p>
+						<p class="PageContent f-lp">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper" class="f-cf f-ms"><div id="Footer" class="f-cf f-ms"><div id="FooterBox1" class="f-cf f-ms"><p class="f-fp"><span class="Footer"><a href="index.html">HOME</a></span></p>
+					<p><span class="Footer"><a href="about.html">ABOUT</a></span></p>
+					<p><span class="Footer"><a href="services.html">SERVICES</a></span></p>
+					<p><span class="Footer"><a href="blog.html">BLOG</a></span></p>
+					<p class="f-lp"><span class="Footer"><a href="contact.html">CONTACT</a></span></p>
+				</div>
+				<div id="FooterBox2" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="Footer">© SECOND<span class="Color3">SIGHT</span> 2014<br>ALL RIGHTS RESERVED</span></p>
+				</div>
+				<div id="FooterBox3" class="f-cf f-ms"><div id="SmallSet8" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet8Icon1',1,'Resources/smallset8icon1.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet8Icon1\',2,\'Resources/smallset8icon1a.png\',\'\',\'Indigo\')',0)"><img id="SmallSet8Icon1" class="f-ms" src="Resources/smallset8icon1a.png" alt="SmallSet8Icon1"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet8Icon2',1,'Resources/smallset8icon2.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet8Icon2\',2,\'Resources/smallset8icon2a.png\',\'\',\'Indigo\')',0)"><img id="SmallSet8Icon2" class="f-ms" src="Resources/smallset8icon2a.png" alt="SmallSet8Icon2"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet8Icon3',1,'Resources/smallset8icon3.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet8Icon3\',2,\'Resources/smallset8icon3a.png\',\'\',\'Indigo\')',0)"><img id="SmallSet8Icon3" class="f-ms" src="Resources/smallset8icon3a.png" alt="SmallSet8Icon3"></a><a href="http://www.googleplus.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('SmallSet8Icon4',1,'Resources/smallset8icon4.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'SmallSet8Icon4\',2,\'Resources/smallset8icon4a.png\',\'\',\'Indigo\')',0)"><img id="SmallSet8Icon4" class="f-ms" src="Resources/smallset8icon4a.png" alt="SmallSet8Icon4"></a></p>
+					</div>
+				</div>
+				<div id="BackToTop" class="f-cf f-ms"><p class="AlignCenter f-fp f-lp"><span class="Footer"><a href="#">BACK TO TOP</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("CSSMenu", 568);
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("CSSMenu", 568);
+});
+
+//]]></script></body>
+</html>

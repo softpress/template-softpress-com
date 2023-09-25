@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Error</title>
+<meta name="viewport" content="width = 1024, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Express 6.1.2">
+<style type="text/css">
+<!--
+body { margin:0px; background-color:#000; background-image:url(Resources/escheresque_ste.png); height:100% }
+html { height:100% }
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+a:link { color:#454548; text-decoration:underline }
+a:visited { color:#454548; text-decoration:underline }
+a:hover { color:#4982ad; text-decoration:underline }
+a:active { color:#4982ad; text-decoration:underline }
+em { font-style:italic }
+h1 { font-size:18px }
+h1:first-child { margin-top:0px }
+strong { font-weight:bold }
+.style7 { text-align:left }
+.style2 { font-family:'Righteous',Helvetica,cursive; font-size:40px }
+.style3 { color:#454548; font-family:'Righteous',Helvetica,cursive; font-size:40px }
+.style4 { text-align:center }
+.style6 { font-family:'Righteous',Helvetica,cursive; font-size:18px }
+.style10 { font-family:'Lato',Helvetica,sans-serif; font-weight: 300; font-size:16px; text-align:center }
+.style5 { color:#fff; font-family:'Lato',Helvetica,sans-serif; font-weight: 300; font-size:14px; text-align:center }
+#PageDiv { position:relative; max-width:1024px; min-height:100%; margin:auto }
+#Image.f-ms { position:relative; width:1010px; height:500px; vertical-align:middle }
+#Facebook.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Twitter.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#LinkedIn.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#GooglePlus.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Flickr.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Tumblr.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Instagram.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Dribbble.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Pinterest.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#YouTube.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Vimeo.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Soundcloud.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#Skype.f-ms { position:relative; width:64px; height:64px; margin:5px }
+#fwNav1 { float:right;  padding:0; margin:0; list-style:none; }
+#fwNav1 .fwNavItem { width:auto;  float:left;margin:0; padding:0; border-right:0; border-top:0; border-bottom:0; border-left:0; position:relative; }
+#fwNav1 .fwNavItem a { display:block;color:#000000; text-decoration:none; background:#FFFFFF; margin:0;padding:20px 23px 20px 23px; height:1%; }
+#fwNav1 .fwFirstChild { border-left:0; }
+#fwNav1 .fwLastChild { border-right:0; }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#FFFFFF; text-decoration:none; background:#5C9DC4; }
+#fwNav1 .fwNavItem a:active { color:#FFFFFF; text-decoration:none; background:#5C9DC4; }
+* html #fwNav1 { float:right; }
+* html #fwNav1 .fwNavItem a { float:left; height:1%; }
+-->
+</style>
+<!--[if lt IE 7]>
+<link rel=stylesheet href="css/ie6.css">
+<style type="text/css">
+#PageDiv { height:100% }
+</style>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<script src="Resources/FW_Object.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato:300+700|Righteous' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+    .fwNavItem a {
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+</style>
+
+
+<script type="text/javascript">//<![CDATA[
+var usingIEFix = false;
+//]]></script>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">//<![CDATA[
+usingIEFix = true;
+//]]></script>
+<![endif]-->
+
+
+<script type="text/javascript">//<![CDATA[
+
+function FWStripFileFromFilterString(filterString)
+{
+	var start,end;
+	var strSrc = "src='";
+	var strRes = "";
+
+	start = filterString.indexOf(strSrc);
+
+	if(start != -1)
+	{
+		start += strSrc.length;
+		
+		end = filterString.indexOf("',",start);
+		if(end != -1)
+		{
+			strRes = filterString.substring(start,end);
+		}
+	}
+
+	return strRes;
+}
+
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old)
+		{
+			if(usingIEFix && im.runtimeStyle.filter)
+				im.old = FWStripFileFromFilterString(im.runtimeStyle.filter);
+			else
+				im.old = im.src;
+		}
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/facebook1.png");
+	FWLoad("Resources/facebook.png");
+	FWLoad("Resources/twitter1.png");
+	FWLoad("Resources/twitter.png");
+	FWLoad("Resources/linkedin1.png");
+	FWLoad("Resources/linkedin.png");
+	FWLoad("Resources/googleplus1.png");
+	FWLoad("Resources/googleplus.png");
+	FWLoad("Resources/flickr1.png");
+	FWLoad("Resources/flickr.png");
+	FWLoad("Resources/tumblr1.png");
+	FWLoad("Resources/tumblr.png");
+	FWLoad("Resources/instagram1.png");
+	FWLoad("Resources/instagram.png");
+	FWLoad("Resources/dribbble1.png");
+	FWLoad("Resources/dribbble.png");
+	FWLoad("Resources/pinterest1.png");
+	FWLoad("Resources/pinterest.png");
+	FWLoad("Resources/youtube1.png");
+	FWLoad("Resources/youtube.png");
+	FWLoad("Resources/vimeo1.png");
+	FWLoad("Resources/vimeo.png");
+	FWLoad("Resources/soundcloud1.png");
+	FWLoad("Resources/soundcloud.png");
+	FWLoad("Resources/skype1.png");
+	FWLoad("Resources/skype.png");
+}
+//]]></script></head>
+<body onload="FWPreload()">
+<div id="PageDiv">
+	<table style="border-spacing:0px; width:1025px; table-layout:fixed">
+		<colgroup>
+			<col style="width:1024px">
+			<col style="width:1px">
+		</colgroup>
+		<tr style="vertical-align:top">
+			<td><table style="border-spacing:0px; width:1024px; table-layout:fixed">
+				<colgroup>
+					<col style="width:1024px">
+				</colgroup>
+				<tr style="vertical-align:top">
+					<td><table style="border-spacing:0px; width:1024px; padding:8px; background-color:#fff; table-layout:fixed">
+						<colgroup>
+							<col style="width:1008px">
+						</colgroup>
+						<tr style="vertical-align:top">
+							<td><table style="border-spacing:0px; width:225px; table-layout:fixed; float:left; margin:10px">
+								<colgroup>
+									<col style="width:225px">
+								</colgroup>
+								<tr style="vertical-align:top">
+									<td style="height:40px"><p class="style7 f-fp f-lp"><span class="style2">THE</span><span class="style3">BAND</span></p>
+									</td>
+								</tr>
+							</table>
+							<table style="border-spacing:0px; width:550px; table-layout:fixed; float:right">
+								<colgroup>
+									<col style="width:550px">
+								</colgroup>
+								<tr style="vertical-align:top">
+									<td style="height:auto; z-index:1; overflow:visible"><div class="fwNavContainer1">
+										<ul class="style4 f-fp f-lp" id="fwNav1">
+											<li class="fwFirstChild fwNavItem"><a href="index.html"><span class="style6" style="text-decoration:none">HOME</span></a></li>
+											<li class="fwNavItem"><a href="theband.html"><span class="style6" style="text-decoration:none">THE BAND</span></a></li>
+											<li class="fwNavItem"><a href="events.html"><span class="style6" style="text-decoration:none">EVENTS</span></a></li>
+											<li class="fwLastChild fwNavItem"><a href="contact.html"><span class="style6" style="text-decoration:none">CONTACT</span></a></li>
+										</ul>
+									</div>
+									</td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+						<tr class="f-sp">
+							<td><img src="Resources/_clear.gif" width=1008 height=1 alt="" style="float:left"></td>
+						</tr>
+					</table>
+					<table style="border-spacing:0px; width:1024px; padding:5px; background-color:#fff; table-layout:fixed">
+						<colgroup>
+							<col style="width:1014px">
+						</colgroup>
+						<tr style="vertical-align:top">
+							<td><p class="style4 f-fp f-lp"><img id="Image" class="f-ms" src="Resources/image.jpeg" width=1010 height=500 alt="Image"></p>
+							</td>
+						</tr>
+						<tr class="f-sp">
+							<td><img src="Resources/_clear.gif" width=1014 height=1 alt="" style="float:left"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr class="f-sp">
+					<td><img src="Resources/_clear.gif" width=1024 height=1 alt="" style="float:left"></td>
+				</tr>
+			</table>
+			<table style="border-spacing:0px; width:1024px; table-layout:fixed">
+				<colgroup>
+					<col style="width:1024px">
+				</colgroup>
+				<tr style="vertical-align:top">
+					<td style="height:176px"><table style="border-spacing:0px; width:1024px; padding:10px; table-layout:fixed">
+						<colgroup>
+							<col style="width:1004px">
+						</colgroup>
+						<tr style="vertical-align:top">
+							<td style="height:156px"><table style="border-spacing:0px; width:1004px; padding:40px; background-color:#fff; table-layout:fixed">
+								<colgroup>
+									<col style="width:924px">
+								</colgroup>
+								<tr style="vertical-align:top">
+									<td style="height:76px"><p class="style10 f-fp">ERROR!</p>
+									<p class="style10">Your email has not been sent due to an error. Please click <a href="contact.html">here</a> to try again.</p>
+									<p class="style10 f-lp">Alternatively you can email us directly <a href="mailto:&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;?subject=Please Enter A Subject&amp;body=Hi there,">here</a>.  </p>
+									</td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			<table style="border-spacing:0px; width:1024px; background-color:#000; table-layout:fixed">
+				<colgroup>
+					<col style="width:1024px">
+				</colgroup>
+				<tr style="vertical-align:top">
+					<td style="height:189px"><table style="border-spacing:0px; width:1024px; background-color:#fff; table-layout:fixed">
+						<colgroup>
+							<col style="width:1024px">
+						</colgroup>
+						<tr style="vertical-align:top">
+							<td style="height:5px"></td>
+						</tr>
+					</table>
+					<table style="border-spacing:0px; width:1024px; padding:20px; table-layout:fixed">
+						<colgroup>
+							<col style="width:984px">
+						</colgroup>
+						<tr style="vertical-align:top">
+							<td><p class="style5 f-fp">© BAND NAME<br>ALL RIGHTS RESERVED</p>
+							<p class="style5">FOLLOW US</p>
+							<table style="border-spacing:0px; width:970px; table-layout:fixed; margin-left:auto; margin-right:auto">
+								<colgroup>
+									<col style="width:970px">
+								</colgroup>
+								<tr style="vertical-align:top">
+									<td><p class="style4 f-fp f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Facebook',1,'Resources/facebook.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Facebook\',2,\'Resources/facebook.png\',\'\',\'Indigo\')',0)"><img id="Facebook" class="f-ms" src="Resources/facebook1.png" width=64 height=64 alt="Facebook"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Twitter',1,'Resources/twitter.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Twitter\',2,\'Resources/twitter.png\',\'\',\'Indigo\')',0)"><img id="Twitter" class="f-ms" src="Resources/twitter1.png" width=64 height=64 alt="Twitter"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('LinkedIn',1,'Resources/linkedin.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'LinkedIn\',2,\'Resources/linkedin.png\',\'\',\'Indigo\')',0)"><img id="LinkedIn" class="f-ms" src="Resources/linkedin1.png" width=64 height=64 alt="LinkedIn"></a><a href="http://www.googleplus.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('GooglePlus',1,'Resources/googleplus.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'GooglePlus\',2,\'Resources/googleplus.png\',\'\',\'Indigo\')',0)"><img id="GooglePlus" class="f-ms" src="Resources/googleplus1.png" width=64 height=64 alt="GooglePlus"></a><a href="http://www.flickr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Flickr',1,'Resources/flickr.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Flickr\',2,\'Resources/flickr.png\',\'\',\'Indigo\')',0)"><img id="Flickr" class="f-ms" src="Resources/flickr1.png" width=64 height=64 alt="Flickr"></a><a href="http://www.tumblr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Tumblr',1,'Resources/tumblr.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Tumblr\',2,\'Resources/tumblr.png\',\'\',\'Indigo\')',0)"><img id="Tumblr" class="f-ms" src="Resources/tumblr1.png" width=64 height=64 alt="Tumblr"></a><a href="http://www.instagram.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Instagram',1,'Resources/instagram.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Instagram\',2,\'Resources/instagram.png\',\'\',\'Indigo\')',0)"><img id="Instagram" class="f-ms" src="Resources/instagram1.png" width=64 height=64 alt="Instagram"></a><a href="http://www.dribbble.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Dribbble',1,'Resources/dribbble.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Dribbble\',2,\'Resources/dribbble.png\',\'\',\'Indigo\')',0)"><img id="Dribbble" class="f-ms" src="Resources/dribbble1.png" width=64 height=64 alt="Dribbble"></a><a href="http://www.pinterest.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Pinterest',1,'Resources/pinterest.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Pinterest\',2,\'Resources/pinterest.png\',\'\',\'Indigo\')',0)"><img id="Pinterest" class="f-ms" src="Resources/pinterest1.png" width=64 height=64 alt="Pinterest"></a><a href="http://www.youtube.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('YouTube',1,'Resources/youtube.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'YouTube\',2,\'Resources/youtube.png\',\'\',\'Indigo\')',0)"><img id="YouTube" class="f-ms" src="Resources/youtube1.png" width=64 height=64 alt="YouTube"></a><a href="http://www.vimeo.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Vimeo',1,'Resources/vimeo.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Vimeo\',2,\'Resources/vimeo.png\',\'\',\'Indigo\')',0)"><img id="Vimeo" class="f-ms" src="Resources/vimeo1.png" width=64 height=64 alt="Vimeo"></a><a href="http://www.soundcloud.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Soundcloud',1,'Resources/soundcloud.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Soundcloud\',2,\'Resources/soundcloud.png\',\'\',\'Indigo\')',0)"><img id="Soundcloud" class="f-ms" src="Resources/soundcloud1.png" width=64 height=64 alt="Soundcloud"></a><a href="http://www.skype.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Skype',1,'Resources/skype.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Skype\',2,\'Resources/skype.png\',\'\',\'Indigo\')',0)"><img id="Skype" class="f-ms" src="Resources/skype1.png" width=64 height=64 alt="Skype"></a></p>
+									</td>
+								</tr>
+								<tr class="f-sp">
+									<td><img src="Resources/_clear.gif" width=970 height=1 alt="" style="float:left"></td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+						<tr class="f-sp">
+							<td><img src="Resources/_clear.gif" width=984 height=1 alt="" style="float:left"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+			<td></td>
+		</tr>
+		<tr class="f-sp">
+			<td><img src="Resources/_clear.gif" width=1024 height=1 alt="" style="float:left"></td>
+			<td style="height:1px"><img src="Resources/_clear.gif" width=1 height=1 alt="" style="float:left"></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

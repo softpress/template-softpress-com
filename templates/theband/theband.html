@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Band</title>
+<meta name="viewport" content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Pro 7.0.3">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/theband.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Lato:300+700|Righteous' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+    .fwNavItem a {
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+</style>
+<script type="text/javascript">//<![CDATA[
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old) im.old = im.src;
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/set3icon1a.png");
+	FWLoad("Resources/set3icon1.png");
+	FWLoad("Resources/set3icon2a.png");
+	FWLoad("Resources/set3icon2.png");
+	FWLoad("Resources/set3icon3a.png");
+	FWLoad("Resources/set3icon3.png");
+	FWLoad("Resources/set3icon4a.png");
+	FWLoad("Resources/set3icon4.png");
+	FWLoad("Resources/set3icon5a.png");
+	FWLoad("Resources/set3icon5.png");
+	FWLoad("Resources/set3icon6a.png");
+	FWLoad("Resources/set3icon6.png");
+	FWLoad("Resources/set3icon7a.png");
+	FWLoad("Resources/set3icon7.png");
+	FWLoad("Resources/set3icon8a.png");
+	FWLoad("Resources/set3icon8.png");
+	FWLoad("Resources/set3icon9a.png");
+	FWLoad("Resources/set3icon9.png");
+	FWLoad("Resources/set3icon10a.png");
+	FWLoad("Resources/set3icon10.png");
+	FWLoad("Resources/set3icon11a.png");
+	FWLoad("Resources/set3icon11.png");
+	FWLoad("Resources/set3icon12a.png");
+	FWLoad("Resources/set3icon12.png");
+	FWLoad("Resources/set3icon13a.png");
+	FWLoad("Resources/set3icon13.png");
+}
+//]]></script></head>
+<body onload="FWPreload()">
+<div id="PageDiv" class="f-cf">
+	<div id="PageWrapper" class="f-cf f-ms"><div id="HeaderWrapper" class="f-cf f-ms"><div id="TopWrapper" class="f-cf f-ms"><div id="Menu" class="f-ms"><input type="checkbox" id="fwNav1-toggle">
+					<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+					<div class="fwNavContainer1">
+						<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+						<ul class="CenterAlign f-fp f-lp" id="fwNav1">
+							<li class="fwFirstChild fwNavItem"><a href="index.html"><span class="Menu" style="text-decoration:none">HOME</span></a></li>
+							<li class="fwNavItem"><a href="#nil" class="fwCurrent"><span class="Menu" style="text-decoration:none">THE BAND</span></a></li>
+							<li class="fwNavItem"><a href="events.html"><span class="Menu" style="text-decoration:none">EVENTS</span></a></li>
+							<li class="fwLastChild fwNavItem"><a href="contact.html"><span class="Menu" style="text-decoration:none">CONTACT</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="Menu1" class="f-ms"><p class="BigTitle f-fp">THE<span class="highlight">BAND</span></p>
+				</div>
+			</div>
+			<div id="Header" class="f-cf f-ms"></div>
+		</div>
+		<div id="BodyWrapper1" class="f-cf f-ms"><div id="Body1" class="f-cf f-ms"><div id="FourPieceBandWrap"><div id="Content2" class="f-cf"><h2 class="f-fp">JOHN SMITH</h2>
+						<h3>VOCALIST</h3>
+						<p class="body-centered"><img id="BlankPerson1" src="Resources/BlankPerson.jpg" alt="BlankPerson1"></p>
+						<p class="body-centered f-lp">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					<div id="Content1" class="f-cf"><h2 class="f-fp">RON SIMMONS</h2>
+						<p class="sub">GUITAR</p>
+						<p class="body-centered"><img id="BlankPerson2" src="Resources/BlankPerson.jpg" alt="BlankPerson2"></p>
+						<p class="body-centered f-lp">Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui.</p>
+					</div>
+					<div id="Content3" class="f-cf"><h2 class="f-fp">SAM HOLLINGS</h2>
+						<p class="sub">BASS</p>
+						<p class="body-centered"><img id="BlankPerson3" src="Resources/BlankPerson.jpg" alt="BlankPerson3"></p>
+						<p class="body-centered f-lp">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+					</div>
+					<div id="Content4" class="f-cf"><h2 class="f-fp">ROB JONES</h2>
+						<p class="sub">DRUMS</p>
+						<p class="body-centered"><img id="BlankPerson4" src="Resources/BlankPerson.jpg" alt="BlankPerson4"></p>
+						<p class="body-centered f-lp">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+				</div>
+				<div id="FivePieceBandWrap"><div id="Content8" class="f-cf"><h2 class="f-fp">JOHN SMITH</h2>
+						<h3>VOCALIST</h3>
+						<p class="body-centered"><img id="BlankPerson6" src="Resources/BlankPerson.jpg" alt="BlankPerson6"></p>
+						<p class="body-centered f-lp">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					<div id="Content11" class="f-cf"><h2 class="f-fp">RON SIMMONS</h2>
+						<p class="sub">GUITAR</p>
+						<p class="body-centered"><img id="BlankPerson9" src="Resources/BlankPerson.jpg" alt="BlankPerson9"></p>
+						<p class="body-centered f-lp">Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui.</p>
+					</div>
+					<div id="Content12" class="f-cf"><h2 class="f-fp">SAM HOLLINGS</h2>
+						<p class="sub">BASS</p>
+						<p class="body-centered"><img id="BlankPerson10" src="Resources/BlankPerson.jpg" alt="BlankPerson10"></p>
+						<p class="body-centered f-lp">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+					</div>
+					<div id="Content13" class="f-cf"><h2 class="f-fp">ROB JONES</h2>
+						<p class="sub">DRUMS</p>
+						<p class="body-centered"><img id="BlankPerson11" src="Resources/BlankPerson.jpg" alt="BlankPerson11"></p>
+						<p class="body-centered f-lp">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					<div id="Content14" class="f-cf"><h2 class="f-fp">JOEY JONES</h2>
+						<p class="sub">KEYBOARD</p>
+						<p class="body-centered"><img id="BlankPerson12" src="Resources/BlankPerson.jpg" alt="BlankPerson12"></p>
+						<p class="body-centered f-lp">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+				</div>
+				<div id="ThreePieceBandWrap"><div id="Content7" class="f-cf"><h2 class="f-fp">JOHN SMITH</h2>
+						<h3>VOCAL &amp; GUITAR</h3>
+						<p class="body-centered"><img id="BlankPerson5" src="Resources/BlankPerson.jpg" alt="BlankPerson5"></p>
+						<p class="body-centered f-lp">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					<div id="Content9" class="f-cf"><h2 class="f-fp">SAM HOLLINGS</h2>
+						<p class="sub">BASS</p>
+						<p class="body-centered"><img id="BlankPerson7" src="Resources/BlankPerson.jpg" alt="BlankPerson7"></p>
+						<p class="body-centered f-lp">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+					</div>
+					<div id="Content10" class="f-cf"><h2 class="f-fp">ROB JONES</h2>
+						<p class="sub">DRUMS</p>
+						<p class="body-centered"><img id="BlankPerson8" src="Resources/BlankPerson.jpg" alt="BlankPerson8"></p>
+						<p class="body-centered f-lp">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper2" class="f-cf f-ms"><div id="Body2" class="f-cf"><div id="Content5"><h2 class="f-fp">HISTORY OF US</h2>
+					<h3>HOW WE STARTED</h3>
+					<p class="body"><img id="photo1064920090502" src="Resources/photo_10649_20090502.jpg" alt="photo1064920090502">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					<p class="body">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+					<p class="body f-lp">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p>
+				</div>
+				<div id="Content6"><h2 class="f-fp">DISCOGRAPHY</h2>
+					<h3>OUR RELEASES</h3>
+					<div id="Album1" class="f-cf"><p class="body f-fp f-lp"><img id="Ht" src="Resources/60H(t).jpg" alt="Ht">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					<div id="Album2" class="f-cf"><p class="body f-fp f-lp"><img id="Ht1" src="Resources/37H(t).jpg" alt="Ht1">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					<div id="Album3" class="f-cf"><p class="body f-fp f-lp"><img id="Ht2" src="Resources/58H(t).jpg" alt="Ht2">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper1" class="f-cf f-ms"><div id="Footer" class="f-cf f-ms"><p class="CenterAlign f-fp"><span class="Footer">© BAND NAME<br>ALL RIGHTS RESERVED</span></p>
+				<p class="CenterAlign"><span class="Footer">FOLLOW US</span></p>
+				<div id="Set3" class="f-cf f-ms"><p class="CenterAlign f-fp f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon1',1,'Resources/set3icon1.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon1\',2,\'Resources/set3icon1.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon1" class="f-ms" src="Resources/set3icon1a.png" alt="Set3Icon1"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon2',1,'Resources/set3icon2.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon2\',2,\'Resources/set3icon2.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon2" class="f-ms" src="Resources/set3icon2a.png" alt="Set3Icon2"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon3',1,'Resources/set3icon3.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon3\',2,\'Resources/set3icon3.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon3" class="f-ms" src="Resources/set3icon3a.png" alt="Set3Icon3"></a><a href="http://www.googleplus.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon4',1,'Resources/set3icon4.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon4\',2,\'Resources/set3icon4.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon4" class="f-ms" src="Resources/set3icon4a.png" alt="Set3Icon4"></a><a href="http://www.flickr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon5',1,'Resources/set3icon5.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon5\',2,\'Resources/set3icon5.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon5" class="f-ms" src="Resources/set3icon5a.png" alt="Set3Icon5"></a><a href="http://www.tumblr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon6',1,'Resources/set3icon6.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon6\',2,\'Resources/set3icon6.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon6" class="f-ms" src="Resources/set3icon6a.png" alt="Set3Icon6"></a><a href="http://www.instagram.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon7',1,'Resources/set3icon7.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon7\',2,\'Resources/set3icon7.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon7" class="f-ms" src="Resources/set3icon7a.png" alt="Set3Icon7"></a><a href="http://www.dribbble.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon8',1,'Resources/set3icon8.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon8\',2,\'Resources/set3icon8.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon8" class="f-ms" src="Resources/set3icon8a.png" alt="Set3Icon8"></a><a href="http://www.pinterest.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon9',1,'Resources/set3icon9.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon9\',2,\'Resources/set3icon9.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon9" class="f-ms" src="Resources/set3icon9a.png" alt="Set3Icon9"></a><a href="http://www.youtube.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon10',1,'Resources/set3icon10.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon10\',2,\'Resources/set3icon10.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon10" class="f-ms" src="Resources/set3icon10a.png" alt="Set3Icon10"></a><a href="http://www.vimeo.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon11',1,'Resources/set3icon11.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon11\',2,\'Resources/set3icon11.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon11" class="f-ms" src="Resources/set3icon11a.png" alt="Set3Icon11"></a><a href="http://www.soundcloud.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon12',1,'Resources/set3icon12.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon12\',2,\'Resources/set3icon12.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon12" class="f-ms" src="Resources/set3icon12a.png" alt="Set3Icon12"></a><a href="http://www.skype.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon13',1,'Resources/set3icon13.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon13\',2,\'Resources/set3icon13.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon13" class="f-ms" src="Resources/set3icon13a.png" alt="Set3Icon13"></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("Menu", 768);
+fwAddListener(document.getElementById("fwNav1-toggle"), "click", function(){
+	fwToggleMenu(this);
+});
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("Menu", 768);
+});
+
+//]]></script></body>
+</html>

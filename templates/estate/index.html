@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript">
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?load=effects" type="text/javascript">
+</script>
+<meta charset="UTF-8">
+<title>Home</title>
+<meta name="viewport" content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Pro 7.0.3">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/index.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans:300' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css">
+    .fwNavItem a {
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+</style>
+<script type="text/javascript">//<![CDATA[
+document.observe('dom:loaded', function(evt){
+var v;
+	if((v = Scriptaculous.Version.split('.'))  && v[1] && v[1] == 8 && v[2] && v[2] < 3){
+		Effect.ScrollTo = function(element) {
+			var options = arguments[1] || { },
+			scrollOffsets = document.viewport.getScrollOffsets(),
+			elementOffsets = $(element).cumulativeOffset(),
+			max = document.viewport.getScrollOffsets[0] - document.viewport.getHeight();
+			if (options.offset) elementOffsets[1] += options.offset;
+			return new Effect.Tween(null,
+		 		scrollOffsets.top,
+		 		elementOffsets[1] > max ? max : elementOffsets[1],
+		 		options,
+		 		function(p){ scrollTo(scrollOffsets.left, p.round()) }
+			);
+		};
+	}
+	var anchors = $$('a').reject(function(elm){ return (elm.up('.controls') || elm.className.match(/carousel/)); });
+	anchors.each(function(elm){
+		var ref = elm.href.split(/#/)[1];
+		var t = (!!$(ref)) ? $(ref) : anchors.find(function(em){ return em.name == ref; });
+		if(t){
+			elm.observe('click',function(evt){
+				evt.stop();
+				Effect.ScrollTo(t, {duration:'0.6', offset:-40});
+			});
+		}
+	});
+});
+
+function FWFindLayer(lay)
+{
+	if (lay)
+	{
+		if (document.layers) 
+			return document[lay];
+		else if (document.getElementById)
+			return document.getElementById(lay).style;
+		else if (document.all) 
+			return document.all[lay].style;
+	}
+	return null;
+}
+
+
+function FWShowHideLayerFade(lay, vis, ch, duration)
+{
+	if (ch && lay != "") 
+	{
+		vis = (vis) ? "visible" : "hidden";
+		var obj = FWFindLayer(lay);
+		if (obj && obj.visibility != vis) 
+		{
+			if(vis == "visible")
+			{
+				obj.visibility = vis;
+				new Effect.Appear(lay, {duration:duration, delay:null});
+			}
+			else
+			{
+				new Effect.Fade(lay, {duration:duration, delay:null, afterFinish:function(){obj.visibility = vis}});
+			}
+		} 
+	}
+}
+
+// Modified from http://snipplr.com/view/1853/
+function getElementsByAttribute(oElm, strTagName, strAttributeName, strAttributeValue)
+{
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var oAttributeValue = (typeof strAttributeValue != "undefined")? new RegExp("(^|\\s)" + strAttributeValue + "(\\s|$)", "i") : null;
+	var oCurrent;
+	var oAttribute;
+	for(var i=0; i<arrElements.length; i++){
+		oCurrent = arrElements[i];
+		oAttribute = oCurrent.getAttribute && oCurrent.getAttribute(strAttributeName);
+		if (typeof strAttributeValue == "undefined")
+		{
+			if (typeof oAttribute == "string")
+				arrReturnElements.push(oCurrent);
+		}
+		else if(typeof oAttribute == "string" && oAttribute.length > 0)
+		{
+			if(oAttributeValue && oAttributeValue.test(oAttribute))
+				arrReturnElements.push(oCurrent);
+		}
+	}
+	return arrReturnElements;
+}
+
+function testFields()
+{
+	var emailFields = getElementsByAttribute(document, "*", "type", "email");
+	var invalidEmailCount = 0;
+	for(var i=0; i<emailFields.length; i++)
+	{
+		var field = emailFields[i];
+		if (field.value)
+		{
+			var mail1 = ".+";
+			var mail2 = "@";
+			var mail3 = "\\.";
+			if (!field.value.match(mail1+mail2+mail1+mail3+mail1))
+			{
+				invalidEmailCount++;
+				if (!field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+					field.className += " sendFormInvalid";
+			}
+			else if (field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+				field.className = field.className.replace(/(?:^|\s)sendFormInvalid(?!\S)/g , '');
+		}
+		else if (field.className.match(/(?:^|\s)sendFormInvalid(?!\S)/))
+			field.className = field.className.replace(/(?:^|\s)sendFormInvalid(?!\S)/g , '');
+	}
+	
+	var requiredFields = getElementsByAttribute(document, "*", "required");
+	var invalidRequiredCount = 0;
+	for(var i=0; i<requiredFields.length; i++)
+	{
+		var field = requiredFields[i];
+		if (!field.value)
+		{
+			invalidRequiredCount++;
+			if (!field.className.match(/(?:^|\s)sendFormRequired(?!\S)/))
+				field.className += " sendFormRequired";
+		}
+		else if (field.value && field.className.match(/(?:^|\s)sendFormRequired(?!\S)/))
+			field.className = field.className.replace(/(?:^|\s)sendFormRequired(?!\S)/g , '');
+	}
+	
+	if (invalidRequiredCount > 0 || invalidEmailCount > 0)
+	{
+		alert("Please fill out all required fields with valid details.");
+		return false;
+	}
+	else
+		return true;
+}
+var fwSeq= new Object;
+fwSeq['1']=1;
+fwSeq['2']=2;
+fwSeq['3']=3;
+fwSeq['4']=4;
+
+var fwCurrSeq=0;
+var fwCurrSeqDown=false;
+var fwPlaySeqTimer=true;
+
+function FWSeqTimer()
+{
+	if(fwPlaySeqTimer)
+	{
+		if (fwCurrSeqDown)
+			FW_Hit(top.frames,'Indigo',fwSeq[fwCurrSeq],0);
+		else
+		{
+			fwCurrSeq++;
+			if (fwCurrSeq > 4)
+				fwCurrSeq = 1;
+			FW_Hit(top.frames,'Indigo',fwSeq[fwCurrSeq],1);
+		}
+		fwCurrSeqDown=!fwCurrSeqDown;
+		setTimeout("FWSeqTimer();",2000);
+	}
+}
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old) im.old = im.src;
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/facebook1.png");
+	FWLoad("Resources/facebook.png");
+	FWLoad("Resources/twitter1.png");
+	FWLoad("Resources/twitter.png");
+	FWLoad("Resources/linkedin1.png");
+	FWLoad("Resources/linkedin.png");
+	FWLoad("Resources/google1.png");
+	FWLoad("Resources/google.png");
+	FWLoad("Resources/flickr1.png");
+	FWLoad("Resources/flickr.png");
+	FWLoad("Resources/tumblr1.png");
+	FWLoad("Resources/tumblr.png");
+	FWLoad("Resources/instagram1.png");
+	FWLoad("Resources/instagram.png");
+	FWLoad("Resources/dribble1.png");
+	FWLoad("Resources/dribble.png");
+	FWLoad("Resources/pinterest1.png");
+	FWLoad("Resources/pinterest.png");
+	FWLoad("Resources/youtube1.png");
+	FWLoad("Resources/youtube.png");
+	FWLoad("Resources/vimeo1.png");
+	FWLoad("Resources/vimeo.png");
+	FWLoad("Resources/soundcloud1.png");
+	FWLoad("Resources/soundcloud.png");
+	FWLoad("Resources/skype1.png");
+	FWLoad("Resources/skype.png");
+}
+//]]></script>
+<style type="text/css"><!--.sendFormInvalid, .sendFormRequired { border-color:red; }
+a.m4:link  { text-decoration: none; color:#FFFFFF }
+a.m4:visited  { text-decoration: none; color:#FFFFFF }
+a.m4:hover  { text-decoration: none; color:#C0392B }
+a.m4:active  { text-decoration: none; color:#C0392B }
+--></style></head>
+<body onload="FWSeqTimer();;FWPreload()">
+<div id="PageDiv">
+	<div id="PageWrapper" class="f-ms"><div id="Top" class="f-ms"></div>
+		<div id="Menu" class="f-ms"><input type="checkbox" id="fwNav1-toggle">
+			<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+			<div class="fwNavContainer1">
+				<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+				<ul class="CSSMenu f-fp f-lp" id="fwNav1">
+					<li class="fwFirstChild fwNavItem"><a href="#nil" class="fwCurrent">HOME</a></li>
+					<li class="fwNavItem"><a href="theestate.html">THE ESTATE</a></li>
+					<li class="fwNavItem"><a href="aboutus.html">ABOUT US</a></li>
+					<li class="fwLastChild fwNavItem"><a href="getintouch.html">GET IN TOUCH</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="HeaderWrapper"><div id="Image1" style="visibility:hidden; display:none"></div>
+			<div id="Image2" style="visibility:hidden; display:none"></div>
+			<div id="Image3" style="visibility:hidden; display:none"></div>
+			<div id="Image4" style="visibility:hidden; display:none"></div>
+			<div id="Text"><div id="Text_m">
+					<p class="CenterAlign f-fp"><span class="BigTitle">WELCOME TO THE ESTATE</span></p>
+					<p class="CenterAlign f-lp"><span class="BigSubtitle">RENTABLE ROOMS IN A BEAUTIFUL LOCATION</span></p>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper1" class="f-ms"><div id="Body1" class="f-ms"><div id="Content1"><h2 class="f-fp">GET AWAY &amp; RELAX</h2>
+					<h3>PERFECT LOCATION FOR EVERY TYPE OF GETAWAY</h3>
+					<p class="Content">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+					<p class="Content">Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+					<p class="FormItem f-lp"><img id="item1" src="Resources/5.jpg" alt="item1"></p>
+				</div>
+				<div id="Content2"><h2 class="f-fp">FULLY CATERED</h2>
+					<h3>TO SUIT EVERYONE!</h3>
+					<p class="Content">Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="Content">Full menus available online including vegetarian, vegan and other dietry requirements.</p>
+					<p class="FormItem f-lp"><img id="item2" src="Resources/1.jpg" alt="item2"></p>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper2"><div id="Body2"></div>
+		</div>
+		<div id="BodyWrapper3" class="f-ms"><div id="Body3" class="f-ms"><div id="Content3"><h2 class="f-fp">EVERYTHING YOU NEED AND WANT</h2>
+					<h3>IN ONE PLACE</h3>
+					<p class="Content">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="Content">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+					<p class="Content f-lp">Find out more about us <a href="aboutus.html">here</a> or see details of the property <a href="theestate.html">here</a>!</p>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper" class="f-ms"><div id="Footer1" class="f-ms"><div id="m4" class="f-ms"><p class="CenterAlign f-fp f-lp"><span class="FooterText"><a href="index.html" class="m4">HOME</a><br><a href="theestate.html" class="m4">THE ESTATE</a><br><a href="aboutus.html" class="m4">ABOUT US</a><br><a href="getintouch.html" class="m4">GET IN TOUCH</a></span></p>
+				</div>
+				<div id="m1" class="f-ms">
+					<form action="FW_SendForm_index_m1.php" method="post" onsubmit="return testFields()">
+						<p class="CenterAlign f-fp"><span class="PageContent">QUICK EMAIL</span></p>
+						<p class="CenterAlign f-lp"><input id="QuickName" class="FormItem f-ms" type=text name="Quick Name" placeholder="Name" size=16><input id="QuickEmail" class="FormItem f-ms" type=email name="Quick Email" placeholder="Email Address" size=16><br><textarea id="QuickMessage" class="FormItem f-ms" cols=33 rows=3 name="Quick Message" placeholder="Enter your message..."></textarea><br><input id="SEND" class="FormItem f-ms" type=submit value="Send"></p>
+					<input name="sendForm15280" id="sendForm15280" tabindex="-1" style="display:none;"></form>
+				</div>
+			</div>
+			<div id="Footer2" class="f-ms"><p class="CenterAlign f-fp"><span class="FooterText">FOLLOW US</span></p>
+				<div id="SocialIcons" class="f-ms"><p class="CenterAlign f-fp f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('facebook',1,'Resources/facebook.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'facebook\',2,\'Resources/facebook.png\',\'\',\'Indigo\')',0)"><img id="facebook" class="f-ms" src="Resources/facebook1.png" alt="facebook"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('twitter',1,'Resources/twitter.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'twitter\',2,\'Resources/twitter.png\',\'\',\'Indigo\')',0)"><img id="twitter" class="f-ms" src="Resources/twitter1.png" alt="twitter"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('linkedin',1,'Resources/linkedin.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'linkedin\',2,\'Resources/linkedin.png\',\'\',\'Indigo\')',0)"><img id="linkedin" class="f-ms" src="Resources/linkedin1.png" alt="linkedin"></a><a href="http://www.googleplus.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('google',1,'Resources/google.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'google\',2,\'Resources/google.png\',\'\',\'Indigo\')',0)"><img id="google" class="f-ms" src="Resources/google1.png" alt="google"></a><a href="http://www.flickr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('flickr',1,'Resources/flickr.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'flickr\',2,\'Resources/flickr.png\',\'\',\'Indigo\')',0)"><img id="flickr" class="f-ms" src="Resources/flickr1.png" alt="flickr"></a><a href="http://www.tumblr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('tumblr',1,'Resources/tumblr.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'tumblr\',2,\'Resources/tumblr.png\',\'\',\'Indigo\')',0)"><img id="tumblr" class="f-ms" src="Resources/tumblr1.png" alt="tumblr"></a><a href="http://www.instagram.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('instagram',1,'Resources/instagram.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'instagram\',2,\'Resources/instagram.png\',\'\',\'Indigo\')',0)"><img id="instagram" class="f-ms" src="Resources/instagram1.png" alt="instagram"></a><a href="http://www.dribbble.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('dribble',1,'Resources/dribble.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'dribble\',2,\'Resources/dribble.png\',\'\',\'Indigo\')',0)"><img id="dribble" class="f-ms" src="Resources/dribble1.png" alt="dribble"></a><a href="http://www.pinterest.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('pinterest',1,'Resources/pinterest.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'pinterest\',2,\'Resources/pinterest.png\',\'\',\'Indigo\')',0)"><img id="pinterest" class="f-ms" src="Resources/pinterest1.png" alt="pinterest"></a><a href="http://www.youtube.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('youtube',1,'Resources/youtube.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'youtube\',2,\'Resources/youtube.png\',\'\',\'Indigo\')',0)"><img id="youtube" class="f-ms" src="Resources/youtube1.png" alt="youtube"></a><a href="http://www.vimeo.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('vimeo',1,'Resources/vimeo.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'vimeo\',2,\'Resources/vimeo.png\',\'\',\'Indigo\')',0)"><img id="vimeo" class="f-ms" src="Resources/vimeo1.png" alt="vimeo"></a><a href="http://www.soundcloud.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('soundcloud',1,'Resources/soundcloud.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'soundcloud\',2,\'Resources/soundcloud.png\',\'\',\'Indigo\')',0)"><img id="soundcloud" class="f-ms" src="Resources/soundcloud1.png" alt="soundcloud"></a><a href="http://www.skype.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('skype',1,'Resources/skype.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'skype\',2,\'Resources/skype.png\',\'\',\'Indigo\')',0)"><img id="skype" class="f-ms" src="Resources/skype1.png" alt="skype"></a></p>
+				</div>
+				<p class="CenterAlign f-lp"><span class="FooterText">© COMPANY NAME 2014</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+function FWImage_Indigo(chain,msg)
+{
+	if (chain==1)
+		FWShowHideLayerFade("Image1",msg,msg,0.5);
+	else 
+		FWShowHideLayerFade("Image1",!msg,msg,0.5);
+	if (chain==2)
+		FWShowHideLayerFade("Image2",msg,msg,0.5);
+	else 
+		FWShowHideLayerFade("Image2",!msg,msg,0.5);
+	if (chain==3)
+		FWShowHideLayerFade("Image3",msg,msg,0.5);
+	else 
+		FWShowHideLayerFade("Image3",!msg,msg,0.5);
+	if (chain==4)
+		FWShowHideLayerFade("Image4",msg,msg,0.5);
+	else 
+		FWShowHideLayerFade("Image4",!msg,msg,0.5);
+}
+window.FT_Indigo=new Object;
+window.FT_Indigo['0']=FWImage_Indigo;
+
+fwShowHideMenu("Menu", 768);
+fwAddListener(document.getElementById("fwNav1-toggle"), "click", function(){
+	fwToggleMenu(this);
+});
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("Menu", 768);
+});
+
+//]]></script>
+</body>
+</html>

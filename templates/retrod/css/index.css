@@ -1,0 +1,56 @@
+body { margin:0px; background-color:#524656; height:100% }
+html { height:100% }
+a:link { text-decoration:none }
+a:visited { text-decoration:none }
+a:hover { text-decoration:none }
+a:active { text-decoration:none }
+#hero a:link { color:#eb7b59 }
+#hero a:visited { color:#eb7b59 }
+#hero a:hover { color:#a7c5bd }
+#hero a:active { color:#a10a18 }
+#artwork a:link { color:#eb7b59 }
+#artwork a:visited { color:#eb7b59 }
+#artwork a:hover { color:#a7c5bd }
+#artwork a:active { color:#a10a18 }
+#photography a:link { color:#524656 }
+#photography a:visited { color:#524656 }
+#photography a:hover { color:#a7c5bd }
+#photography a:active { color:#a10a18 }
+#movies a:link { color:#eb7b59 }
+#movies a:visited { color:#eb7b59 }
+#movies a:hover { color:#a7c5bd }
+#movies a:active { color:#a10a18 }
+#projects a:link { color:#7c6584 }
+#projects a:visited { color:#7c6584 }
+#projects a:hover { color:#eb7b59 }
+#projects a:active { color:#a10a18 }
+#contact a:link { color:#a7c5bd }
+#contact a:visited { color:#a7c5bd }
+#contact a:hover { color:#524656 }
+#contact a:active { color:#e5ddcb }
+#footer a:link { color:#eb7b59 }
+#footer a:visited { color:#eb7b59 }
+#footer a:hover { color:#a7c5bd }
+#footer a:active { color:#a10a18 }
+#PageDiv { position:relative; min-height:100% }
+#header-nav { height:auto; overflow:visible }
+#fwNav1 { float:right; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#524656; text-decoration:none; background:#FFFFFF; padding:41px 14px 40px 14px }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#FFFFFF; text-decoration:none; background:#EB7B59 }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('../Resources/menu.png'); background-repeat:no-repeat; background-size:100%; float:right }
+@media screen and (max-width:865px)
+{
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; top:0; right:0; bottom:100%; left:0; margin-top:-100%; background-color:#FFFFFF; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out margin, .2s ease-out bottom; -moz-transition:.2s ease-out margin, .2s ease-out bottom; -ms-transition:.2s ease-out margin, .2s ease-out bottom; -o-transition:.2s ease-out margin, .2s ease-out bottom; transition:.2s ease-out margin, .2s ease-out bottom }
+	.fwNav1-toggle-close { background-image:url('../Resources/close-round.png'); margin:31px 29px 20px 20px }
+	.fwNavContainer1.fwMenuOn { margin-top:0; bottom:0 }
+}

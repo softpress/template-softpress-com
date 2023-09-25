@@ -1,0 +1,25 @@
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+em { font-style:italic }
+h1 { font-weight:bold; font-size:18px }
+h1:first-child { margin-top:0px }
+h2 { color:#000; font-family:'Alegreya',serif; font-size:18px; letter-spacing:0.45px; word-spacing:2.16px; text-align:center; margin-bottom:2px }
+h2:first-child { margin-top:0px }
+h3 { color:#999; font-family:'Alegreya',serif; font-size:16px; letter-spacing:0.4px; word-spacing:1.92px; text-align:center; margin-top:2px }
+h3:first-child { margin-top:0px }
+strong { font-weight:bold }
+.LogoText { font-family:'Alegreya',serif; font-size:14px; letter-spacing:0.35px; word-spacing:1.68px }
+.LogoSub { color:#999 }
+.CSSMenu { font-family:'Alegreya',serif; font-size:14px; letter-spacing:0.35px; word-spacing:1.68px; text-align:center }
+.CenterAlign { text-align:center }
+.reducer { line-height:0; text-align:center; margin-top:0px; margin-bottom:0.1px }
+.PageContent { color:#000; font-family:'Alegreya',serif; font-size:16px; letter-spacing:0.4px; word-spacing:1.92px; line-height:1.75; text-align:left }
+.Footer { color:#000; font-family:'Alegreya',serif; font-size:14px; text-align:center }
+.CenteredContent { color:#000; font-family:'Alegreya',serif; font-size:16px; text-align:center }

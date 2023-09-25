@@ -1,0 +1,90 @@
+body { margin:0px; background-color:#313040; height:100% }
+html { height:100% }
+a:link { color:#008048; text-decoration:underline }
+a:visited { color:#008048; text-decoration:underline }
+a:hover { color:#57bf7c; text-decoration:underline }
+a:active { color:#57bf7c; text-decoration:underline }
+#FooterBox1 a:link { color:#ccc; text-decoration:none }
+#FooterBox1 a:visited { color:#ccc; text-decoration:none }
+#FooterBox1 a:hover { color:#008048; text-decoration:none }
+#FooterBox1 a:active { color:#008048; text-decoration:none }
+#BackToTop a:link { color:#ccc; text-decoration:none }
+#BackToTop a:visited { color:#ccc; text-decoration:none }
+#BackToTop a:hover { color:#008048; text-decoration:none }
+#BackToTop a:active { color:#008048; text-decoration:none }
+#PageDiv { position:relative; min-height:100% }
+#BodyWrapper1 { position:relative; width:100%; height:525px; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#fff; border-bottom:solid #f5f5f5 3px; overflow:visible }
+#InitialImage1 { position:absolute; left:0px; top:0px; width:100%; min-height:525px; z-index:1; background-image:url(../Resources/picjumbo.com_img_.jpg); background-position:left; background-repeat:no-repeat; overflow:visible; font-size:1px; background-size:cover }
+#Image3 { position:absolute; left:0px; top:0px; width:100%; min-height:525px; z-index:2; background-image:url(../Resources/picjumbo.com_img_1.jpg); background-position:left; background-repeat:no-repeat; overflow:visible; font-size:1px; background-size:cover }
+#Image2 { position:absolute; left:0px; top:0px; width:100%; min-height:525px; z-index:3; background-image:url(../Resources/picjumbo.com_img_2.jpg); background-position:left; background-repeat:no-repeat; overflow:visible; font-size:1px; background-size:cover }
+#Image1 { position:absolute; left:0px; top:0px; width:100%; min-height:525px; z-index:4; background-image:url(../Resources/picjumbo.com_img_.jpg); background-position:left; background-repeat:no-repeat; overflow:visible; font-size:1px; background-size:cover }
+#BodyWrapper2 { width:100%; z-index:0; margin-left:auto; margin-right:auto; background-color:#e6e6e6; border-bottom:solid #f5f5f5 3px; overflow:visible }
+#Body2.f-ms { overflow:visible }
+#Body3.f-ms { overflow:visible }
+#Box1 { width:26%; z-index:0; float:left; clear:left; padding-top:10px; padding-bottom:10px; margin-left:5%; overflow:visible }
+#ImageWrapper { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#check { width:64px; overflow:hidden }
+#TitleWrapper { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#Box2 { width:26%; z-index:0; float:left; padding-top:10px; padding-bottom:10px; margin-left:6%; overflow:visible }
+#ImageWrapper1 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#key { width:64px; overflow:hidden }
+#TitleWrapper1 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper1 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#Box3 { width:26%; z-index:0; float:left; clear:right; padding-top:10px; padding-bottom:10px; margin-left:6%; margin-right:5%; overflow:visible }
+#ImageWrapper2 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#clock { width:64px; overflow:hidden }
+#TitleWrapper2 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper2 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#Body4.f-ms { overflow:visible }
+#Box4 { width:18%; z-index:0; float:left; clear:left; padding-top:10px; padding-bottom:10px; margin-left:5%; overflow:visible }
+#ImageWrapper3 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#profle { width:64px; overflow:hidden }
+#TitleWrapper3 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper3 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#Box5 { width:18%; z-index:0; float:left; padding-top:10px; padding-bottom:10px; margin-left:6%; overflow:visible }
+#ImageWrapper4 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#pencil { width:64px; overflow:hidden }
+#TitleWrapper4 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper4 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#Box6 { width:18%; z-index:0; float:left; padding-top:10px; padding-bottom:10px; margin-left:6%; overflow:visible }
+#ImageWrapper5 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#global { width:64px; overflow:hidden }
+#TitleWrapper5 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper5 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#Box7 { width:18%; z-index:0; float:left; clear:right; padding-top:10px; padding-bottom:10px; margin-left:6%; margin-right:5%; overflow:visible }
+#ImageWrapper6 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#phone { width:64px; overflow:hidden }
+#TitleWrapper6 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper6 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#CSSMenu { height:auto; overflow:visible; position:relative }
+.fwNavContainer1 { float:right; position:relative; right:50% }
+#fwNav1 { position:relative; display:block; left:50%; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left }
+#fwNav1 .fwNavItem a { display:block; color:#313040; text-decoration:none; padding:8px 8px 8px 8px }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#008048; text-decoration:none }
+#fwNav1 .fwNavItem a:active { color:#008048; text-decoration:none }
+#fwNav1 .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem a.fwCurrent:hover { display:block; color:#57BF7C }
+* html #fwNav1 { float:left }
+* html #fwNav1 .fwNavItem a { float:left; height:1% }
+@media screen and (max-width:980px)
+{
+	#InitialImage1 { background-position:center }
+	#Image3 { background-position:center }
+	#Image2 { background-position:center }
+	#Image1 { background-position:center }
+	#Box4 { width:45%; margin-left:0px }
+	#Box5 { width:45%; float:right; clear:right; margin-left:0px }
+	#Box6 { width:45%; clear:left; margin-left:0px; margin-top:5% }
+	#Box7 { width:45%; float:right; margin-left:0px; margin-top:5%; margin-right:0px }
+}
+@media screen and (max-width:750px)
+{
+	#Box1 { width:90%; clear:both; margin-right:5% }
+	#Box2 { width:90%; clear:both; margin-left:5%; margin-top:5%; margin-right:5% }
+	#Box3 { width:90%; clear:both; margin-left:5%; margin-top:5% }
+	#Box4 { width:90%; clear:both; margin-left:5%; margin-right:5% }
+	#Box5 { width:90%; clear:both; margin-left:5%; margin-top:5%; margin-right:5% }
+	#Box6 { width:90%; clear:both; margin-left:5%; margin-right:5% }
+	#Box7 { width:90%; margin-left:5%; margin-right:5% }
+}

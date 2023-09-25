@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<meta name="viewport" content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Pro 7.0.3">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/index.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Lato:300+700|Righteous' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+    .fwNavItem a {
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+</style>
+<script type="text/javascript">//<![CDATA[
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old) im.old = im.src;
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/set3icon1a.png");
+	FWLoad("Resources/set3icon1.png");
+	FWLoad("Resources/set3icon2a.png");
+	FWLoad("Resources/set3icon2.png");
+	FWLoad("Resources/set3icon3a.png");
+	FWLoad("Resources/set3icon3.png");
+	FWLoad("Resources/set3icon4a.png");
+	FWLoad("Resources/set3icon4.png");
+	FWLoad("Resources/set3icon5a.png");
+	FWLoad("Resources/set3icon5.png");
+	FWLoad("Resources/set3icon6a.png");
+	FWLoad("Resources/set3icon6.png");
+	FWLoad("Resources/set3icon7a.png");
+	FWLoad("Resources/set3icon7.png");
+	FWLoad("Resources/set3icon8a.png");
+	FWLoad("Resources/set3icon8.png");
+	FWLoad("Resources/set3icon9a.png");
+	FWLoad("Resources/set3icon9.png");
+	FWLoad("Resources/set3icon10a.png");
+	FWLoad("Resources/set3icon10.png");
+	FWLoad("Resources/set3icon11a.png");
+	FWLoad("Resources/set3icon11.png");
+	FWLoad("Resources/set3icon12a.png");
+	FWLoad("Resources/set3icon12.png");
+	FWLoad("Resources/set3icon13a.png");
+	FWLoad("Resources/set3icon13.png");
+}
+//]]></script></head>
+<body onload="FWPreload()">
+<div id="PageDiv" class="f-cf">
+	<div id="PageWrapper" class="f-cf f-ms"><div id="HeaderWrapper" class="f-cf f-ms"><div id="TopWrapper" class="f-cf f-ms"><div id="Menu1" class="f-ms"><p class="BigTitle f-fp">THE<span class="highlight">BAND</span></p>
+				</div>
+				<div id="Menu" class="f-ms"><input type="checkbox" id="fwNav1-toggle">
+					<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+					<div class="fwNavContainer1">
+						<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+						<ul class="CenterAlign f-fp f-lp" id="fwNav1">
+							<li class="fwFirstChild fwNavItem"><a href="#nil" class="fwCurrent"><span class="Menu" style="text-decoration:none">HOME</span></a></li>
+							<li class="fwNavItem"><a href="theband.html"><span class="Menu" style="text-decoration:none">THE BAND</span></a></li>
+							<li class="fwNavItem"><a href="events.html"><span class="Menu" style="text-decoration:none">EVENTS</span></a></li>
+							<li class="fwLastChild fwNavItem"><a href="contact.html"><span class="Menu" style="text-decoration:none">CONTACT</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="Header" class="f-cf"></div>
+		</div>
+		<div id="BodyWrapper1" class="f-cf f-ms"><div id="Body1" class="f-cf"><div id="ContentWrapper1"><div id="Content1" class="f-cf"><h2 class="f-fp">THE BAND</h2>
+						<p class="sub">ROCKIN' SINCE '87</p>
+						<p class="body-centered">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						<p class="body-centered">Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam</p>
+						<p class="body-centered f-lp">Find out more <a href="theband.html">here</a>!</p>
+					</div>
+					<div id="Content3" class="f-cf"><h2 class="f-fp">NEXT EVENT</h2>
+						<p class="sub">HEAR IT HERE FIRST!</p>
+						<p class="body-centered">1st January 2015</p>
+						<p class="body-centered">Tickets available from <a href="www.ticketsite.com" target="_blank">Site One</a>, <a href="www.ticketsite.com" target="_blank">Site Two</a> and <a href="www.ticketsite.com" target="_blank">Site Three</a>.</p>
+						<p class="body-centered f-lp">See more about our events <a href="events.html">here</a>!</p>
+					</div>
+				</div>
+				<div id="Content2"><h2 class="f-fp">PROMO VIDEO</h2>
+					<p class="sub">LATEST RELEASE!</p>
+					<p class="body-centered"><video id="Video720caption" src="Resources/Video(720)-caption.mp4" controls></video></p>
+					<p class="body-centered">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					<p class="body-centered f-lp">Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper2" class="f-cf f-ms"><div id="Body2" class="f-cf"><div id="Content4" class="f-cf"><h2 class="f-fp">UPCOMING EVENTS</h2>
+					<h3>WHERE WE'RE GONNA BE</h3>
+					<p class="body-centered f-lp">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+				<div id="Content5"><h2 class="f-fp">1/1/2015</h2>
+					<p class="body-centered f-lp">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+				<div id="Content6"><h2 class="f-fp">2/2/2015</h2>
+					<p class="body-centered f-lp">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+				<div id="Content7"><h2 class="f-fp">3/3/2015</h2>
+					<p class="body-centered f-lp">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+				<div id="Content8"><h2 class="f-fp">4/4/2015</h2>
+					<p class="body-centered f-lp">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+				<div id="Content9"><h2 class="f-fp">5/5/2015</h2>
+					<p class="body-centered f-lp">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper1" class="f-cf f-ms"><div id="Footer" class="f-cf f-ms"><p class="CenterAlign f-fp"><span class="Footer">© BAND NAME<br>ALL RIGHTS RESERVED</span></p>
+				<p class="CenterAlign"><span class="Footer">FOLLOW US</span></p>
+				<div id="Set3" class="f-cf f-ms"><p class="CenterAlign f-fp f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon1',1,'Resources/set3icon1.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon1\',2,\'Resources/set3icon1.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon1" class="f-ms" src="Resources/set3icon1a.png" alt="Set3Icon1"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon2',1,'Resources/set3icon2.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon2\',2,\'Resources/set3icon2.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon2" class="f-ms" src="Resources/set3icon2a.png" alt="Set3Icon2"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon3',1,'Resources/set3icon3.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon3\',2,\'Resources/set3icon3.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon3" class="f-ms" src="Resources/set3icon3a.png" alt="Set3Icon3"></a><a href="http://www.googleplus.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon4',1,'Resources/set3icon4.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon4\',2,\'Resources/set3icon4.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon4" class="f-ms" src="Resources/set3icon4a.png" alt="Set3Icon4"></a><a href="http://www.flickr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon5',1,'Resources/set3icon5.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon5\',2,\'Resources/set3icon5.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon5" class="f-ms" src="Resources/set3icon5a.png" alt="Set3Icon5"></a><a href="http://www.tumblr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon6',1,'Resources/set3icon6.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon6\',2,\'Resources/set3icon6.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon6" class="f-ms" src="Resources/set3icon6a.png" alt="Set3Icon6"></a><a href="http://www.instagram.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon7',1,'Resources/set3icon7.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon7\',2,\'Resources/set3icon7.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon7" class="f-ms" src="Resources/set3icon7a.png" alt="Set3Icon7"></a><a href="http://www.dribbble.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon8',1,'Resources/set3icon8.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon8\',2,\'Resources/set3icon8.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon8" class="f-ms" src="Resources/set3icon8a.png" alt="Set3Icon8"></a><a href="http://www.pinterest.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon9',1,'Resources/set3icon9.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon9\',2,\'Resources/set3icon9.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon9" class="f-ms" src="Resources/set3icon9a.png" alt="Set3Icon9"></a><a href="http://www.youtube.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon10',1,'Resources/set3icon10.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon10\',2,\'Resources/set3icon10.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon10" class="f-ms" src="Resources/set3icon10a.png" alt="Set3Icon10"></a><a href="http://www.vimeo.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon11',1,'Resources/set3icon11.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon11\',2,\'Resources/set3icon11.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon11" class="f-ms" src="Resources/set3icon11a.png" alt="Set3Icon11"></a><a href="http://www.soundcloud.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon12',1,'Resources/set3icon12.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon12\',2,\'Resources/set3icon12.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon12" class="f-ms" src="Resources/set3icon12a.png" alt="Set3Icon12"></a><a href="http://www.skype.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('Set3Icon13',1,'Resources/set3icon13.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'Set3Icon13\',2,\'Resources/set3icon13.png\',\'\',\'Indigo\')',0)"><img id="Set3Icon13" class="f-ms" src="Resources/set3icon13a.png" alt="Set3Icon13"></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("Menu", 768);
+fwAddListener(document.getElementById("fwNav1-toggle"), "click", function(){
+	fwToggleMenu(this);
+});
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("Menu", 768);
+});
+
+//]]></script></body>
+</html>

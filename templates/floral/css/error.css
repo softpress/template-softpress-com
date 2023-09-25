@@ -1,0 +1,38 @@
+body { margin:0px; background-image:url(../Resources/picjumbo.com_img_.jpg); background-attachment:fixed; height:100% }
+html { height:100% }
+a:link { color:#4c4c4c; text-decoration:underline }
+a:visited { color:#4c4c4c; text-decoration:underline }
+a:hover { color:#8e44ad; text-decoration:underline }
+a:active { color:#8e44ad; text-decoration:underline }
+#PageDiv { position:relative; min-height:100% }
+#GetInTouch { width:70%; z-index:0; padding-top:175px; padding-bottom:25px; margin-left:auto; margin-right:auto }
+#GetInTouch1 { width:70%; z-index:0; padding-top:25px; padding-bottom:175px; margin-left:auto; margin-right:auto }
+#CSSMenu { height:auto; overflow:visible; position:relative }
+.fwNavContainer1 { float:right; position:relative; right:50% }
+#fwNav1 { position:relative; display:block; left:50%; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#333333; text-decoration:none; padding:25px 25px 5px 25px }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#8E44AD; text-decoration:none }
+#fwNav1 .fwNavItem a:active { color:#8E44AD; text-decoration:none }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('../Resources/menu-1-black.png'); background-repeat:no-repeat; background-size:100%; margin-left:auto; margin-right:auto }
+#fwNav1 .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem a.fwCurrent:hover { display:block; color:#9B59B6; font-weight:normal }
+@media screen and (max-width:480px)
+{
+	#GetInTouch1 { width:76.72% }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; left:0; right:0; top:0; bottom:0; background-color:#F5F5F5; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out -webkit-transform; -moz-transition:.2s ease-out -moz-transform; -ms-transition:.2s ease-out -ms-transform; -o-transition:.2s ease-out -o-transform; transition:.2s ease-out transform; -webkit-transform:translate3d(0,-100%,0); -moz-transform:translate3d(0,-100%,0); -ms-transform:translate3d(0,-100%,0); -o-transform:translate3d(0,-100%,0); transform:translate3d(0,-100%,0) }
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNav1-toggle-close { margin:20px auto 20px auto }
+	#fwNav1-toggle:checked ~ .fwNavContainer1 { font-size:1em; -webkit-transform:translate3d(0,0,0); -moz-transform:translate3d(0,0,0); -ms-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); transform:translate3d(0,0,0) }
+}
+@media screen and (max-width:320px)
+{
+	#GetInTouch1 { width:94.69% }
+}

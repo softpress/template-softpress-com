@@ -1,0 +1,31 @@
+#header.f-ms { width:100%; min-height:80px; z-index:0 }
+#header-center.f-ms { position:relative; width:96%; min-height:80px; max-width:2400px; z-index:0; margin-left:auto; margin-right:auto }
+#logo.f-ms { position:absolute; left:10px; top:10px; width:60px; min-height:60px; z-index:1 }
+#nav.f-ms { position:absolute; width:580px; top:16px; right:10px; height:48px; z-index:2 }
+#m1.f-ms { width:100px; height:20px; display:inline-block }
+#m2.f-ms { width:100px; height:20px; display:inline-block }
+#m3.f-ms { width:100px; height:20px; display:inline-block }
+#credit.f-ms { position:fixed; left:0px; right:0px; bottom:0px; min-height:45px; z-index:1 }
+#credit_m.f-ms { position:relative; min-height:25px; margin:0px; padding:10px 20px; background-image:url(../Resources/credit.png); background-position:left top; background-repeat:repeat; background-attachment:scroll }
+#previous.f-ms { width:20px; min-height:40px; z-index:0; float:left; margin-top:-10px; margin-bottom:-10px }
+#next.f-ms { width:20px; min-height:40px; z-index:0; float:right; margin-top:-10px; margin-bottom:-10px }
+#submenu1.f-ms { position:absolute; left:0px; top:-482px; width:100%; z-index:2; padding:10px; background-color:#191919 }
+#photographert.f-ms { width:68px; height:68px; overflow:hidden }
+#submenu2.f-ms { position:absolute; left:0px; top:-380px; width:100%; z-index:3; padding:10px; background-color:#191919 }
+#tunnelt.f-ms { width:68px; height:68px; overflow:hidden }
+#roofstructuret.f-ms { width:68px; height:68px; overflow:hidden }
+#submenu3.f-ms { position:absolute; left:0px; top:-192px; width:100%; z-index:4; padding:10px; background-color:#191919 }
+#eaglet.f-ms { width:68px; height:68px; overflow:hidden }
+#jellyt.f-ms { width:68px; height:68px; overflow:hidden }
+@media screen and (max-width:667px)
+{
+	#nav.f-ms { top:20px; width:auto; height:40px }
+	#submenu1.f-ms { left:-492px; top:-487px; padding:10px 0px }
+	#photographert.f-ms { width:125px; height:auto }
+	#submenu2.f-ms { left:-248px; top:-313px; padding:10px 0px }
+	#tunnelt.f-ms { width:125px; height:auto }
+	#roofstructuret.f-ms { width:125px; height:auto }
+	#submenu3.f-ms { left:480px; top:-313px; padding:10px 0px }
+	#eaglet.f-ms { width:125px; height:auto }
+	#jellyt.f-ms { width:125px; height:auto }
+}

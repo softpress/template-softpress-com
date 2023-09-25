@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js" type="text/javascript">
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js?load=effects" type="text/javascript">
+</script>
+<meta charset="UTF-8">
+<title>Home</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="generator" content="Freeway Pro 7.0">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/index.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Mate|Montserrat|Open+Sans' rel='stylesheet' type='text/css'>
+<script type="text/javascript">//<![CDATA[
+document.observe('dom:loaded', function(evt){
+var v;
+	if((v = Scriptaculous.Version.split('.'))  && v[1] && v[1] == 8 && v[2] && v[2] < 3){
+		Effect.ScrollTo = function(element) {
+			var options = arguments[1] || { },
+			scrollOffsets = document.viewport.getScrollOffsets(),
+			elementOffsets = $(element).cumulativeOffset(),
+			max = document.viewport.getScrollOffsets[0] - document.viewport.getHeight();
+			if (options.offset) elementOffsets[1] += options.offset;
+			return new Effect.Tween(null,
+		 		scrollOffsets.top,
+		 		elementOffsets[1] > max ? max : elementOffsets[1],
+		 		options,
+		 		function(p){ scrollTo(scrollOffsets.left, p.round()) }
+			);
+		};
+	}
+	var anchors = $$('a').reject(function(elm){ return (elm.up('.controls') || elm.className.match(/carousel/)); });
+	anchors.each(function(elm){
+		var ref = elm.href.split(/#/)[1];
+		var t = (!!$(ref)) ? $(ref) : anchors.find(function(em){ return em.name == ref; });
+		if(t){
+			elm.observe('click',function(evt){
+				evt.stop();
+				Effect.ScrollTo(t, {duration:'0.6', offset:-100});
+			});
+		}
+	});
+});
+//]]></script>
+<link rel="stylesheet" type="text/css" href="Resources/showtime-styles.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+<script type="text/javascript" src="Resources/showtime.js">
+</script>
+<script>
+	var m1Showtime;
+	jQuery(function(){
+	m1Showtime = $xb("#m1").xbShowtime({showCaptions: 1, showControls: 1, showInfo: 1, showThumbs: 1});
+	});
+</script>
+</head>
+<body>
+<form action="">
+<div id="PageDiv" class="f-cf">
+	<div id="PageWrapper" class="f-cf f-ms"><div id="TopSpacer1" class="f-cf f-ms"></div>
+		<div id="HeaderWrapper" class="f-cf f-ms"><div id="Header" class="f-cf f-ms"><p class="BigTitle">ESPERANTO</p>
+				<p class="BigSubtitle">We talk your language</p>
+			</div>
+		</div>
+		<div id="BodyWrapper" class="f-cf f-ms"><div id="Body" class="f-cf f-ms"><p class="CenterAlign f-fp"><img id="DeathtoStockWired3" class="f-ms" src="Resources/DeathtoStock_Wired3.jpg" alt="DeathtoStockWired3"></p>
+				<p class="BigTitle"><a id="welcome"><img id="m2" class="f-ms" src="Resources/master.gif" alt=""></a>Welcome</p>
+				<p class="BigSubtitle">Where We Begin</p>
+				<div id="Welcome" class="f-cf f-ms"><p class="PageContentTitle f-fp"><img id="Check" class="f-ms" src="Resources/Check.png" alt="Check"><br>Welcome to our site</p>
+					<p class="PageContent">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					<p class="PageContent f-lp">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis.</p>
+				</div>
+				<p class="BigTitle"><a id="about"><img id="m3" class="f-ms" src="Resources/master.gif" alt=""></a>About Us</p>
+				<p class="BigSubtitle">Get To Know Us</p>
+				<div id="About" class="f-cf f-ms"><div id="AboutLeft" class="f-cf f-ms"><p class="PageContentTitle f-fp"><img id="Person" class="f-ms" src="Resources/Person.png" alt="Person"><br>Who we are</p>
+						<p class="PageContent">Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+						<p class="PageContent">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+						<p class="PageContent">Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+						<p class="PageContent f-lp">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					</div>
+					<div id="AboutRight" class="f-cf f-ms"><p class="PageContentTitle f-fp"><img id="Pencil" class="f-ms" src="Resources/Pencil.png" alt="Pencil"><br>What we do</p>
+						<p class="PageContent">Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.</p>
+						<p class="PageContent">Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+						<p class="PageContent">Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+						<p class="PageContent f-lp">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue.</p>
+					</div>
+				</div>
+				<p class="BigTitle"><a id="gallery"><img id="m4" class="f-ms" src="Resources/master.gif" alt=""></a>Gallery</p>
+				<p class="BigSubtitle">See Some Photos</p>
+				<div id="ShowcaseWrapper" class="f-cf f-ms"><div id="m1"><div class="xb-showtime_slideshow">
+							<div class="xb-showtime_main">
+								<div class="xb-showtime_image">
+									<img src="Resources/DeathtoStock_Wired5.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="xb-showtime_slidereel">
+							<div class="xb-showtime_outer">
+								<div class="xb-showtime_inner">
+									<ul class="xb-showtime_thumbs">
+										<li>
+											<a href="Resources/DeathtoStock_Wired5.jpg" data-width="200" data-height="133">
+												<img src="Resources/DeathtoStock_Wired5_thumb.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="Resources/DeathtoStock_Wired4.jpg" data-width="200" data-height="133">
+												<img src="Resources/DeathtoStock_Wired4_thumb.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="Resources/DeathtoStock_Wired6.jpg" data-width="200" data-height="133">
+												<img src="Resources/DeathtoStock_Wired6_thumb.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="Resources/DeathtoStock_Wired7.jpg" data-width="200" data-height="133">
+												<img src="Resources/DeathtoStock_Wired7_thumb.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="Resources/DeathtoStock_Wired9.jpg" data-width="200" data-height="133">
+												<img src="Resources/DeathtoStock_Wired9_thumb.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="Resources/DeathtoStock_Wired10.jpg" data-width="200" data-height="133">
+												<img src="Resources/DeathtoStock_Wired10_thumb.jpg">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="BigSubtitle">&nbsp;</p>
+				<p class="BigTitle"><a id="contact"><img id="m5" class="f-ms" src="Resources/master.gif" alt=""></a>ContacT</p>
+				<p class="BigSubtitle">Get In Touch</p>
+				<div id="Contact" class="f-cf f-ms"><div id="Email" class="f-cf f-ms"><p class="PageContentTitle f-fp"><img id="Mail" class="f-ms" src="Resources/Mail.png" alt="Mail"><br>Send us a message</p>
+						<p class="CenterAlign"><input id="Name" class="ContactFormFields f-ms" type=text name="Name" placeholder="Johnny Appleseed" size=39 required></p>
+						<p class="CenterAlign"><input id="Email1" class="ContactFormFields f-ms" type=email name="Email" placeholder="&#106;&#111;&#104;&#110;&#110;&#121;&#64;&#97;&#112;&#112;&#108;&#101;&#115;&#101;&#101;&#100;&#46;&#99;&#111;&#109;" size=39 required></p>
+						<p class="CenterAlign"><input id="Subject" class="ContactFormFields f-ms" type=text name="Subject" placeholder="I'm contacting you to say..." size=39 required></p>
+						<p class="CenterAlign"><textarea id="Message" class="f-ms" cols=39 rows=6 name="Message"></textarea></p>
+						<p class="CenterAlign f-lp"><input id="SendFormButton" class="button f-ms" type=submit name="Send" value="Send" required></p>
+					</div>
+					<div id="Comment" class="f-cf f-ms"><p class="PageContentTitle f-fp"><img id="Messages" class="f-ms" src="Resources/Messages.png" alt="Messages"><br>Leave a comment</p>
+						<p class="f-lp"><span id="VisitorComments" class="f-ms"><span id="disqus_thread"></span>
+		<script type="text/javascript">
+			var disqus_shortname = 'Company';
+			var	disqus_identifier = 'Comments';
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+	</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper" class="f-cf f-ms"><div id="Footer" class="f-cf f-ms"><p class="Footer">© Esperanto<br>All Rights Reserved</p>
+				<p class="Footer">Join in the conversation<br><a href="http://www.facebook.com" target="_blank"><img id="facebook" class="f-ms" src="Resources/facebook.png" alt="facebook"></a><a href="http://www.twitter.com" target="_blank"><img id="twitter" class="f-ms" src="Resources/twitter.png" alt="twitter"></a><a href="http://www.flikr.com" target="_blank"><img id="flickr" class="f-ms" src="Resources/flickr.png" alt="flickr"></a><a href="http://dribbble.com"><img id="dribble" class="f-ms" src="Resources/dribble.png" alt="dribble"></a></p>
+				<p class="Footer f-lp">Icon set from <a href="http://designdeck.co.uk/a/246/IC-Minimal-Icon-Set-by-design-deck" target="_blank">DesignDeck</a></p>
+			</div>
+		</div>
+	</div>
+	<div id="dont-delete-me" class="f-ms"><a id="top"><img src="Resources/master.gif" width=33 height=15 alt="dont-delete-me" style="float:left"></a>
+	</div>
+	<div id="CSSMenu" class="CSSMenuSM f-ms"><input type="checkbox" id="fwNav1-toggle">
+		<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+		<div class="fwNavContainer1">
+			<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+			<ul class="f-fp f-lp" id="fwNav1">
+				<li class="fwFirstChild fwNavItem"><a href="#top">Home</a></li>
+				<li class="fwNavItem"><a href="#welcome">Welcome</a></li>
+				<li class="fwNavItem"><a href="#about">About Us</a></li>
+				<li class="fwNavItem"><a href="#gallery">Gallery</a></li>
+				<li class="fwLastChild fwNavItem"><a href="#contact">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</form>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("CSSMenu", 750);
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("CSSMenu", 750);
+});
+
+//]]></script></body>
+</html>

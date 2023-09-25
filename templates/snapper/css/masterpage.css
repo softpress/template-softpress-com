@@ -1,0 +1,45 @@
+#PageWrapper.f-ms { width:100%; z-index:0; background-size:cover }
+#HeaderWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#f0f0f0; overflow:hidden; background-size:cover }
+#Header.f-ms { width:80%; z-index:0; clear:both; padding-top:20px; padding-bottom:20px; margin-left:auto; margin-right:auto; overflow:hidden }
+#NameWrapper.f-ms { width:38%; z-index:0; float:left; padding:1%; margin-top:25px }
+#CSSMenu.f-ms { width:40%; z-index:0; float:right; margin-top:30px }
+#LogoWrapper.f-ms { width:20%; z-index:0; float:left }
+#logo.f-ms { width:100px; height:100px; overflow:hidden }
+#BodyWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#e6e6e6; overflow:hidden }
+#Body.f-ms { width:90%; z-index:0; clear:both; padding-top:2%; padding-bottom:2%; margin-left:auto; margin-right:auto; overflow:hidden }
+#FooterWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#ccc; overflow:hidden }
+#Footer.f-ms { width:80%; z-index:0; clear:both; padding-top:4%; padding-bottom:4%; margin-left:auto; margin-right:auto; overflow:hidden }
+#SocialIcons.f-ms { width:100%; z-index:0; clear:both }
+#facebook.f-ms { left:303px; top:0px; width:38px; height:38px; margin:0px }
+#twitter.f-ms { left:341px; top:0px; width:38px; height:38px; margin:0px }
+#linkedin.f-ms { left:379px; top:0px; width:38px; height:38px; margin:0px }
+#google.f-ms { left:417px; top:0px; width:38px; height:38px; margin:0px }
+#flickr.f-ms { left:455px; top:0px; width:38px; height:38px; margin:0px }
+#tumblr.f-ms { left:493px; top:0px; width:38px; height:38px; margin:0px }
+#instagram.f-ms { left:531px; top:0px; width:38px; height:38px; margin:0px }
+#dribble.f-ms { left:569px; top:0px; width:38px; height:38px; margin:0px }
+#pinterest.f-ms { left:607px; top:0px; width:38px; height:38px; margin:0px }
+#youtube.f-ms { left:645px; top:0px; width:38px; height:38px; margin:0px }
+#vimeo.f-ms { left:683px; top:0px; width:38px; height:38px; margin:0px }
+#FooterContent.f-ms { width:100%; z-index:0; clear:both; padding-top:2% }
+@media screen and (max-width:768px)
+{
+	#Header.f-ms { width:90% }
+	#Body.f-ms { width:96% }
+	#Footer.f-ms { width:90% }
+}
+@media screen and (max-width:667px)
+{
+	#Header.f-ms { width:96% }
+	#NameWrapper.f-ms { width:41.11%; margin-top:10px }
+	#CSSMenu.f-ms { width:10.14%; margin-top:15px }
+	#LogoWrapper.f-ms { width:12.28% }
+	#logo.f-ms { width:60px; height:60px }
+	#Body.f-ms { width:100% }
+	#Footer.f-ms { width:96% }
+}
+@media screen and (max-width:375px)
+{
+	#NameWrapper.f-ms { width:33.61% }
+	#LogoWrapper.f-ms { width:auto }
+}

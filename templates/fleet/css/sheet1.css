@@ -1,0 +1,33 @@
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.f-cf:before,.f-cf:after { content:" "; display:table }
+.f-cf { _zoom:1 }
+.f-cf:after { clear:both }
+em { font-style:italic }
+h1 { font-weight:bold; font-size:18px }
+h1:first-child { margin-top:0px }
+h2 { color:#191919; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 400; font-weight:bold; font-size:26px; margin-bottom:5px }
+h2:first-child { margin-top:0px }
+h3 { font-weight:bold; font-size:14px }
+h3:first-child { margin-top:0px }
+strong { font-weight:bold }
+.BigTitle { color:#e6e6e6; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 400; font-size:36px }
+.Color1 { color:#ffb72b }
+.BigSubtitle { color:#fff; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 400; font-size:20px; text-align:right }
+.CSSMenu { font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 400; font-size:16px; text-align:center }
+.CenterAlign { text-align:center }
+.PageContent { color:#191919; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 300; font-size:16px; margin-top:2px }
+h2.right { color:#191919; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 400; font-weight:bold; font-size:26px; text-align:right; margin-bottom:5px }
+h2:first-child { margin-top:0px }
+.PageContentRIGHT { color:#191919; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 300; font-size:16px; text-align:right; margin-top:2px }
+h2.center { color:#191919; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 400; font-weight:bold; font-size:26px; text-align:center; margin-bottom:5px }
+h2:first-child { margin-top:0px }
+.PageContentCENTER { color:#191919; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 300; font-size:16px; text-align:center; margin-top:2px }
+.Footer { color:#fff; font-family:'Ubuntu', Helvetica, sans-serif; font-weight: 300; font-size:16px; text-align:center; margin-top:0px }

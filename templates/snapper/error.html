@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Error</title>
+<meta name="viewport" content="width = device-width, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="GENERATOR" content="Freeway Pro 7.0.3">
+<link rel=stylesheet href="css/masterpage.css">
+<link rel=stylesheet href="css/success.css">
+<link rel=stylesheet href="css/sheet1.css">
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">//<![CDATA[
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old) im.old = im.src;
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length) {
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try {
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+			} catch(e) {}
+		}
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+	}
+	else
+		FWCallHit(frameset.window["FT_"+chain],targNum,msg);
+}
+
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+
+function FWPreload()
+{
+	FWLoad("Resources/facebook1.png");
+	FWLoad("Resources/facebook.png");
+	FWLoad("Resources/twitter1.png");
+	FWLoad("Resources/twitter.png");
+	FWLoad("Resources/linkedin1.png");
+	FWLoad("Resources/linkedin.png");
+	FWLoad("Resources/google1.png");
+	FWLoad("Resources/google.png");
+	FWLoad("Resources/flickr1.png");
+	FWLoad("Resources/flickr.png");
+	FWLoad("Resources/tumblr1.png");
+	FWLoad("Resources/tumblr.png");
+	FWLoad("Resources/instagram1.png");
+	FWLoad("Resources/instagram.png");
+	FWLoad("Resources/dribble1.png");
+	FWLoad("Resources/dribble.png");
+	FWLoad("Resources/pinterest1.png");
+	FWLoad("Resources/pinterest.png");
+	FWLoad("Resources/youtube1.png");
+	FWLoad("Resources/youtube.png");
+	FWLoad("Resources/vimeo1.png");
+	FWLoad("Resources/vimeo.png");
+}
+//]]></script></head>
+<body onload="FWPreload()">
+<div id="PageDiv">
+	<div id="PageWrapper" class="f-ms"><div id="HeaderWrapper" class="f-ms"><div id="Header" class="f-ms"><div id="NameWrapper" class="f-ms"><p class="LogoText f-fp f-lp">YOUR NAME HERE<br><span class="LogoSub">PHOTOGRAPHER</span></p>
+				</div>
+				<div id="CSSMenu" class="f-ms"><input type="checkbox" id="fwNav1-toggle">
+					<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+					<div class="fwNavContainer1">
+						<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+						<ul class="CSSMenu f-fp f-lp" id="fwNav1">
+							<li class="fwFirstChild fwNavItem"><a href="index.html">ABOUT</a></li>
+							<li class="fwNavItem"><a href="works.html">WORKS</a></li>
+							<li class="fwLastChild fwNavItem"><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="LogoWrapper" class="f-ms"><p class="CenterAlign f-fp f-lp"><img id="logo" class="f-ms" src="Resources/logo.png" alt="logo"></p>
+				</div>
+			</div>
+		</div>
+		<div id="BodyWrapper" class="f-ms"><div id="Body" class="f-ms"><div id="Message"><h2 class="f-fp">SORRY</h2>
+					<h3>something went wrong</h3>
+					<p class="PageContent">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					<p class="PageContent f-lp">Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.</p>
+				</div>
+			</div>
+		</div>
+		<div id="FooterWrapper" class="f-ms"><div id="Footer" class="f-ms"><div id="SocialIcons" class="f-ms"><p class="CenterAlign f-fp f-lp"><a href="http://www.facebook.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('facebook',1,'Resources/facebook.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'facebook\',2,\'Resources/facebook.png\',\'\',\'Indigo\')',0)"><img id="facebook" class="f-ms" src="Resources/facebook1.png" alt="facebook"></a><a href="http://www.twitter.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('twitter',1,'Resources/twitter.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'twitter\',2,\'Resources/twitter.png\',\'\',\'Indigo\')',0)"><img id="twitter" class="f-ms" src="Resources/twitter1.png" alt="twitter"></a><a href="http://www.linkedin.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('linkedin',1,'Resources/linkedin.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'linkedin\',2,\'Resources/linkedin.png\',\'\',\'Indigo\')',0)"><img id="linkedin" class="f-ms" src="Resources/linkedin1.png" alt="linkedin"></a><a href="http://www.googleplus.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('google',1,'Resources/google.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'google\',2,\'Resources/google.png\',\'\',\'Indigo\')',0)"><img id="google" class="f-ms" src="Resources/google1.png" alt="google"></a><a href="http://www.flickr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('flickr',1,'Resources/flickr.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'flickr\',2,\'Resources/flickr.png\',\'\',\'Indigo\')',0)"><img id="flickr" class="f-ms" src="Resources/flickr1.png" alt="flickr"></a><a href="http://www.tumblr.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('tumblr',1,'Resources/tumblr.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'tumblr\',2,\'Resources/tumblr.png\',\'\',\'Indigo\')',0)"><img id="tumblr" class="f-ms" src="Resources/tumblr1.png" alt="tumblr"></a><a href="http://www.instagram.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('instagram',1,'Resources/instagram.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'instagram\',2,\'Resources/instagram.png\',\'\',\'Indigo\')',0)"><img id="instagram" class="f-ms" src="Resources/instagram1.png" alt="instagram"></a><a href="http://www.dribbble.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('dribble',1,'Resources/dribble.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'dribble\',2,\'Resources/dribble.png\',\'\',\'Indigo\')',0)"><img id="dribble" class="f-ms" src="Resources/dribble1.png" alt="dribble"></a><a href="http://www.pinterest.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('pinterest',1,'Resources/pinterest.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'pinterest\',2,\'Resources/pinterest.png\',\'\',\'Indigo\')',0)"><img id="pinterest" class="f-ms" src="Resources/pinterest1.png" alt="pinterest"></a><a href="http://www.youtube.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('youtube',1,'Resources/youtube.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'youtube\',2,\'Resources/youtube.png\',\'\',\'Indigo\')',0)"><img id="youtube" class="f-ms" src="Resources/youtube1.png" alt="youtube"></a><a href="http://www.vimeo.com" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('vimeo',1,'Resources/vimeo.png','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')" onclick="setTimeout('FWRestore(2,\'Indigo\');FWLSwap(\'vimeo\',2,\'Resources/vimeo.png\',\'\',\'Indigo\')',0)"><img id="vimeo" class="f-ms" src="Resources/vimeo1.png" alt="vimeo"></a></p>
+				</div>
+				<div id="FooterContent" class="f-ms"><p class="Footer f-fp f-lp">© YOUR NAME HERE<br>ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("CSSMenu", 768);
+fwAddListener(document.getElementById("fwNav1-toggle"), "click", function(){
+	fwToggleMenu(this);
+});
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("CSSMenu", 768);
+});
+
+//]]></script></body>
+</html>

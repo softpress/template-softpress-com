@@ -1,0 +1,66 @@
+body { margin:0px; background-color:#333; height:100% }
+html { height:100% }
+#Body1 a:link { color:#4c6075; text-decoration:underline }
+#Body1 a:visited { color:#4c6075; text-decoration:underline }
+#Body1 a:hover { color:#93b2ff; text-decoration:underline }
+#Body1 a:active { color:#93b2ff; text-decoration:underline }
+#Body2 a:link { color:#4c6075; text-decoration:underline }
+#Body2 a:visited { color:#4c6075; text-decoration:underline }
+#Body2 a:hover { color:#93b2ff; text-decoration:underline }
+#Body2 a:active { color:#93b2ff; text-decoration:underline }
+#Footer a:link { color:#e6e6e6; text-decoration:none }
+#Footer a:visited { color:#e6e6e6; text-decoration:none }
+#Footer a:hover { color:#93b2ff; text-decoration:none }
+#Footer a:active { color:#93b2ff; text-decoration:none }
+#PageDiv { position:relative; min-height:100% }
+#Box1 { width:95.79%; z-index:0; float:left; padding:2%; border:solid #ccc 1px }
+#profle { width:64px; float:left; margin-left:1%; margin-right:15px; margin-bottom:15px }
+#Box2 { width:95.79%; z-index:0; float:right; padding:2%; margin-top:50px; border:solid #ccc 1px }
+#calendar { width:64px; float:right; margin-left:15px; margin-right:1%; margin-bottom:15px }
+#Box3 { width:75%; z-index:0; float:left; clear:left; padding-top:15px; padding-bottom:15px; border:solid #ccc 1px }
+#ImageWrapper1 { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto }
+#chat { width:64px; overflow:hidden }
+#TitleWrapper1 { width:96%; z-index:0; padding-left:2%; padding-top:15px; padding-right:2%; margin-left:auto; margin-right:auto }
+#ContentWrapper1 { width:96%; z-index:0; clear:both; padding-left:2%; padding-top:15px; padding-right:2%; margin-left:auto; margin-right:auto }
+#Box4 { width:20%; z-index:0; float:right; padding-top:15px; padding-bottom:15px; border:solid #ccc 1px }
+#ImageWrapper2 { width:90%; z-index:0; clear:both; padding-left:5%; padding-right:5%; margin-left:auto; margin-right:auto }
+#mail { width:64px; overflow:hidden }
+#TitleWrapper2 { width:96%; z-index:0; padding-left:2%; padding-top:15px; padding-right:2%; margin-left:auto; margin-right:auto }
+#ContentWrapper2 { width:96%; z-index:0; clear:both; padding-left:2%; padding-top:15px; padding-right:2%; margin-left:auto; margin-right:auto }
+#CSSMenu { height:auto; overflow:visible; position:relative }
+.fwNavContainer1 { float:right; position:relative; right:50% }
+#fwNav1 { position:relative; display:block; left:50%; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#333333; text-decoration:none; padding:5px 6px 5px 6px }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#93B2FF; text-decoration:none }
+#fwNav1 .fwNavItem a:active { color:#93B2FF; text-decoration:none }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('../Resources/menu-1-black.png'); background-repeat:no-repeat; background-size:100%; margin-left:auto; margin-right:auto }
+#fwNav1 .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem a.fwCurrent:hover { display:block; color:#93B2FF; font-weight:normal }
+@media screen and (max-width:768px)
+{
+	#Box1 { width:95% }
+	#Box2 { width:95%; margin-top:8% }
+	#Box3 { width:95%; float:none; clear:both; margin-left:auto; margin-right:auto }
+	#Box4 { width:95%; float:none; clear:both; margin-left:auto; margin-top:8%; margin-right:auto }
+}
+@media screen and (max-width:480px)
+{
+	#Box1 { width:95.54% }
+	#Box2 { width:95.71% }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; left:0; right:0; top:0; bottom:0; background-color:#F5F5F5; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out -webkit-transform; -moz-transition:.2s ease-out -moz-transform; -ms-transition:.2s ease-out -ms-transform; -o-transition:.2s ease-out -o-transform; transition:.2s ease-out transform; -webkit-transform:translate3d(0,-100%,0); -moz-transform:translate3d(0,-100%,0); -ms-transform:translate3d(0,-100%,0); -o-transform:translate3d(0,-100%,0); transform:translate3d(0,-100%,0) }
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:40px; padding-bottom:40px; padding-left:20px; padding-right:20px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNav1-toggle-close { background-image:url('../Resources/menu-close-black.png'); margin:40px auto 20px auto }
+	#fwNav1-toggle:checked ~ .fwNavContainer1 { font-size:1em; -webkit-transform:translate3d(0,0,0); -moz-transform:translate3d(0,0,0); -ms-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); transform:translate3d(0,0,0) }
+}
+@media screen and (max-width:320px)
+{
+	#Box1 { width:95.31% }
+}

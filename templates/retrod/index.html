@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript">
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?load=effects" type="text/javascript">
+</script>
+<meta charset="UTF-8">
+<title>Home</title>
+<meta name="viewport" content="width = device-width, initial-scale = 1.00, minimum-scale = 0.25, maximum-scale = 1.60">
+<meta name="generator" content="Freeway Pro 7.0.1b18">
+<style type="text/css">
+<!--
+body { margin:0px; background-color:#524656; height:100% }
+html { height:100% }
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.f-cf:before,.f-cf:after { content:" "; display:table }
+.f-cf { _zoom:1 }
+.f-cf:after { clear:both }
+a:link { text-decoration:none }
+a:visited { text-decoration:none }
+a:hover { text-decoration:none }
+a:active { text-decoration:none }
+#hero a:link { color:#eb7b59 }
+#hero a:visited { color:#eb7b59 }
+#hero a:hover { color:#a7c5bd }
+#hero a:active { color:#a10a18 }
+#artwork a:link { color:#eb7b59 }
+#artwork a:visited { color:#eb7b59 }
+#artwork a:hover { color:#a7c5bd }
+#artwork a:active { color:#a10a18 }
+#photography a:link { color:#524656 }
+#photography a:visited { color:#524656 }
+#photography a:hover { color:#a7c5bd }
+#photography a:active { color:#a10a18 }
+#movies a:link { color:#eb7b59 }
+#movies a:visited { color:#eb7b59 }
+#movies a:hover { color:#a7c5bd }
+#movies a:active { color:#a10a18 }
+#projects a:link { color:#7c6584 }
+#projects a:visited { color:#7c6584 }
+#projects a:hover { color:#eb7b59 }
+#projects a:active { color:#a10a18 }
+#contact a:link { color:#a7c5bd }
+#contact a:visited { color:#a7c5bd }
+#contact a:hover { color:#524656 }
+#contact a:active { color:#e5ddcb }
+#footer a:link { color:#eb7b59 }
+#footer a:visited { color:#eb7b59 }
+#footer a:hover { color:#a7c5bd }
+#footer a:active { color:#a10a18 }
+blockquote { font-family:Montserrat; font-size:17px; margin-left:20px; margin-right:20px; background-color:rgba(255,255,255,0.2); padding:14px; border:solid 1px rgba(0,0,0,0.1) }
+em { font-style:italic }
+h1 { color:#fff; font-family:Montserrat; font-size:40px; text-transform:uppercase; text-align:center; font-weight:normal }
+h1:first-child { margin-top:0px }
+h2 { color:#fff; font-family:Montserrat; font-size:20px; text-transform:uppercase; text-align:center; margin-bottom:20px; font-weight:normal }
+h2:first-child { margin-top:0px }
+h3 { color:#fff; font-family:Montserrat; font-size:18px; text-transform:none; font-variant:normal; text-align:center; margin-bottom:16px; font-weight:normal }
+h3:first-child { margin-top:0px }
+input:focus, textarea:focus { background-color:#e4535a; outline:none; border:1px solid rgba(255,255,255,0.7) !important }
+strong { font-weight:bold }
+.highlight { color:#a7c5bd }
+.logotail { color:#eb7b59 }
+.center { text-align:center }
+.darken { color:#524656 }
+.body { color:#fff; font-family:Montserrat; font-size:17px; line-height:24px }
+.lighten { color:#fff }
+.bodycenter { color:#fff; font-family:Montserrat; font-size:17px; text-align:center }
+.bodysmall { font-size:14px }
+.button { color:#524656; font-family:Montserrat; font-size:17px }
+.logo { color:#524656; font-family:Montserrat; font-size:40px }
+.navigation { font-family:Montserrat; text-transform:uppercase }
+#PageDiv { position:relative; min-height:100% }
+#hero-wrap.f-ms { width:100%; z-index:0; margin-top:100px; background-color:#524656; border-bottom:solid #7c6584 1px }
+#hero.f-ms { width:97.92%; max-width:940px; z-index:0; margin-left:auto; margin-right:auto }
+#leader.f-ms { width:87.23%; max-width:820px; z-index:0; margin:70px auto }
+#hero-column.f-ms { width:25%; min-height:100px; z-index:0; float:left; margin-bottom:70px }
+#view.f-ms { width:151px; height:152px; overflow:hidden }
+#hero-artwork.f-ms { width:162px; z-index:0; margin-left:auto; margin-right:auto }
+#hero-column1.f-ms { width:25%; min-height:100px; z-index:0; float:left; margin-bottom:70px }
+#camera.f-ms { width:163px; height:152px; overflow:hidden }
+#hero-photography.f-ms { width:162px; z-index:0; margin-left:auto; margin-right:auto }
+#hero-column2.f-ms { width:25%; min-height:100px; z-index:0; float:left; margin-bottom:70px }
+#film.f-ms { width:126px; height:152px; overflow:hidden }
+#hero-movies.f-ms { width:135px; z-index:0; margin-left:auto; margin-right:auto }
+#hero-column3.f-ms { width:25%; min-height:100px; z-index:0; float:left; margin-bottom:70px }
+#flag.f-ms { width:151px; height:152px; overflow:hidden }
+#hero-projects.f-ms { width:162px; z-index:0; margin-left:auto; margin-right:auto }
+#artwork-wrap.f-ms { width:100%; z-index:0; background-color:#e5ddcb; border-bottom:solid #f5ebd3 1px }
+#artwork.f-ms { width:97.92%; max-width:940px; z-index:0; margin-left:auto; margin-right:auto }
+#artwork-leader.f-ms { width:87.23%; max-width:820px; z-index:0; margin:70px auto }
+#artwork-leader-image.f-ms { left:280px; top:0px; width:32px; height:41px; vertical-align:top; margin-right:12px; overflow:hidden }
+#artwork-image-1.f-ms { width:32%; height:211px; z-index:0; float:left; margin-bottom:15px; background-color:#f5ebd3 }
+#artwork-image-2.f-ms { width:32%; height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:15px; background-color:#f5ebd3 }
+#artwork-image-3.f-ms { width:32%; height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:15px; background-color:#f5ebd3 }
+#artwork-image-4.f-ms { width:32%; height:211px; z-index:0; float:left; margin-bottom:30px; background-color:#f5ebd3 }
+#artwork-image-5.f-ms { width:32%; height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:30px; background-color:#f5ebd3 }
+#artwork-image-6.f-ms { width:32%; height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:30px; background-color:#f5ebd3 }
+#artwork-text.f-ms { width:87.23%; max-width:820px; z-index:0; clear:both; margin-left:auto; margin-right:auto; margin-bottom:70px }
+#photography-wrap.f-ms { width:100%; z-index:0; background-color:#eb7b59; border-bottom:solid #e4535a 1px }
+#photography.f-ms { width:97.92%; max-width:940px; z-index:0; margin-left:auto; margin-right:auto }
+#photography-leader.f-ms { width:87.23%; max-width:820px; z-index:0; margin:70px auto }
+#photography-leader-image.f-ms { left:227px; top:0px; width:32px; height:42px; vertical-align:top; margin-right:12px; overflow:hidden }
+#photography-image-1.f-ms { width:32%; height:211px; z-index:0; float:left; margin-bottom:15px; background-color:#e5947e }
+#photography-image-2.f-ms { width:32%; height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:15px; background-color:#e5947e }
+#photography-image-3.f-ms { width:32%; height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:15px; background-color:#e5947e }
+#photography-image-4.f-ms { width:32%; height:211px; z-index:0; float:left; margin-bottom:30px; background-color:#e5947e }
+#photography-image-5.f-ms { width:32%; height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:30px; background-color:#e5947e }
+#photography-image-6.f-ms { width:32%; height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:30px; background-color:#e5947e }
+#photography-text.f-ms { width:87.23%; max-width:820px; z-index:0; clear:both; margin-left:auto; margin-right:auto; margin-bottom:70px }
+#movies-wrap.f-ms { width:100%; z-index:0; background-color:#524656; border-bottom:solid #7c6584 1px }
+#movies.f-ms { width:97.92%; max-width:940px; z-index:0; margin-left:auto; margin-right:auto }
+#movies-leader.f-ms { width:87.23%; max-width:820px; z-index:0; margin:70px auto }
+#movies-leader-image.f-ms { left:306px; top:0px; width:32px; height:42px; vertical-align:top; margin-right:12px; overflow:hidden }
+#movies-image-1.f-ms { width:32%; min-height:211px; z-index:0; float:left; margin-bottom:15px; background-color:#7c6584 }
+#movies-image-2.f-ms { width:32%; min-height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:15px; background-color:#7c6584 }
+#movies-image-3.f-ms { width:32%; min-height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:15px; background-color:#7c6584 }
+#movies-image-4.f-ms { width:32%; min-height:211px; z-index:0; float:left; margin-bottom:70px; background-color:#7c6584 }
+#movies-image-5.f-ms { width:32%; min-height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:70px; background-color:#7c6584 }
+#movies-image-6.f-ms { width:32%; min-height:211px; z-index:0; float:left; margin-left:2%; margin-bottom:70px; background-color:#7c6584 }
+#projects-wrap.f-ms { width:100%; z-index:0; background-color:#a7c5bd; border-bottom:solid #afd6cb 1px }
+#projects.f-ms { width:97.92%; max-width:940px; z-index:0; margin-left:auto; margin-right:auto }
+#projects-leader.f-ms { width:87.23%; max-width:820px; z-index:0; margin:70px auto }
+#projects-leader-image.f-ms { left:279px; top:0px; width:32px; height:42px; vertical-align:top; margin-right:12px; overflow:hidden }
+#MiniDeskTop.f-ms { width:470px; max-width:50%; float:left; margin-left:10% }
+#MiniLapTop.f-ms { width:456px; max-width:48.51%; float:left; margin-left:-25%; margin-top:150px; margin-bottom:35px }
+#projects-text.f-ms { width:87.23%; max-width:820px; z-index:0; clear:both; margin:30px auto 70px }
+#contact-wrap.f-ms { width:100%; z-index:0; background-color:#cf4647; border-bottom:solid #e4535a 1px }
+#contact.f-ms { width:97.92%; max-width:940px; z-index:0; margin-left:auto; margin-right:auto }
+#contact-leader.f-ms { width:87.23%; max-width:820px; z-index:0; margin:70px auto }
+#contact-leader-image.f-ms { left:260px; top:0px; width:44px; height:41px; vertical-align:top; margin-right:12px; overflow:hidden }
+#form.f-ms { width:87.23%; min-height:100px; max-width:820px; z-index:0; margin-left:auto; margin-right:auto; margin-bottom:70px }
+#form-left.f-ms { width:37.98%; min-height:100px; z-index:0; float:left }
+#contact-name-label.f-ms { width:100px; min-height:18px; z-index:0 }
+#contact-name.f-ms { width:88%; height:20px; padding:10px; background-color:#e4535a; border:solid #a10a18 1px }
+#contact-email-label.f-ms { width:100px; min-height:18px; z-index:0 }
+#contact-email.f-ms { width:88%; height:20px; padding:10px; background-color:#e4535a; border:solid #a10a18 1px }
+#form-right.f-ms { width:55.64%; min-height:170px; z-index:0; float:right }
+#contact-message-label.f-ms { width:100px; min-height:18px; z-index:0 }
+#contact-message.f-ms { width:88%; height:127px; padding:10px; background-color:#e4535a; border:solid #a10a18 1px }
+#contact-assurance.f-ms { width:61.37%; min-height:21px; z-index:0; float:left; margin-right:20px }
+#contact-send.f-ms { width:114px; height:37px; vertical-align:middle; background-color:#e5ddcb; border:solid #a10a18 1px }
+#footer-wrap.f-ms { width:100%; z-index:0; background-color:#524656 }
+#footer.f-ms { max-width:960px; z-index:0; margin-left:auto; margin-right:auto }
+#footer-copyright.f-ms { width:100%; z-index:0; margin:40px auto }
+#header.f-ms { position:fixed; left:0px; top:0px; width:100%; min-height:100px; z-index:1; background-color:#fff; box-shadow:0px 2px 2px rgba(82,70,86,0.30) }
+#header-title.f-ms { position:absolute; left:40px; top:25px; z-index:1 }
+#header-nav.f-ms { position:absolute; width:621px; top:0px; right:29px; z-index:2 }
+#header-nav { height:auto; overflow:visible }
+#fwNav1 { float:right; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#524656; text-decoration:none; background:#FFFFFF; padding:41px 14px 40px 14px }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#FFFFFF; text-decoration:none; background:#EB7B59 }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('Resources/menu.png'); background-repeat:no-repeat; background-size:100%; float:right }
+@media screen and (max-width:865px)
+{
+	#header-nav.f-ms { top:31px; width:266px; height:40px }
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; top:0; right:0; bottom:100%; left:0; margin-top:-100%; background-color:#FFFFFF; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out margin, .2s ease-out bottom; -moz-transition:.2s ease-out margin, .2s ease-out bottom; -ms-transition:.2s ease-out margin, .2s ease-out bottom; -o-transition:.2s ease-out margin, .2s ease-out bottom; transition:.2s ease-out margin, .2s ease-out bottom }
+	.fwNav1-toggle-close { background-image:url('Resources/close-round.png'); margin:31px 29px 20px 20px }
+	.fwNavContainer1.fwMenuOn { margin-top:0; bottom:0 }
+}
+@media screen and (max-width:768px)
+{
+	#hero-column.f-ms { width:50% }
+	#hero-column1.f-ms { width:50% }
+	#hero-column2.f-ms { width:50% }
+	#hero-column3.f-ms { width:50% }
+	#form-left.f-ms { width:auto; float:none }
+	#contact-name.f-ms { width:96.04% }
+	#contact-email.f-ms { width:96.04% }
+	#form-right.f-ms { width:auto; float:none }
+	#contact-message.f-ms { width:96.04% }
+	#contact-assurance.f-ms { width:auto; float:none; margin-right:0px }
+	#contact-send.f-ms { width:99.09% }
+}
+@media screen and (max-width:667px)
+{
+	#artwork-image-1.f-ms { width:49% }
+	#artwork-image-2.f-ms { width:49% }
+	#artwork-image-3.f-ms { width:49%; margin-left:0px }
+	#artwork-image-4.f-ms { width:49%; margin-left:2%; margin-bottom:15px }
+	#artwork-image-5.f-ms { width:49%; margin-left:0px }
+	#artwork-image-6.f-ms { width:49% }
+	#photography-image-1.f-ms { width:49% }
+	#photography-image-2.f-ms { width:49% }
+	#photography-image-3.f-ms { width:49%; margin-left:0px }
+	#photography-image-4.f-ms { width:49%; margin-left:2%; margin-bottom:15px }
+	#photography-image-5.f-ms { width:49%; margin-left:0px }
+	#photography-image-6.f-ms { width:49% }
+	#movies-image-1.f-ms { width:49% }
+	#movies-image-2.f-ms { width:49% }
+	#movies-image-3.f-ms { width:49%; margin-left:0px }
+	#movies-image-4.f-ms { width:49%; margin-left:2%; margin-bottom:15px }
+	#movies-image-5.f-ms { width:49%; margin-left:0px }
+	#movies-image-6.f-ms { width:49% }
+	#contact-name.f-ms { width:95.44% }
+	#contact-email.f-ms { width:95.44% }
+	#contact-message.f-ms { width:95.44% }
+	#contact-assurance.f-ms { margin-left:auto; margin-right:auto }
+	#contact-send.f-ms { width:98.82% }
+	#footer.f-ms { max-width:667px }
+}
+@media screen and (max-width:375px)
+{
+	#hero-column.f-ms { width:100% }
+	#hero-column1.f-ms { width:100% }
+	#hero-column2.f-ms { width:100% }
+	#hero-column3.f-ms { width:100% }
+	#artwork-leader.f-ms { width:auto; max-width:367px }
+	#artwork-image-1.f-ms { width:100% }
+	#artwork-image-2.f-ms { width:100%; margin-left:0px }
+	#artwork-image-3.f-ms { width:100% }
+	#artwork-image-4.f-ms { width:100%; margin-left:0px }
+	#artwork-image-5.f-ms { width:100% }
+	#artwork-image-6.f-ms { width:100%; margin-left:0px }
+	#artwork-text.f-ms { width:96% }
+	#photography-leader.f-ms { width:auto; max-width:367px }
+	#photography-image-1.f-ms { width:100% }
+	#photography-image-2.f-ms { width:100%; margin-left:0px }
+	#photography-image-3.f-ms { width:100% }
+	#photography-image-4.f-ms { width:100%; margin-left:0px }
+	#photography-image-5.f-ms { width:100% }
+	#photography-image-6.f-ms { width:100%; margin-left:0px }
+	#photography-text.f-ms { width:96% }
+	#movies-leader.f-ms { width:auto; max-width:367px }
+	#movies-image-1.f-ms { width:100% }
+	#movies-image-2.f-ms { width:100%; margin-left:0px }
+	#movies-image-3.f-ms { width:100% }
+	#movies-image-4.f-ms { width:100%; margin-left:0px }
+	#movies-image-5.f-ms { width:100%; margin-bottom:15px }
+	#movies-image-6.f-ms { width:100%; margin-left:0px }
+	#projects-leader.f-ms { width:auto; max-width:367px }
+	#MiniDeskTop.f-ms { width:184px; margin-left:4% }
+	#MiniLapTop.f-ms { width:201px; float:right; margin:-70px 2% 20px 0px }
+	#projects-text.f-ms { width:96% }
+	#contact-leader.f-ms { width:auto; max-width:367px }
+	#form.f-ms { width:96% }
+	#contact-name.f-ms { width:92.62% }
+	#contact-email.f-ms { width:92.62% }
+	#form-right.f-ms { margin-top:15px }
+	#contact-message.f-ms { width:92.62% }
+	#contact-send.f-ms { width:98.3% }
+	#footer.f-ms { max-width:375px }
+}
+-->
+</style>
+<!--[if lt IE 9]>
+<script src="Resources/html5shiv.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<script type="text/javascript">//<![CDATA[
+document.observe('dom:loaded', function(evt){
+var v;
+	if((v = Scriptaculous.Version.split('.'))  && v[1] && v[1] == 8 && v[2] && v[2] < 3){
+		Effect.ScrollTo = function(element) {
+			var options = arguments[1] || { },
+			scrollOffsets = document.viewport.getScrollOffsets(),
+			elementOffsets = $(element).cumulativeOffset(),
+			max = document.viewport.getScrollOffsets[0] - document.viewport.getHeight();
+			if (options.offset) elementOffsets[1] += options.offset;
+			return new Effect.Tween(null,
+		 		scrollOffsets.top,
+		 		elementOffsets[1] > max ? max : elementOffsets[1],
+		 		options,
+		 		function(p){ scrollTo(scrollOffsets.left, p.round()) }
+			);
+		};
+	}
+	var anchors = $$('a').reject(function(elm){ return (elm.up('.controls') || elm.className.match(/carousel/)); });
+	anchors.each(function(elm){
+		var ref = elm.href.split(/#/)[1];
+		var t = (!!$(ref)) ? $(ref) : anchors.find(function(em){ return em.name == ref; });
+		if(t){
+			elm.observe('click',function(evt){
+				evt.stop();
+				Effect.ScrollTo(t, {duration:'0.6', offset:-100});
+			});
+		}
+	});
+});
+//]]></script>
+</head>
+<body>
+<div id="PageDiv" class="f-cf">
+	<div id="hero-wrap" class="f-cf f-ms"><section id="hero" class="f-cf f-ms"><div id="leader" class="f-cf f-ms"><h1 class="f-fp f-lp">We’re <span class="highlight">RETRO</span><span class="logotail">’D</span> and we create</h1>
+			</div>
+			<div id="hero-column" class="center f-ms"><p class="f-fp"><img id="view" class="f-ms" src="Resources/view.png" alt="artwork"></p>
+				<div id="hero-artwork" class="f-cf f-ms"><h2 class="f-fp">Artwork</h2>
+				</div>
+			</div>
+			<div id="hero-column1" class="center f-ms"><p class="f-fp"><img id="camera" class="f-ms" src="Resources/camera.png" alt="photography"></p>
+				<div id="hero-photography" class="f-cf f-ms"><h2 class="f-fp">Photography</h2>
+				</div>
+			</div>
+			<div id="hero-column2" class="center f-ms"><p class="f-fp"><img id="film" class="f-ms" src="Resources/film.png" alt="movies "></p>
+				<div id="hero-movies" class="f-cf f-ms"><h2 class="f-fp">Movies</h2>
+				</div>
+			</div>
+			<div id="hero-column3" class="center f-ms"><p class="f-fp"><img id="flag" class="f-ms" src="Resources/flag.png" alt="projects "></p>
+				<div id="hero-projects" class="f-cf f-ms"><h2 class="f-fp">Projects</h2>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div id="artwork-wrap" class="f-cf f-ms"><section id="artwork" class="f-cf f-ms"><div id="artwork-leader" class="f-cf f-ms"><h1 class="f-fp f-lp"><img id="artwork-leader-image" class="f-ms" src="Resources/artwork-leader-im.png" alt="artwork-leader-image"><span class="darken">Artwork</span></h1>
+			</div>
+			<div id="artwork-image-1" class="f-ms"></div>
+			<div id="artwork-image-2" class="f-ms"></div>
+			<div id="artwork-image-3" class="f-ms"></div>
+			<div id="artwork-image-4" class="f-ms"></div>
+			<div id="artwork-image-5" class="f-ms"></div>
+			<div id="artwork-image-6" class="f-ms"></div>
+			<div id="artwork-text" class="f-cf f-ms"><h2 class="f-fp"><span class="darken">Inspiration and Motivation</span></h2>
+				<p class="body"><span class="darken">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</span></p>
+				<blockquote><span class="darken">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought.</span></blockquote>
+				<p class="body f-lp"><span class="darken">It wasn’t a dream.</span></p>
+			</div>
+		</section>
+	</div>
+	<div id="photography-wrap" class="f-cf f-ms"><section id="photography" class="f-cf f-ms"><div id="photography-leader" class="f-cf f-ms"><h1 class="f-fp f-lp"><img id="photography-leader-image" class="f-ms" src="Resources/photography-leade.png" alt="photography-leader-image">Photography</h1>
+			</div>
+			<div id="photography-image-1" class="f-ms"></div>
+			<div id="photography-image-2" class="f-ms"></div>
+			<div id="photography-image-3" class="f-ms"></div>
+			<div id="photography-image-4" class="f-ms"></div>
+			<div id="photography-image-5" class="f-ms"></div>
+			<div id="photography-image-6" class="f-ms"></div>
+			<div id="photography-text" class="f-cf f-ms"><h2 class="f-fp">Life through the lens</h2>
+				<p class="body">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. </p>
+				<ul class="body">
+					<li><span class="lighten">He lay on his armour-like back, </span></li>
+					<li><span class="lighten">and if he lifted his head a little he could see his brown belly, </span></li>
+					<li><span class="lighten">slightly domed and divided by arches into stiff sections.</span></li>
+				</ul>
+				<p class="body f-lp">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought. It wasn’t a dream.</p>
+			</div>
+		</section>
+	</div>
+	<div id="movies-wrap" class="f-cf f-ms"><section id="movies" class="f-cf f-ms"><div id="movies-leader" class="f-cf f-ms"><h1 class="f-fp f-lp"><img id="movies-leader-image" class="f-ms" src="Resources/movies-leader-ima.png" alt="movies-leader-image">Movies</h1>
+			</div>
+			<div id="movies-image-1" class="f-ms"></div>
+			<div id="movies-image-2" class="f-ms"></div>
+			<div id="movies-image-3" class="f-ms"></div>
+			<div id="movies-image-4" class="f-ms"></div>
+			<div id="movies-image-5" class="f-ms"></div>
+			<div id="movies-image-6" class="f-ms"></div>
+		</section>
+	</div>
+	<div id="projects-wrap" class="f-cf f-ms"><section id="projects" class="f-cf f-ms"><div id="projects-leader" class="f-cf f-ms"><h1 class="f-fp f-lp"><img id="projects-leader-image" class="f-ms" src="Resources/projects-leader-i.png" alt="projects-leader-image">Projects</h1>
+			</div>
+			<p><img id="MiniDeskTop" class="f-ms" src="Resources/MiniDeskTop.png" alt="MiniDeskTop"><img id="MiniLapTop" class="f-ms" src="Resources/MiniLapTop.png" alt="">&nbsp;</p>
+			<div id="projects-text" class="f-cf f-ms"><h2 class="f-fp">Is the world becoming flat?</h2>
+				<p class="body">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. </p>
+				<blockquote><span class="lighten">He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</span></blockquote>
+				<p class="body f-lp">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought. It wasn’t a dream.</p>
+			</div>
+		</section>
+	</div>
+	<div id="contact-wrap" class="f-cf f-ms"><section id="contact" class="f-cf f-ms"><div id="contact-leader" class="f-cf f-ms"><h1 class="f-fp f-lp"><img id="contact-leader-image" class="f-ms" src="Resources/contact-leader-im.png" alt="contact-leader-image">Reach Out</h1>
+			</div>
+			<div id="form" class="f-cf f-ms"><div id="form-left" class="f-ms"><div id="contact-name-label" class="f-cf f-ms"><p class="body f-fp f-lp"><label>Name:</label></p>
+					</div>
+					<p><input id="contact-name" class="body f-ms" type=text name="name" size=33 required></p>
+					<div id="contact-email-label" class="f-cf f-ms"><p class="body f-fp f-lp"><label>Email:</label></p>
+					</div>
+					<p class="f-lp"><input id="contact-email" class="body f-ms" type=email name="email" size=40 required></p>
+				</div>
+				<div id="form-right" class="f-ms"><div id="contact-message-label" class="f-cf f-ms"><p class="body f-fp f-lp"><label>Message:</label></p>
+					</div>
+					<p><textarea id="contact-message" class="body f-ms" cols=40 rows=7 name="message" required></textarea></p>
+					<div id="contact-assurance" class="f-cf f-ms"><p class="bodycenter f-fp f-lp">We’d love to hear from you ♥</p>
+					</div>
+					<p class="f-lp"><input id="contact-send" class="button f-ms" type=submit value="Send" required></p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div id="footer-wrap" class="f-cf f-ms"><footer id="footer" class="f-cf f-ms"><div id="footer-copyright" class="f-cf f-ms"><p class="bodycenter f-fp f-lp"><span class="bodysmall">© copyright info – Made in <a href="http://www.softpress.com/">Freeway</a></span></p>
+			</div>
+		</footer>
+	</div>
+	<header id="header" class="f-ms"><div id="header-title" class="f-ms"><p class="f-fp f-lp"><span class="logo">RETRO<span class="logotail">’D</span></span></p>
+		</div>
+		<nav id="header-nav" class="f-ms"><input type="checkbox" id="fwNav1-toggle">
+			<label for="fwNav1-toggle" class="fwNav1-toggle-label"></label>
+			<div class="fwNavContainer1">
+				<label for="fwNav1-toggle" class="fwNav1-toggle-label fwNav1-toggle-close"></label>
+				<ul class="f-fp f-lp" id="fwNav1">
+					<li class="fwFirstChild fwNavItem"><a href="#artwork"><span class="navigation" style="text-decoration:none">Artwork</span></a></li>
+					<li class="fwNavItem"><a href="#photography"><span class="navigation" style="text-decoration:none">Photography</span></a></li>
+					<li class="fwNavItem"><a href="#movies"><span class="navigation" style="text-decoration:none">Movies</span></a></li>
+					<li class="fwNavItem"><a href="#projects"><span class="navigation" style="text-decoration:none">Projects</span></a></li>
+					<li class="fwLastChild fwNavItem"><a href="#contact"><span class="navigation" style="text-decoration:none">Reach out</span></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+</div>
+<script src="Resources/fwResponsiveMenus.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+fwShowHideMenu("header-nav", 865);
+fwAddListener(document.getElementById("fwNav1-toggle"), "click", function(){
+	fwToggleMenu(this);
+});
+fwAddListener(window, "resize", function() {
+    fwShowHideMenu("header-nav", 865);
+});
+
+//]]></script></body>
+</html>

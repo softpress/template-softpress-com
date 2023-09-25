@@ -1,0 +1,96 @@
+body { margin:0px; background-color:#313040; height:100% }
+html { height:100% }
+a:link { color:#008048; text-decoration:underline }
+a:visited { color:#008048; text-decoration:underline }
+a:hover { color:#57bf7c; text-decoration:underline }
+a:active { color:#57bf7c; text-decoration:underline }
+#FooterBox1 a:link { color:#ccc; text-decoration:none }
+#FooterBox1 a:visited { color:#ccc; text-decoration:none }
+#FooterBox1 a:hover { color:#008048; text-decoration:none }
+#FooterBox1 a:active { color:#008048; text-decoration:none }
+#BackToTop a:link { color:#ccc; text-decoration:none }
+#BackToTop a:visited { color:#ccc; text-decoration:none }
+#BackToTop a:hover { color:#008048; text-decoration:none }
+#BackToTop a:active { color:#008048; text-decoration:none }
+#PageDiv { position:relative; min-height:100% }
+#Body1.f-ms { overflow:visible }
+#QuoteItem { width:70%; z-index:0; clear:both; margin-left:auto; margin-right:auto; overflow:visible }
+#Body2.f-ms { overflow:visible }
+#Box1 { width:40%; z-index:0; float:left; padding-top:10px; padding-bottom:10px; margin-left:5%; overflow:visible }
+#ImageWrapper1 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#gear { width:64px; overflow:hidden }
+#TitleWrapper { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#ImageWrapper2 { width:100%; z-index:0; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#picjumbocomIMG5540 { width:408px; max-width:100%; overflow:hidden }
+#Box2 { width:40%; z-index:0; float:right; padding-top:10px; padding-bottom:10px; margin-right:5%; overflow:visible }
+#ImageWrapper3 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#document { width:64px; overflow:hidden }
+#TitleWrapper1 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper1 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#Body3.f-ms { overflow:visible }
+#Box3 { width:40%; z-index:0; float:left; padding-top:10px; padding-bottom:10px; margin-left:5%; overflow:visible }
+#ImageWrapper4 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#gear1 { width:64px; overflow:hidden }
+#TitleWrapper2 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper2 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#ImageWrapper5 { width:100%; z-index:0; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#picjumbocomIMG6037 { width:408px; max-width:100%; overflow:hidden }
+#Box4 { width:40%; z-index:0; float:right; padding-top:10px; padding-bottom:10px; margin-right:5%; overflow:visible }
+#ImageWrapper6 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#document1 { width:64px; overflow:hidden }
+#TitleWrapper3 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper3 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#Body4.f-ms { overflow:visible }
+#TakeALook { width:70%; z-index:0; clear:both; margin-left:auto; margin-right:auto; margin-bottom:40px; overflow:visible }
+#Box5 { width:26%; z-index:0; float:left; clear:left; padding-top:10px; padding-bottom:10px; margin-left:5%; overflow:visible }
+#ImageWrapper6aa { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#pencil { width:64px; overflow:hidden }
+#TitleWrapper4 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper4 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#picjumbocomIMG5561 { width:265px; max-width:100%; overflow:hidden }
+#Box6 { width:26%; z-index:0; float:left; padding-top:10px; padding-bottom:10px; margin-left:6%; overflow:visible }
+#ImageWrapper6aa1 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#pencil1 { width:64px; overflow:hidden }
+#TitleWrapper5 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper5 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#H { width:265px; max-width:100%; overflow:hidden }
+#Box7 { width:26%; z-index:0; float:left; clear:right; padding-top:10px; padding-bottom:10px; margin-left:6%; margin-right:5%; overflow:visible }
+#ImageWrapper6aa2 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#pencil2 { width:64px; overflow:hidden }
+#TitleWrapper6 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#TextWrapper6 { width:100%; z-index:0; clear:both; padding-top:10px; padding-bottom:10px; margin-left:auto; margin-right:auto; overflow:visible }
+#picjumbocomIMG4923 { width:265px; max-width:100%; overflow:hidden }
+#CSSMenu { height:auto; overflow:visible; position:relative }
+.fwNavContainer1 { float:right; position:relative; right:50% }
+#fwNav1 { position:relative; display:block; left:50%; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left }
+#fwNav1 .fwNavItem a { display:block; color:#313040; text-decoration:none; padding:8px 8px 8px 8px }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#008048; text-decoration:none }
+#fwNav1 .fwNavItem a:active { color:#008048; text-decoration:none }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url(../Resources/menu-1-black1.png); background-repeat:no-repeat; background-size:100%; margin-left:auto; margin-right:auto }
+#fwNav1 .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem a.fwCurrent:hover { display:block; color:#57BF7C }
+* html #fwNav1 { float:left }
+* html #fwNav1 .fwNavItem a { float:left; height:1% }
+@media screen and (max-width:980px)
+{
+	#Box5 { width:90%; float:none; clear:both; margin-left:auto; margin-right:auto }
+	#Box6 { width:90%; float:none; clear:both; margin-left:auto; margin-top:5%; margin-right:auto }
+	#Box7 { width:90%; float:none; margin-left:auto; margin-top:5%; margin-right:auto }
+}
+@media screen and (max-width:750px)
+{
+	#Box1 { width:90%; float:none; clear:both; margin-left:auto; margin-right:auto }
+	#Box2 { width:90%; float:none; clear:both; margin-left:auto; margin-top:5%; margin-right:auto }
+	#Box3 { width:90%; float:none; clear:both; margin-left:auto; margin-right:auto }
+	#Box4 { width:90%; float:none; clear:both; margin-left:auto; margin-top:5%; margin-right:auto }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; left:0; right:0; top:0; bottom:0; background-color:#F5F5F5; overflow:auto; float:none; -webkit-transition:.2s ease-out -webkit-transform; -moz-transition:.2s ease-out -moz-transform; -ms-transition:.2s ease-out -ms-transform; -o-transition:.2s ease-out -o-transform; transition:.2s ease-out transform; -webkit-transform:translate3d(0,-100%,0); -moz-transform:translate3d(0,-100%,0); -ms-transform:translate3d(0,-100%,0); -o-transform:translate3d(0,-100%,0); transform:translate3d(0,-100%,0) }
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { float:none; overflow:hidden; width:100% }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-left:20px; padding-right:20px }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	#fwNav1 .fwLastChild a { padding-bottom:20px }
+	.fwNav1-toggle-close { background-image:url(../Resources/menu-close-black.png); margin:20px auto 20px auto }
+	#fwNav1-toggle:checked ~ .fwNavContainer1 { font-size:1em; -webkit-transform:translate3d(0,0,0); -moz-transform:translate3d(0,0,0); -ms-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); transform:translate3d(0,0,0) }
+}

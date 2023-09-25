@@ -1,0 +1,29 @@
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.f-cf:before,.f-cf:after { content:" "; display:table }
+.f-cf { _zoom:1 }
+.f-cf:after { clear:both }
+em { font-style:italic }
+h1 { font-weight:bold; font-size:18px }
+h1:first-child { margin-top:0px }
+h2 { color:#4982ad; font-family:'Righteous',Helvetica,cursive;; font-size:24px; text-align:center; margin-bottom:2px }
+h2:first-child { margin-top:0px }
+h3 { color:#000; font-family:'Righteous',Helvetica,cursive;; font-size:20px; text-align:center; margin-top:0px }
+h3:first-child { margin-top:0px }
+strong { font-weight:bold }
+.BigTitle { color:#000; font-family:'Righteous',Helvetica,cursive;; font-size:40px; margin-bottom:0.1px }
+.highlight { color:#454548 }
+.CenterAlign { text-align:center }
+.Menu { font-family:'Righteous',Helvetica,cursive;; font-size:18px }
+.sub { color:#000; font-family:'Righteous',Helvetica,cursive;; font-size:18px; text-align:center; margin-top:0px; margin-bottom:0.1px }
+.body-centered { color:#000; font-family:'Lato',Helvetica,sans-serif; font-weight: 300;; font-size:16px; word-spacing:1.92px; line-height:26px; text-align:center }
+.Footer { color:#fff; font-family:'Lato',Helvetica,sans-serif; font-weight: 300;; font-size:14px }
+.body { color:#000; font-family:'Lato',Helvetica,sans-serif; font-weight: 300;; font-size:16px; line-height:26px }
+.FormItem { color:#000; font-family:'Lato',Helvetica,sans-serif; font-weight: 300;; font-size:16px; text-align:center }

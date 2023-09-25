@@ -1,0 +1,43 @@
+#PageWrapper.f-ms { width:100%; z-index:0; background-image:url(../Resources/4h.jpg); background-size:100% }
+#HeaderWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto }
+#Header.f-ms { max-width:1060px; z-index:0; clear:both; padding:20px; margin-left:auto; margin-right:auto }
+#LogoWrapper.f-ms { width:40%; z-index:0; float:left; clear:left }
+#LogoWrapper1.f-ms { width:40%; z-index:0; float:right; clear:right; margin-top:20px }
+#CSSMenuWrapper.f-ms { max-width:1100px; z-index:0; clear:both; margin-left:auto; margin-right:auto }
+#CSSMenu.f-ms { width:100%; z-index:0; clear:both; margin:40px auto; background-color:#46b465 }
+#BodyWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto }
+#Body.f-ms { max-width:1040px; z-index:0; clear:both; padding:30px; margin-left:auto; margin-right:auto; overflow:hidden }
+#FooterWrapper.f-ms { width:100%; z-index:0; clear:both; margin-left:auto; margin-right:auto; background-color:#191919 }
+#Footer.f-ms { max-width:1100px; z-index:0; clear:both; padding-top:40px; padding-bottom:40px; margin-left:auto; margin-right:auto }
+#FooterLeft.f-ms { width:40%; z-index:0; float:left }
+#FooterRight.f-ms { width:40%; min-height:100px; z-index:0; float:right }
+#facebook.f-ms { left:124px; top:30px; width:64px; height:64px; overflow:hidden }
+#twitter.f-ms { left:188px; top:30px; width:64px; height:64px; overflow:hidden }
+#linkedin.f-ms { left:252px; top:30px; width:64px; height:64px; overflow:hidden }
+@media screen and (max-width:768px)
+{
+	#Header.f-ms { max-width:728px }
+	#CSSMenuWrapper.f-ms { max-width:768px }
+	#CSSMenu.f-ms { padding-top:20px; padding-bottom:20px }
+	#Body.f-ms { max-width:708px }
+	#Footer.f-ms { max-width:768px }
+}
+@media screen and (max-width:480px)
+{
+	#Header.f-ms { max-width:440px }
+	#LogoWrapper.f-ms { width:100%; float:none }
+	#LogoWrapper1.f-ms { width:100% }
+	#CSSMenuWrapper.f-ms { max-width:480px }
+	#Body.f-ms { max-width:420px }
+	#Footer.f-ms { max-width:480px }
+	#FooterLeft.f-ms { width:100%; float:none; margin-bottom:20px }
+	#FooterRight.f-ms { width:100%; float:none }
+}
+@media screen and (max-width:320px)
+{
+	#Header.f-ms { max-width:280px }
+	#LogoWrapper1.f-ms { float:none }
+	#CSSMenuWrapper.f-ms { max-width:320px }
+	#Body.f-ms { max-width:260px }
+	#Footer.f-ms { max-width:320px }
+}

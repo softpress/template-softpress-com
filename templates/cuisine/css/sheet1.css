@@ -1,0 +1,34 @@
+form { margin:0px }
+body > form { height:100% }
+img { margin:0px; border-style:none }
+button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }
+table { empty-cells:hide }
+td { padding:0px }
+.f-sp { font-size:1px; visibility:hidden }
+.f-lp { margin-bottom:0px }
+.f-fp { margin-top:0px }
+.f-cf:before,.f-cf:after { content:" "; display:table }
+.f-cf { _zoom:1 }
+.f-cf:after { clear:both }
+em { font-style:italic }
+h1 { font-weight:bold; font-size:18px }
+h1:first-child { margin-top:0px }
+h2 { font-weight:bold; font-size:16px }
+h2:first-child { margin-top:0px }
+h3 { font-weight:bold; font-size:14px }
+h3:first-child { margin-top:0px }
+strong { font-weight:bold }
+.LogoTitle { color:#f75e17; font-family:'Nixie One',Helvetica,cursive; font-size:36px; text-align:center; margin-top:0px; margin-bottom:0.1px }
+.LogoSubtitle { color:#000; font-family:'Nixie One',Helvetica,cursive; font-size:18px; text-align:center; margin-top:0px; margin-bottom:0.1px }
+.CSSMenu { font-family:'Nixie One',Helvetica,cursive; font-size:14px; text-align:center }
+.BigTitle { color:#f75e17; font-family:'Nixie One',Helvetica,cursive; font-size:42px; text-align:center; margin-top:0px; margin-bottom:0.1px }
+.BigSubtitle { color:#fff; font-family:'Nixie One',Helvetica,cursive; font-size:30px; text-align:center; margin-top:0px; margin-bottom:0.1px }
+.PageContentTitle { color:#e46300; font-family:'Nixie One',Helvetica,cursive; font-size:26px; text-align:center; margin-top:0px; margin-bottom:0.1px }
+.PageContentSubtitle { color:#fff; font-family:'Nixie One',Helvetica,cursive; font-size:20px; text-align:center; margin-top:5px; margin-bottom:0.1px; padding-bottom:10px; border-bottom:solid 1px #fefefe }
+.PageContent { color:#fff; font-family:'Open Sans',Helvetica,sans-serif; font-weight: 200; font-size:16px; line-height:20px; text-align:left }
+.EyeCatchingTextSize { font-size:30px }
+.Footer { color:#000; font-family:'Nixie One',Helvetica,cursive; font-size:16px; text-align:center; margin-top:0px }
+.quote { color:#000; font-family:'Open Sans',Helvetica,sans-serif; font-weight: 200; font-style:italic; font-size:16px; background-color:#e46300; line-height:22px; margin-left:10px; margin-right:10px; padding:10px }
+.MenuTable { color:#fff; font-family:'Nixie One',Helvetica,cursive; font-size:14px; text-align:center }
+.MenuTableTitle { color:#000; font-family:'Nixie One',Helvetica,cursive; font-weight:bold; font-size:16px; text-align:center }
+.FormItems { color:#000; font-family:'Nixie One',Helvetica,cursive; font-size:14px }
