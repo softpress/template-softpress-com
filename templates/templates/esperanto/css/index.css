@@ -1,0 +1,48 @@
+body { margin:0px; background-color:#556672; height:100% }
+html { height:100% }
+a:link { color:#ff7775; text-decoration:none; -webkit-transition:all 100ms font-size 0; -moz-transition: all 100ms font-size 0; -o-transition: all 100ms font-size 0; transition: all 100ms font-size 0 }
+a:visited { color:#dedede; text-decoration:none }
+a:hover { color:#fff; text-decoration:none }
+a:active { color:#fff; text-decoration:none; background-color:#ff7775 }
+#PageDiv { position:relative; min-height:100% }
+#main { z-index:0; padding-left:2%; padding-top:40px; padding-right:2% }
+#desk { max-width:100%; background-color:#527287; overflow:hidden }
+#preview, #preview p, #preview span, #preview a { display:block; text-decoration:none; -webkit-transition:all 100ms; -moz-transition:all 100ms; -ms-transition:all 100ms; transition:all 100ms }
+#preview:hover, #preview:focus { color:#FFFFFF; background-color:#FF7775; border-color:#FF7775 }
+#preview:hover p, #preview:hover span, #preview:focus p, #preview:focus span { color:#FFFFFF }
+#purchase, #purchase p, #purchase span, #purchase a { display:block; text-decoration:none; -webkit-transition:all 100ms; -moz-transition:all 100ms; -ms-transition:all 100ms; transition:all 100ms }
+#purchase:hover, #purchase:focus { color:#455767; background-color:#FAF964; border-color:#FAF964 }
+#purchase:hover p, #purchase:hover span, #purchase:focus p, #purchase:focus span { color:#455767 }
+#nav { height:auto; overflow:visible }
+#fwNav1 { float:right; padding:0; margin:0; list-style:none }
+#fwNav1 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:0; border-bottom:0 }
+#fwNav1 .fwNavItem a { display:block; color:#FFFFFF; text-decoration:none; padding:14px 14px 14px 14px }
+#fwNav1 .fwFirstChild { border-left:0 }
+#fwNav1 .fwLastChild { border-right:0 }
+#fwNav1 .fwNavItem a:hover, #fwNav1 .fwNavItem span a:hover, #fwNav1 .fwNavItem a:focus { color:#E3E651; text-decoration:none }
+#fwNav1 .fwNavItem a:active { text-decoration:none }
+#fwNav1-toggle, .fwNav1-toggle-label { display:none }
+.fwNav1-toggle-label { width:30px; height:30px; overflow:hidden; background-image:url('../../../Resources/menu-white.svg'); background-repeat:no-repeat; background-size:100%; float:right }
+#fwNav1 .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem a.fwCurrent:hover { display:block; color:#FAF964; font-weight:normal }
+#secondary-nav { height:auto; overflow:visible; position:relative }
+#fwNav2 { float:right; padding:0; margin:0; list-style:none }
+#fwNav2 .fwNavItem { width:auto; position:relative; float:left; margin:0; padding:0; border-top:1px solid #FF7775; border-bottom:1px solid #FF7775 }
+#fwNav2 .fwNavItem a { display:block; color:#FFFFFF; text-decoration:none; padding:8px 14px 8px 14px }
+#fwNav2 .fwFirstChild { border-left:1px solid #FF7775 }
+#fwNav2 .fwLastChild { border-right:1px solid #FF7775 }
+#fwNav2 .fwNavItem a:hover, #fwNav2 .fwNavItem span a:hover, #fwNav2 .fwNavItem a:focus { color:#FFFFFF; text-decoration:none; background:#FF7775 }
+#fwNav2-toggle, .fwNav2-toggle-label { display:none }
+.fwNav2-toggle-label { width:30px; height:30px; overflow:hidden; background-repeat:no-repeat; background-size:100%; float:right }
+#fwNav2 .fwNavItem a.fwCurrent, #fwNav2 .fwNavItem a.fwCurrent:hover { display:block; color:#FFFFFF; background:#FF7775; font-weight:normal }
+@media screen and (max-width:930px)
+{
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-right:0; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-left:30px; padding-right:30px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNavContainer1 { display:none; position:fixed; width:100%; top:0; right:0; bottom:100%; left:0; margin-top:-100%; background-color:#527287; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out margin, .2s ease-out bottom; -moz-transition:.2s ease-out margin, .2s ease-out bottom; -ms-transition:.2s ease-out margin, .2s ease-out bottom; -o-transition:.2s ease-out margin, .2s ease-out bottom; transition:.2s ease-out margin, .2s ease-out bottom }
+	.fwNav1-toggle-close { background-image:url('../../../Resources/close-round.svg'); margin:16px 15px 20px 20px }
+	.fwNavContainer1.fwMenuOn { margin-top:0; bottom:0 }
+}
